@@ -1,179 +1,70 @@
 export default function HomePage() {
   return (
-    <>
-      <style>{`
-        body {
-          margin: 0;
-          background: #F8F6F1;
-          color: #111;
-          font-family: Arial, sans-serif;
-        }
+    <main
+      style={{
+        minHeight: "100vh",
+        backgroundImage:
+          "linear-gradient(90deg, rgba(255,255,255,.98) 0%, rgba(255,255,255,.92) 45%, rgba(255,255,255,.25) 75%), url('https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1600')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        padding: "100px 32px",
+        color: "#111",
+      }}
+    >
+      <p style={{ color: "#B7833A", letterSpacing: "6px", fontWeight: "bold" }}>
+        PROFESSIONAL. RELIABLE. DISCREET.
+      </p>
 
-        .hero {
-          min-height: 100vh;
-          background:
-            linear-gradient(90deg, rgba(255,255,255,.98) 0%, rgba(255,255,255,.92) 42%, rgba(255,255,255,.25) 75%),
-            url('https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1600');
-          background-size: cover;
-          background-position: center;
-          padding: 120px 8%;
-        }
+      <h1
+        style={{
+          fontFamily: "Georgia, serif",
+          fontSize: "64px",
+          lineHeight: ".95",
+          maxWidth: "800px",
+        }}
+      >
+        Mobile Notary & Loan Signing Services
+      </h1>
 
-        .eyebrow {
-          color: #B7833A;
-          letter-spacing: .34em;
-          text-transform: uppercase;
-          font-weight: 700;
-          margin-bottom: 30px;
-        }
+      <p style={{ color: "#B7833A", letterSpacing: "5px", fontSize: "24px" }}>
+        DELIVERED TO YOU.
+      </p>
 
-        h1 {
-          font-family: Georgia, serif;
-          font-size: clamp(56px, 8vw, 110px);
-          line-height: .92;
-          max-width: 850px;
-          margin: 0 0 25px;
-        }
+      <p style={{ fontSize: "22px", lineHeight: "1.6", maxWidth: "650px" }}>
+        Convenient, professional, and accurate notary and loan signing services
+        throughout Fresno County and the Central Valley.
+      </p>
 
-        .gold {
-          color: #B7833A;
-          letter-spacing: .28em;
-          text-transform: uppercase;
-          font-size: 28px;
-          font-weight: 700;
-          margin-bottom: 35px;
-        }
+      <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+        <a
+          href="https://calendly.com/"
+          style={{
+            background: "#050505",
+            color: "white",
+            padding: "18px 28px",
+            borderRadius: "6px",
+            textDecoration: "none",
+            fontWeight: "bold",
+          }}
+        >
+          Schedule Appointment
+        </a>
 
-        .line {
-          width: 90px;
-          height: 2px;
-          background: #B7833A;
-          margin-bottom: 35px;
-        }
-
-        .subtext {
-          max-width: 650px;
-          font-size: 22px;
-          line-height: 1.7;
-          margin-bottom: 40px;
-        }
-
-        .buttons {
-          display: flex;
-          gap: 20px;
-          flex-wrap: wrap;
-          margin-bottom: 70px;
-        }
-
-        .btn {
-          padding: 20px 32px;
-          border-radius: 6px;
-          text-transform: uppercase;
-          letter-spacing: .14em;
-          font-weight: 700;
-          text-decoration: none;
-        }
-
-        .btn-dark {
-          background: #050505;
-          color: white;
-        }
-
-        .btn-light {
-          background: white;
-          color: #8B5A20;
-          border: 1px solid #B7833A;
-        }
-
-        .feature-bar {
-          background: #090909;
-          color: white;
-          border-radius: 16px;
-          padding: 34px;
-          display: grid;
-          grid-template-columns: repeat(5, 1fr);
-          gap: 25px;
-          box-shadow: 0 20px 50px rgba(0,0,0,.25);
-        }
-
-        .feature h3 {
-          color: white;
-          text-transform: uppercase;
-          letter-spacing: .12em;
-          font-size: 15px;
-          margin-bottom: 10px;
-        }
-
-        .feature p {
-          color: #ccc;
-          line-height: 1.6;
-        }
-
-        @media (max-width: 800px) {
-          .hero {
-            padding: 80px 24px;
-          }
-
-          .feature-bar {
-            grid-template-columns: 1fr;
-          }
-
-          .subtext {
-            font-size: 19px;
-          }
-        }
-      `}</style>
-
-      <section className="hero">
-        <p className="eyebrow">Professional. Reliable. Discreet.</p>
-
-        <h1>Mobile Notary & Loan Signing Services</h1>
-
-        <p className="gold">Delivered To You.</p>
-
-        <div className="line" />
-
-        <p className="subtext">
-          Convenient, professional, and accurate notary and loan signing services throughout Fresno County and the Central Valley.
-        </p>
-
-        <div className="buttons">
-          <a className="btn btn-dark" href="https://calendly.com/">
-            Schedule Appointment
-          </a>
-
-          <a className="btn btn-light" href="sms:14158065811">
-            Text (415) 806-5811
-          </a>
-        </div>
-
-        <div className="feature-bar">
-          <div className="feature">
-            <h3>Same-Day Appointments</h3>
-            <p>When you need it, we’re there.</p>
-          </div>
-
-          <div className="feature">
-            <h3>Bonded & Insured</h3>
-            <p>Your peace of mind is our priority.</p>
-          </div>
-
-          <div className="feature">
-            <h3>We Travel To You</h3>
-            <p>Homes, offices, hospitals, jails & more.</p>
-          </div>
-
-          <div className="feature">
-            <h3>Evening & Weekend Availability</h3>
-            <p>Flexible scheduling to fit your needs.</p>
-          </div>
-
-          <div className="feature">
-            <h3>Last-Minute Signings Welcome</h3>
-            <p>We’re here when you’re in a rush.</p>
-          </div>
-        </div>
-      </section>
-    </>
+        <a
+          href="sms:14158065811"
+          style={{
+            background: "white",
+            color: "#8B5A20",
+            border: "1px solid #B7833A",
+            padding: "18px 28px",
+            borderRadius: "6px",
+            textDecoration: "none",
+            fontWeight: "bold",
+          }}
+        >
+          Text (415) 806-5811
+        </a>
+      </div>
+    </main>
   );
 }
