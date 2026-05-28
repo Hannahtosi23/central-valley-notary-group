@@ -977,7 +977,7 @@ export default function HomePage() {
           </div>
         </section>
 
-      <section id="contact" className="dark">
+              <section id="contact" className="dark">
           <div className="center">
             <p className="section-label">Contact Me</p>
             <h2>Let’s Get Your Documents Notarized</h2>
@@ -1020,21 +1020,29 @@ export default function HomePage() {
               <div>
                 <h3>Email Me</h3>
                 <p>Send questions, document details, or appointment requests.</p>
-                <p className="gold" style={{ fontSize: "13px", letterSpacing: ".08em" }}>
+                <p
+                  className="gold"
+                  style={{
+                    fontSize: "13px",
+                    letterSpacing: ".08em",
+                    wordBreak: "break-word",
+                  }}
+                >
                   appointments@centralvalleynotarygroup.com
                 </p>
               </div>
             </div>
           </div>
 
-                  <div className="footer-note">
+          <div className="footer-note">
             <div
               style={{
-                marginBottom: "28px",
-                padding: "22px",
-                border: "1px solid rgba(255,255,255,.12)",
+                marginBottom: "30px",
+                padding: "24px",
+                border: "1px solid rgba(255,255,255,.14)",
                 borderRadius: "8px",
-                background: "rgba(255,255,255,.03)",
+                background: "rgba(255,255,255,.04)",
+                maxWidth: "520px",
               }}
             >
               <h3
@@ -1045,6 +1053,7 @@ export default function HomePage() {
                   fontSize: "12px",
                   marginTop: 0,
                   marginBottom: "18px",
+                  fontFamily: "Arial, sans-serif",
                 }}
               >
                 Business Hours
@@ -1058,27 +1067,20 @@ export default function HomePage() {
                   color: "#d0d0d0",
                   lineHeight: "1.8",
                   fontSize: "15px",
-                  maxWidth: "420px",
                 }}
               >
                 <div>Monday</div>
                 <div>7:00 AM – 7:00 PM</div>
-
                 <div>Tuesday</div>
                 <div>7:00 AM – 7:00 PM</div>
-
                 <div>Wednesday</div>
                 <div>7:00 AM – 7:00 PM</div>
-
                 <div>Thursday</div>
                 <div>7:00 AM – 7:00 PM</div>
-
                 <div>Friday</div>
                 <div>7:00 AM – 7:00 PM</div>
-
                 <div>Saturday</div>
                 <div>7:00 AM – 7:00 PM</div>
-
                 <div>Sunday</div>
                 <div>7:00 AM – 7:00 PM</div>
               </div>
@@ -1095,3 +1097,4 @@ export default function HomePage() {
               rights reserved.
             </p>
           </div>
+        </section>
