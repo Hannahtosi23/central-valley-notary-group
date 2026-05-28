@@ -890,31 +890,126 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section id="contact" className="dark">
-          <div className="center">
-            <p className="section-label">Contact Me</p>
-            <h2>Let’s Get Your Documents Notarized</h2>
-          </div>
+       <section id="contact" className="bg-[#050505] text-white">
+  <div className="max-w-7xl mx-auto px-6 py-20">
+    <div className="text-center mb-12">
+      <p className="text-[#B7833A] uppercase tracking-[0.24em] text-xs font-semibold mb-4">
+        Contact Me
+      </p>
 
-          <div className="contact-grid">
-            <div className="contact-card"><div className="contact-bubble"><Icon type="calendar" /></div><div><h3>Schedule Online</h3><p>Book an appointment in just a few clicks.</p><a className="btn btn-light" href="https://calendly.com/">Schedule with Calendly</a></div></div>
-            <div className="contact-card"><div className="contact-bubble"><Icon type="message" /></div><div><h3>Text Me</h3><p>The fastest way to reach me for same-day availability, pricing, and appointment details.</p><a className="btn btn-light" href="sms:14158065811">Text (415) 806-5811</a></div></div>
-            <div className="contact-card"><div className="contact-bubble"><Icon type="mail" /></div><div><h3>Email Me</h3><p>Send questions, document details, or appointment requests.</p><p>hello@centralvalleynotarygroup.com</p></div></div>
-          </div>
+      <h2 className="font-serif text-4xl md:text-5xl">
+        Let’s Get Your Documents Notarized
+      </h2>
+    </div>
 
-          <div className="footer-note">
-            I am a Notary Public, not an attorney licensed to practice law. I may not give legal advice or accept fees for legal advice.
-            <br /><br />
-            © Central Valley Notary Group
-          </div>
-        </section>
+    <div className="grid md:grid-cols-3 gap-8 mb-14">
 
-        <div className="mobile-bar">
-          <a className="mobile-text" href="sms:14158065811">Text</a>
-          <a className="mobile-call" href="tel:14158065811">Call Now</a>
-          <a className="mobile-schedule" href="https://calendly.com/">Schedule</a>
+      {/* SCHEDULE */}
+      <div className="flex gap-5 items-start">
+        <div className="h-14 w-14 rounded-full bg-white/10 flex items-center justify-center text-[#E8C27A]">
+          <CalendarDays />
         </div>
-      </main>
-    </>
-  );
-}
+
+        <div>
+          <h3 className="font-semibold mb-2">
+            Schedule Online
+          </h3>
+
+          <p className="text-neutral-300 leading-7 mb-3">
+            Book an appointment in just a few clicks.
+          </p>
+
+          <Button className="rounded-md bg-white text-[#8B5A20] hover:bg-neutral-200 border border-[#B7833A] px-5 py-4 text-xs tracking-[0.16em] uppercase h-auto">
+            Schedule with Calendly
+          </Button>
+        </div>
+      </div>
+
+      {/* TEXT */}
+      <div className="flex gap-5 items-start">
+        <div className="h-14 w-14 rounded-full bg-white/10 flex items-center justify-center text-[#E8C27A]">
+          <MessageCircle />
+        </div>
+
+        <div>
+          <h3 className="font-semibold mb-2">
+            Text Me
+          </h3>
+
+          <p className="text-neutral-300 leading-7 mb-3">
+            The fastest way to reach me for same-day availability,
+            pricing, and appointment details.
+          </p>
+
+          <Button className="rounded-md bg-white text-[#8B5A20] hover:bg-neutral-200 border border-[#B7833A] px-5 py-4 text-xs tracking-[0.16em] uppercase h-auto">
+            Text (415) 806-5811
+          </Button>
+        </div>
+      </div>
+
+      {/* EMAIL */}
+      <div className="flex gap-5 items-start">
+        <div className="h-14 w-14 rounded-full bg-white/10 flex items-center justify-center text-[#E8C27A]">
+          <Mail />
+        </div>
+
+        <div>
+          <h3 className="font-semibold mb-2">
+            Email Me
+          </h3>
+
+          <p className="text-neutral-300 leading-7 mb-3">
+            Send questions, document details,
+            or appointment requests.
+          </p>
+
+          <p className="text-[#E8C27A] tracking-[0.08em] text-xs font-semibold break-all">
+            appointments@centralvalleynotarygroup.com
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div className="border-t border-white/10 pt-10 grid lg:grid-cols-[.7fr_1.3fr] gap-8 items-start">
+
+      <div className="flex items-center gap-4">
+        <div className="h-12 w-12 rounded-full border border-[#B7833A] bg-black flex items-center justify-center text-[#E8C27A]">
+          <Stamp className="h-6 w-6" />
+        </div>
+
+        <div>
+          <p className="font-serif text-2xl tracking-[0.12em] uppercase">
+            Central Valley
+          </p>
+
+          <p className="font-serif text-2xl tracking-[0.12em] uppercase">
+            Notary Group
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <div className="flex flex-wrap gap-8 text-xs font-semibold tracking-[0.14em] uppercase mb-6">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#service-area">Service Area</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <p className="text-neutral-300 leading-7 text-sm max-w-3xl">
+          I am a Notary Public, not an attorney licensed to practice law.
+          I may not give legal advice or accept fees for legal advice.
+          I can only provide notarial services.
+        </p>
+
+        <p className="text-neutral-500 text-sm mt-6">
+          © {new Date().getFullYear()} Central Valley Notary Group.
+          All rights reserved.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
