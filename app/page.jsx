@@ -918,13 +918,13 @@ export default function HomePage() {
           <div className="contact-grid">
             <div className="contact-card"><div className="contact-bubble"><Icon type="calendar" /></div><div><h3>Schedule Online</h3><p>Book an appointment in just a few clicks.</p><a className="btn btn-light" href="https://calendly.com/">Schedule with Calendly</a></div></div>
             <div className="contact-card"><div className="contact-bubble"><Icon type="message" /></div><div><h3>Text Me</h3><p>The fastest way to reach me for same-day availability, pricing, and appointment details.</p><a className="btn btn-light" href="sms:14158065811">Text (415) 806-5811</a></div></div>
-            <div className="contact-card"><div className="contact-bubble"><Icon type="mail" /></div><div><h3>Email Me</h3><p>Send questions, document details, or appointment requests.</p><p>hello@centralvalleysigningservices.com</p></div></div>
+            <div className="contact-card"><div className="contact-bubble"><Icon type="mail" /></div><div><h3>Email Me</h3><p>Send questions, document details, or appointment requests.</p><p>hello@centralvalleynotarygroup.com</p></div></div>
           </div>
 
           <div className="footer-note">
             I am a Notary Public, not an attorney licensed to practice law. I may not give legal advice or accept fees for legal advice.
             <br /><br />
-            © Central Valley Signing Services
+            © Central Valley Notary Group
           </div>
         </section>
 
