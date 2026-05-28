@@ -1004,12 +1004,9 @@ export default function HomePage() {
           I can only provide notarial services.
         </p>
 
-        <p className="text-neutral-500 text-sm mt-6">
-          © {new Date().getFullYear()} Central Valley Notary Group.
-          All rights reserved.
-        </p>
-      </div>
-
-    </div>
-  </div>
 </section>
+
+      <div className="h-20 md:hidden bg-[#050505]" />
+    </div>
+  );
+}
