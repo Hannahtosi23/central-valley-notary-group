@@ -6,15 +6,15 @@ export default function HomePage() {
           box-sizing: border-box;
         }
 
+        html {
+          scroll-behavior: smooth;
+        }
+
         body {
           margin: 0;
           background: #F8F6F1;
           color: #111;
           font-family: Arial, sans-serif;
-        }
-
-        html {
-          scroll-behavior: smooth;
         }
 
         .hero {
@@ -38,16 +38,23 @@ export default function HomePage() {
           width: 100%;
         }
 
-        .eyebrow {
+        .eyebrow,
+        .gold,
+        .section-label {
           color: #B7833A;
-          letter-spacing: .34em;
           text-transform: uppercase;
+          letter-spacing: .28em;
           font-weight: 700;
+        }
+
+        .eyebrow {
           margin-bottom: 30px;
           font-size: 13px;
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
           font-family: Georgia, serif;
         }
 
@@ -66,11 +73,7 @@ export default function HomePage() {
         }
 
         .gold {
-          color: #B7833A;
-          letter-spacing: .28em;
-          text-transform: uppercase;
           font-size: 28px;
-          font-weight: 700;
           margin-bottom: 35px;
         }
 
@@ -138,19 +141,33 @@ export default function HomePage() {
           box-shadow: 0 20px 50px rgba(0,0,0,.22);
         }
 
+        .feature {
+          display: flex;
+          gap: 16px;
+          align-items: flex-start;
+        }
+
+        .feature-icon {
+          color: #E8C27A;
+          font-size: 32px;
+          line-height: 1;
+          flex-shrink: 0;
+        }
+
         .feature h3 {
           font-family: Arial, sans-serif;
           color: white;
           text-transform: uppercase;
           letter-spacing: .12em;
           font-size: 14px;
-          margin-bottom: 12px;
+          margin: 0 0 12px;
         }
 
         .feature p {
           color: #d2d2d2;
           line-height: 1.6;
           font-size: 15px;
+          margin: 0;
         }
 
         section {
@@ -164,11 +181,7 @@ export default function HomePage() {
         }
 
         .section-label {
-          color: #B7833A;
-          text-transform: uppercase;
-          letter-spacing: .28em;
           font-size: 12px;
-          font-weight: 700;
           margin-bottom: 20px;
         }
 
@@ -184,6 +197,12 @@ export default function HomePage() {
           border-radius: 8px;
           padding: 34px;
           box-shadow: 0 10px 28px rgba(0,0,0,.04);
+        }
+
+        .card-icon {
+          color: #B7833A;
+          font-size: 36px;
+          margin-bottom: 18px;
         }
 
         .card h3 {
@@ -217,11 +236,25 @@ export default function HomePage() {
           padding: 40px 8%;
           display: grid;
           grid-template-columns: repeat(4, 1fr);
-          gap: 20px;
+          gap: 24px;
+        }
+
+        .trust div {
+          display: flex;
+          align-items: center;
+          gap: 14px;
           text-transform: uppercase;
           letter-spacing: .12em;
           font-size: 13px;
           font-weight: 700;
+          line-height: 1.5;
+        }
+
+        .trust-icon {
+          color: #E8C27A;
+          font-size: 26px;
+          line-height: 1;
+          flex-shrink: 0;
         }
 
         .docs {
@@ -243,6 +276,25 @@ export default function HomePage() {
           grid-template-columns: 1fr 1fr;
           gap: 70px;
           align-items: start;
+        }
+
+        .ready-list {
+          display: grid;
+          gap: 18px;
+        }
+
+        .ready-item {
+          display: flex;
+          align-items: flex-start;
+          gap: 14px;
+          color: #555;
+          line-height: 1.7;
+        }
+
+        .ready-icon {
+          color: #B7833A;
+          font-size: 22px;
+          flex-shrink: 0;
         }
 
         .faq {
@@ -277,6 +329,12 @@ export default function HomePage() {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 30px;
+        }
+
+        .contact-icon {
+          color: #E8C27A;
+          font-size: 34px;
+          margin-bottom: 12px;
         }
 
         .footer-note {
@@ -317,14 +375,16 @@ export default function HomePage() {
           h1 {
             font-size: 64px;
           }
+
+          .gold {
+            font-size: 24px;
+          }
         }
       `}</style>
 
       <main>
-
         <section className="hero">
           <div className="hero-inner">
-
             <p className="eyebrow">
               Professional. Reliable. Discreet.
             </p>
@@ -344,62 +404,68 @@ export default function HomePage() {
             </p>
 
             <div className="buttons">
-              <a
-                className="btn btn-dark"
-                href="https://calendly.com/"
-              >
+              <a className="btn btn-dark" href="https://calendly.com/">
                 Schedule Appointment
               </a>
 
-              <a
-                className="btn btn-light"
-                href="sms:14158065811"
-              >
+              <a className="btn btn-light" href="sms:14158065811">
                 Text (415) 806-5811
               </a>
             </div>
 
             <div className="feature-bar">
-
               <div className="feature">
-                <h3>Same-Day Appointments</h3>
-                <p>When you need it, we’re there.</p>
+                <span className="feature-icon">◷</span>
+                <div>
+                  <h3>Same-Day Appointments</h3>
+                  <p>When you need it, we’re there.</p>
+                </div>
               </div>
 
               <div className="feature">
-                <h3>Bonded & Insured</h3>
-                <p>Your peace of mind is our priority.</p>
+                <span className="feature-icon">◇</span>
+                <div>
+                  <h3>Bonded & Insured</h3>
+                  <p>Your peace of mind is our priority.</p>
+                </div>
               </div>
 
               <div className="feature">
-                <h3>We Travel To You</h3>
-                <p>Homes, offices, hospitals, jails & more.</p>
+                <span className="feature-icon">⌂</span>
+                <div>
+                  <h3>We Travel To You</h3>
+                  <p>Homes, offices, hospitals, jails & more.</p>
+                </div>
               </div>
 
               <div className="feature">
-                <h3>Evening & Weekend Availability</h3>
-                <p>Flexible scheduling to fit your needs.</p>
+                <span className="feature-icon">▣</span>
+                <div>
+                  <h3>Evening & Weekend Availability</h3>
+                  <p>Flexible scheduling to fit your needs.</p>
+                </div>
               </div>
 
               <div className="feature">
-                <h3>Last-Minute Signings Welcome</h3>
-                <p>We’re here when you’re in a rush.</p>
+                <span className="feature-icon">ϟ</span>
+                <div>
+                  <h3>Last-Minute Signings Welcome</h3>
+                  <p>We’re here when you’re in a rush.</p>
+                </div>
               </div>
-
             </div>
           </div>
         </section>
 
         <section>
-
           <div className="center">
             <p className="section-label">Services</p>
             <h2>Professional Notary Services</h2>
           </div>
 
           <div className="grid4">
-
             <div className="card">
+              <div className="card-icon">✒</div>
               <h3>Loan Signing Services</h3>
               <p>
                 Refinance packages, HELOCs, seller packages, buyer closings, and real estate loan documents.
@@ -410,6 +476,7 @@ export default function HomePage() {
             </div>
 
             <div className="card">
+              <div className="card-icon">✓</div>
               <h3>Apostille Services</h3>
               <p>
                 Birth certificates, marriage certificates, power of attorney documents, and international paperwork.
@@ -420,6 +487,7 @@ export default function HomePage() {
             </div>
 
             <div className="card">
+              <div className="card-icon">⌂</div>
               <h3>Jail Notarizations</h3>
               <p>
                 Power of attorney forms, inmate authorization forms, legal affidavits, and custody-related documents.
@@ -430,6 +498,7 @@ export default function HomePage() {
             </div>
 
             <div className="card">
+              <div className="card-icon">✍</div>
               <h3>General Notary Services</h3>
               <p>
                 Power of attorney forms, affidavits, travel consent forms, trusts, and healthcare directives.
@@ -438,19 +507,17 @@ export default function HomePage() {
                 Starting at <span>$45</span>
               </div>
             </div>
-
           </div>
         </section>
 
         <div className="trust">
-          <div>Commissioned California Notary Public</div>
-          <div>Bonded & Insured</div>
-          <div>Loan Signing Support</div>
-          <div>Serving Fresno & Clovis</div>
+          <div><span className="trust-icon">✓</span>Commissioned California Notary Public</div>
+          <div><span className="trust-icon">◆</span>Bonded & Insured</div>
+          <div><span className="trust-icon">✍</span>Loan Signing Support</div>
+          <div><span className="trust-icon">⌖</span>Serving Fresno & Clovis</div>
         </div>
 
         <section>
-
           <div className="center">
             <p className="section-label">Common Documents</p>
             <h2>Documents Commonly Notarized</h2>
@@ -461,7 +528,6 @@ export default function HomePage() {
           </div>
 
           <div className="docs">
-
             <div className="doc">Power of Attorney</div>
             <div className="doc">Trust Documents</div>
             <div className="doc">Real Estate Closings</div>
@@ -474,12 +540,36 @@ export default function HomePage() {
             <div className="doc">Estate Planning Documents</div>
             <div className="doc">Jail Authorization Forms</div>
             <div className="doc">Business Agreements</div>
+          </div>
+        </section>
 
+        <section>
+          <div className="center">
+            <p className="section-label">Service Area</p>
+            <h2>Serving Fresno and the Central Valley</h2>
+
+            <p>
+              Mobile appointments are available throughout Fresno County and nearby communities.
+            </p>
+          </div>
+
+          <div className="docs">
+            <div className="doc">⌖ Fresno</div>
+            <div className="doc">⌖ Clovis</div>
+            <div className="doc">⌖ Madera</div>
+            <div className="doc">⌖ Sanger</div>
+            <div className="doc">⌖ Selma</div>
+            <div className="doc">⌖ Kerman</div>
+            <div className="doc">⌖ Reedley</div>
+            <div className="doc">⌖ Kingsburg</div>
+            <div className="doc">⌖ Friant</div>
+            <div className="doc">⌖ Shaver Lake</div>
+            <div className="doc">⌖ Auberry</div>
+            <div className="doc">⌖ Nearby Central Valley Areas</div>
           </div>
         </section>
 
         <section className="split">
-
           <div>
             <p className="section-label">About Me</p>
 
@@ -501,7 +591,6 @@ export default function HomePage() {
           </div>
 
           <div className="card">
-
             <p className="section-label">
               Before Your Appointment
             </p>
@@ -510,24 +599,22 @@ export default function HomePage() {
               What To Have Ready
             </h3>
 
-            <p>Valid government-issued photo ID</p>
-            <p>Unsigned documents ready for review</p>
-            <p>All required signers present</p>
-            <p>Witnesses available if your document requires them</p>
-
+            <div className="ready-list">
+              <div className="ready-item"><span className="ready-icon">▣</span>Valid government-issued photo ID</div>
+              <div className="ready-item"><span className="ready-icon">✒</span>Unsigned documents ready for review</div>
+              <div className="ready-item"><span className="ready-icon">●</span>All required signers present</div>
+              <div className="ready-item"><span className="ready-icon">✓</span>Witnesses available if your document requires them</div>
+            </div>
           </div>
-
         </section>
 
         <section>
-
           <div className="center">
             <p className="section-label">FAQ</p>
             <h2>Questions Clients Commonly Ask</h2>
           </div>
 
           <div className="faq">
-
             <div className="faq-item">
               <h3>What forms of ID are accepted?</h3>
               <p>
@@ -548,49 +635,42 @@ export default function HomePage() {
                 Yes. Evening, weekend, and urgent same-day appointments may be available depending on scheduling.
               </p>
             </div>
-
           </div>
-
         </section>
 
         <section className="dark">
-
           <div className="center">
             <p className="section-label">Contact Me</p>
             <h2>Let’s Get Your Documents Notarized</h2>
           </div>
 
           <div className="contact-grid">
-
             <div>
+              <div className="contact-icon">▣</div>
               <h3>Schedule Online</h3>
               <p>
                 Book an appointment in just a few clicks.
               </p>
 
-              <a
-                className="btn btn-light"
-                href="https://calendly.com/"
-              >
+              <a className="btn btn-light" href="https://calendly.com/">
                 Calendly
               </a>
             </div>
 
             <div>
+              <div className="contact-icon">✉</div>
               <h3>Text Me</h3>
               <p>
                 The fastest way to reach me for availability and pricing.
               </p>
 
-              <a
-                className="btn btn-light"
-                href="sms:14158065811"
-              >
+              <a className="btn btn-light" href="sms:14158065811">
                 Text Now
               </a>
             </div>
 
             <div>
+              <div className="contact-icon">✦</div>
               <h3>Email Me</h3>
 
               <p>
@@ -601,7 +681,6 @@ export default function HomePage() {
                 hello@centralvalleynotarygroup.com
               </p>
             </div>
-
           </div>
 
           <div className="footer-note">
@@ -609,10 +688,8 @@ export default function HomePage() {
             <br /><br />
             © Central Valley Notary Group
           </div>
-
         </section>
-
       </main>
     </>
   );
-  }
+}
