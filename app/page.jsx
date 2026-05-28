@@ -1064,7 +1064,7 @@ export default function HomePage() {
                 <div>Wednesday</div><div>7:00 AM – 7:00 PM</div>
                 <div>Thursday</div><div>7:00 AM – 7:00 PM</div>
                 <div>Friday</div><div>7:00 AM – 7:00 PM</div>
-                <div>Saturday</div><div>7:00 AM – 7:00 PM</div>
+                <div>Saturday</div><div>10:00 AM – 6:00 PM</div>
                 <div>Sunday</div><div>10:00 AM – 6:00 PM</div>
               </div>
             </div>
