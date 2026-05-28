@@ -977,7 +977,7 @@ export default function HomePage() {
           </div>
         </section>
 
-              <section id="contact" className="dark">
+                      <section id="contact" className="dark">
           <div className="center">
             <p className="section-label">Contact Me</p>
             <h2>Let’s Get Your Documents Notarized</h2>
@@ -1020,14 +1020,7 @@ export default function HomePage() {
               <div>
                 <h3>Email Me</h3>
                 <p>Send questions, document details, or appointment requests.</p>
-                <p
-                  className="gold"
-                  style={{
-                    fontSize: "13px",
-                    letterSpacing: ".08em",
-                    wordBreak: "break-word",
-                  }}
-                >
+                <p className="gold" style={{ fontSize: "13px", letterSpacing: ".08em" }}>
                   appointments@centralvalleynotarygroup.com
                 </p>
               </div>
@@ -1035,79 +1028,31 @@ export default function HomePage() {
           </div>
 
           <div className="footer-note">
-            <div
-              style={{
-                marginBottom: "30px",
-                padding: "24px",
-                border: "1px solid rgba(255,255,255,.14)",
-                borderRadius: "8px",
-                background: "rgba(255,255,255,.04)",
-                maxWidth: "520px",
-              }}
-            >
-              <h3
-                style={{
-                  color: "#E8C27A",
-                  textTransform: "uppercase",
-                  letterSpacing: ".18em",
-                  fontSize: "12px",
-                  marginTop: 0,
-                  marginBottom: "18px",
-                  fontFamily: "Arial, sans-serif",
-                }}
-              >
-                Business Hours
-              </h3>
-
-              <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "1fr 1fr",
-                  gap: "10px 30px",
-                  color: "#d0d0d0",
-                  lineHeight: "1.8",
-                  fontSize: "15px",
-                }}
-              >
-                <div>Monday</div>
-                <div>7:00 AM – 7:00 PM</div>
-                <div>Tuesday</div>
-                <div>7:00 AM – 7:00 PM</div>
-                <div>Wednesday</div>
-                <div>7:00 AM – 7:00 PM</div>
-                <div>Thursday</div>
-                <div>7:00 AM – 7:00 PM</div>
-                <div>Friday</div>
-                <div>7:00 AM – 7:00 PM</div>
-                <div>Saturday</div>
-                <div>7:00 AM – 7:00 PM</div>
-                <div>Sunday</div>
-                <div>7:00 AM – 7:00 PM</div>
-              </div>
-            </div>
+            <h3 style={{ color: "#E8C27A", textTransform: "uppercase", letterSpacing: ".18em", fontSize: "12px" }}>
+              Business Hours
+            </h3>
 
             <p>
-              I am a Notary Public, not an attorney licensed to practice law. I
-              may not give legal advice or accept fees for legal advice. I can
-              only provide notarial services.
+              Monday – Sunday<br />
+              7:00 AM – 7:00 PM
             </p>
 
             <p>
-              © {new Date().getFullYear()} Central Valley Notary Group. All
-              rights reserved.
+              I am a Notary Public, not an attorney licensed to practice law.
+              I may not give legal advice or accept fees for legal advice.
+              I can only provide notarial services.
+            </p>
+
+            <p>
+              © {new Date().getFullYear()} Central Valley Notary Group. All rights reserved.
             </p>
           </div>
         </section>
-              <div className="mobile-bar">
-          <a className="mobile-text" href="sms:14158065811">
-            Text
-          </a>
-          <a className="mobile-call" href="tel:14158065811">
-            Call
-          </a>
-          <a className="mobile-schedule" href="https://calendly.com/">
-            Schedule
-          </a>
+
+        <div className="mobile-bar">
+          <a className="mobile-text" href="sms:14158065811">Text</a>
+          <a className="mobile-call" href="tel:14158065811">Call</a>
+          <a className="mobile-schedule" href="https://calendly.com/">Schedule</a>
         </div>
       </main>
     </>
