@@ -586,35 +586,56 @@ export default function HomePage() {
           color: #d0d0d0;
         }
 
-       .contact-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 34px;
+      .contact-grid {
+  grid-template-columns: 1fr !important;
+  width: 100%;
+  max-width: 100%;
+  gap: 42px;
   overflow: hidden;
 }
 
-        .contact-card {
-          display: flex;
-          gap: 22px;
-          align-items: flex-start;
-        }
+.contact-card {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  gap: 18px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
 
-        .contact-bubble {
-          width: 68px;
-          height: 68px;
-          border-radius: 50%;
-          background: rgba(255,255,255,.08);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-shrink: 0;
-        }
+.contact-card > div:last-child {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
 
-        .contact-bubble .svg-icon {
-          width: 32px;
-          height: 32px;
-          color: #E8C27A;
-        }
+.contact-card p,
+.contact-card h3 {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.contact-card .btn {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: normal;
+  word-break: break-word;
+  padding: 14px 12px;
+  font-size: 10px;
+  letter-spacing: .10em;
+  line-height: 1.4;
+}
+
+.contact-bubble {
+  width: 58px;
+  height: 58px;
+}
+
+#contact {
+  padding-bottom: 150px;
+  overflow-x: hidden;
+}
 
         .footer-note {
           border-top: 1px solid rgba(255,255,255,.12);
