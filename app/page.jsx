@@ -586,11 +586,12 @@ export default function HomePage() {
           color: #d0d0d0;
         }
 
-        .contact-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 34px;
-        }
+       .contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+  overflow: hidden;
+}
 
         .contact-card {
           display: flex;
