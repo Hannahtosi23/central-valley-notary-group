@@ -864,16 +864,103 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section id="faq">
+                <section id="faq">
           <div className="center">
             <p className="section-label">FAQ</p>
             <h2>Questions Clients Commonly Ask</h2>
           </div>
 
           <div className="faq">
-            <div className="faq-item"><h3>What forms of ID are accepted?</h3><p>A current government-issued photo ID such as a driver’s license, passport, or state ID is typically required.</p></div>
-            <div className="faq-item"><h3>Do you travel to hospitals and care facilities?</h3><p>Yes. Mobile appointments are available for hospitals, assisted living facilities, rehabilitation centers, and care homes.</p></div>
-            <div className="faq-item"><h3>Are evening or weekend appointments available?</h3><p>Yes. Evening, weekend, and urgent same-day appointments may be available depending on scheduling.</p></div>
+            <div className="faq-item">
+              <h3>What forms of ID are accepted?</h3>
+              <p>
+                A current government-issued photo ID such as a driver’s license,
+                passport, or state ID is typically required.
+              </p>
+            </div>
+
+            <div className="faq-item">
+              <h3>Do you travel to hospitals and care facilities?</h3>
+              <p>
+                Yes. Mobile appointments are available for hospitals, assisted
+                living facilities, rehabilitation centers, and care homes.
+              </p>
+            </div>
+
+            <div className="faq-item">
+              <h3>Are evening or weekend appointments available?</h3>
+              <p>
+                Yes. Evening, weekend, and urgent same-day appointments may be
+                available depending on scheduling.
+              </p>
+            </div>
+
+            <div className="faq-item">
+              <h3>How quickly can I get an appointment?</h3>
+              <p>
+                Same-day appointments may be available depending on your
+                location, availability, and the type of document needing
+                notarization.
+              </p>
+            </div>
+
+            <div className="faq-item">
+              <h3>Do all signers need to be present?</h3>
+              <p>
+                Yes. Every person whose signature requires notarization must
+                personally appear before the notary at the time of signing.
+              </p>
+            </div>
+
+            <div className="faq-item">
+              <h3>Can documents be signed before the appointment?</h3>
+              <p>
+                No. Most notarized documents must be signed in front of the
+                notary during the appointment.
+              </p>
+            </div>
+
+            <div className="faq-item">
+              <h3>Can you provide witnesses?</h3>
+              <p>
+                Witness availability may be possible for certain appointments
+                with advance notice. Additional fees may apply.
+              </p>
+            </div>
+
+            <div className="faq-item">
+              <h3>Do you travel to jails or correctional facilities?</h3>
+              <p>
+                Yes. Jail notarizations may be available depending on the
+                facility’s policies, appointment rules, and scheduling
+                availability.
+              </p>
+            </div>
+
+            <div className="faq-item">
+              <h3>Can you notarize real estate or loan documents?</h3>
+              <p>
+                Yes. Loan signing services are available for refinance packages,
+                HELOCs, buyer documents, seller packages, and other real estate
+                signing appointments.
+              </p>
+            </div>
+
+            <div className="faq-item">
+              <h3>What payment methods do you accept?</h3>
+              <p>
+                Cash, Venmo, and other electronic payment methods may be
+                accepted depending on the appointment type.
+              </p>
+            </div>
+
+            <div className="faq-item">
+              <h3>What areas do you travel to?</h3>
+              <p>
+                Mobile appointments are available throughout Fresno, Clovis, and
+                surrounding Central Valley communities.
+              </p>
+            </div>
           </div>
         </section>
 
