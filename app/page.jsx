@@ -1027,7 +1027,63 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="footer-note">
+                  <div className="footer-note">
+            <div
+              style={{
+                marginBottom: "28px",
+                padding: "22px",
+                border: "1px solid rgba(255,255,255,.12)",
+                borderRadius: "8px",
+                background: "rgba(255,255,255,.03)",
+              }}
+            >
+              <h3
+                style={{
+                  color: "#E8C27A",
+                  textTransform: "uppercase",
+                  letterSpacing: ".18em",
+                  fontSize: "12px",
+                  marginTop: 0,
+                  marginBottom: "18px",
+                }}
+              >
+                Business Hours
+              </h3>
+
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "1fr 1fr",
+                  gap: "10px 30px",
+                  color: "#d0d0d0",
+                  lineHeight: "1.8",
+                  fontSize: "15px",
+                  maxWidth: "420px",
+                }}
+              >
+                <div>Monday</div>
+                <div>7:00 AM – 7:00 PM</div>
+
+                <div>Tuesday</div>
+                <div>7:00 AM – 7:00 PM</div>
+
+                <div>Wednesday</div>
+                <div>7:00 AM – 7:00 PM</div>
+
+                <div>Thursday</div>
+                <div>7:00 AM – 7:00 PM</div>
+
+                <div>Friday</div>
+                <div>7:00 AM – 7:00 PM</div>
+
+                <div>Saturday</div>
+                <div>7:00 AM – 7:00 PM</div>
+
+                <div>Sunday</div>
+                <div>7:00 AM – 7:00 PM</div>
+              </div>
+            </div>
+
             <p>
               I am a Notary Public, not an attorney licensed to practice law. I
               may not give legal advice or accept fees for legal advice. I can
@@ -1039,60 +1095,3 @@ export default function HomePage() {
               rights reserved.
             </p>
           </div>
-        </section>
-
-        <div
-  style={{
-    marginBottom: "28px",
-    padding: "22px",
-    border: "1px solid rgba(255,255,255,.12)",
-    borderRadius: "8px",
-    background: "rgba(255,255,255,.03)",
-  }}
->
-  <h3
-    style={{
-      color: "#E8C27A",
-      textTransform: "uppercase",
-      letterSpacing: ".18em",
-      fontSize: "12px",
-      marginBottom: "18px",
-    }}
-  >
-    Business Hours
-  </h3>
-
-  <div
-    style={{
-      display: "grid",
-      gridTemplateColumns: "1fr 1fr",
-      gap: "10px 30px",
-      color: "#d0d0d0",
-      lineHeight: "1.8",
-      fontSize: "15px",
-    }}
-  >
-    <div>Monday</div><div>7:00 AM – 7:00 PM</div>
-    <div>Tuesday</div><div>7:00 AM – 7:00 PM</div>
-    <div>Wednesday</div><div>7:00 AM – 7:00 PM</div>
-    <div>Thursday</div><div>7:00 AM – 7:00 PM</div>
-    <div>Friday</div><div>7:00 AM – 7:00 PM</div>
-    <div>Saturday</div><div>7:00 AM – 7:00 PM</div>
-    <div>Sunday</div><div>7:00 AM – 7:00 PM</div>
-  </div>
-</div>
-        <div className="mobile-bar">
-          <a className="mobile-text" href="sms:14158065811">
-            Text
-          </a>
-          <a className="mobile-call" href="tel:14158065811">
-            Call
-          </a>
-          <a className="mobile-schedule" href="https://calendly.com/">
-            Schedule
-          </a>
-        </div>
-      </main>
-    </>
-  );
-}
