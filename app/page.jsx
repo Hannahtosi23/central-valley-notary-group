@@ -297,17 +297,17 @@ export default function HomePage() {
           margin-bottom: 70px;
         }
 
-        .btn {
-          padding: 20px 32px;
-          border-radius: 6px;
-          text-transform: uppercase;
-          letter-spacing: .14em;
-          font-weight: 700;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 13px;
-          text-align: center;
-        }
+       .btn {
+  padding: 14px 22px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  text-align: center;
+}
 
         .btn-dark {
           background: #050505;
