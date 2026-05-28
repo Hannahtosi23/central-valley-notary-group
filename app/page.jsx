@@ -1022,7 +1022,7 @@ export default function HomePage() {
           </div>
         </section>
 
-                <section id="contact" className="dark">
+                  <section id="contact" className="dark">
           <div className="center">
             <p className="section-label">Contact Me</p>
             <h2>Let’s Get Your Documents Notarized</h2>
@@ -1048,10 +1048,7 @@ export default function HomePage() {
               </div>
               <div>
                 <h3>Text Me</h3>
-                <p>
-                  The fastest way to reach me for same-day availability, pricing,
-                  and appointment details.
-                </p>
+                <p>The fastest way to reach me for same-day availability, pricing, and appointment details.</p>
                 <a className="btn btn-light contact-btn" href="sms:14158065811">
                   Text (415) 806-5811
                 </a>
@@ -1065,28 +1062,46 @@ export default function HomePage() {
               <div>
                 <h3>Email Me</h3>
                 <p>Send questions, document details, or appointment requests.</p>
-               <a
-  className="email-link"
-  href="mailto:appointments@centralvalleynotarygroup.com"
->
-  appointments@centralvalleynotarygroup.com
-</a>
+                <a className="email-link" href="mailto:appointments@centralvalleynotarygroup.com">
+                  appointments@centralvalleynotarygroup.com
+                </a>
               </div>
             </div>
           </div>
 
           <div className="footer-note">
-            {/* keep your business hours code here */}
+            <div style={{ marginBottom: "30px" }}>
+              <h3 style={{ color: "#E8C27A", textTransform: "uppercase", letterSpacing: ".18em", fontSize: "12px" }}>
+                Business Hours
+              </h3>
+
+              <p>
+                Monday: 7:00 AM – 7:00 PM<br />
+                Tuesday: 7:00 AM – 7:00 PM<br />
+                Wednesday: 7:00 AM – 7:00 PM<br />
+                Thursday: 7:00 AM – 7:00 PM<br />
+                Friday: 7:00 AM – 7:00 PM<br />
+                Saturday: 7:00 AM – 7:00 PM<br />
+                Sunday: 10:00 AM – 6:00 PM
+              </p>
+            </div>
 
             <p>
-              I am a Notary Public, not an attorney licensed to practice law. I
-              may not give legal advice or accept fees for legal advice. I can
-              only provide notarial services.
+              I am a Notary Public, not an attorney licensed to practice law. I may not give legal advice or accept fees for legal advice. I can only provide notarial services.
             </p>
 
             <p>
-              © {new Date().getFullYear()} Central Valley Notary Group. All
-              rights reserved.
+              © {new Date().getFullYear()} Central Valley Notary Group. All rights reserved.
             </p>
           </div>
         </section>
+
+        <div className="mobile-bar">
+          <a className="mobile-text" href="sms:14158065811">Text</a>
+          <a className="mobile-call" href="tel:14158065811">Call</a>
+          <a className="mobile-schedule" href="https://calendly.com/">Schedule</a>
+        </div>
+      </main>
+    </>
+  );
+}
