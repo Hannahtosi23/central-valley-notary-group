@@ -772,7 +772,7 @@ export default function HomePage() {
             </div>
 
             <div>
-              <div className="brand-title">Central Valley Signing Services</div>
+              <div className="brand-title">Central Valley Notary Group</div>
               <div className="brand-subtitle">Fresno Mobile Notary & Loan Signing</div>
             </div>
           </div>
