@@ -1,32 +1,96 @@
 export default function HomePage() {
   const Icon = ({ type }) => {
     const icons = {
-      clock: "M12 6v6l4 2 M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0",
-      shield: "M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z M9 12l2 2 4-4",
-      car: "M5 14l1.5-4.5h11L19 14 M5 14h14v4H5v-4z M7 18h.01 M17 18h.01",
-      calendar: "M7 3v4 M17 3v4 M4 8h16 M5 5h14v16H5z M8 12h2 M12 12h2 M16 12h2 M8 16h2 M12 16h2 M16 16h2",
-      bolt: "M13 2L4 14h7l-1 8 9-12h-7l1-8z",
-      stamp: "M9 4h6v7l3 4v5H6v-5l3-4z M7 20h10 M9 11h6",
-      id: "M4 6h16v12H4z M8 10h4 M8 14h8 M15 10h2",
-      document: "M7 3h7l5 5v13H7z M14 3v6h5 M10 16l5-5 M14 11h1v1",
-      users: "M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M3 20c0-3 3-5 6-5s6 2 6 5 M17 11a2.5 2.5 0 1 0 0-5 M15 15c3 0 5 2 5 5",
-      check: "M9 12l2 2 4-4 M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18",
-      pin: "M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z M12 10h.01",
-      message: "M4 5h16v11H8l-4 4z",
-      mail: "M4 6h16v12H4z M4 7l8 6 8-6",
-      pen: "M12 20h9 M16.5 3.5a2.1 2.1 0 0 1 3 3L8 18l-4 1 1-4z",
-      star: "M12 3l2.8 5.7 6.2.9-4.5 4.4 1.1 6.1L12 17.9 6.4 21l1.1-6.1L3 10.5l6.2-.9z",
+      clock: (
+        <>
+          <circle cx="12" cy="12" r="8" />
+          <path d="M12 7v5l3 2" />
+        </>
+      ),
+      shield: (
+        <>
+          <path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z" />
+          <path d="M9 12l2 2 4-4" />
+        </>
+      ),
+      car: (
+        <>
+          <path d="M5 14l1.5-4.5h11L19 14" />
+          <path d="M5 14h14v4H5v-4z" />
+          <circle cx="8" cy="18" r="1" />
+          <circle cx="16" cy="18" r="1" />
+        </>
+      ),
+      calendar: (
+        <>
+          <rect x="5" y="5" width="14" height="16" rx="1" />
+          <path d="M8 3v4M16 3v4M5 9h14" />
+          <path d="M8 13h2M12 13h2M16 13h1M8 17h2M12 17h2" />
+        </>
+      ),
+      bolt: <path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" />,
+      stamp: (
+        <>
+          <path d="M9 4h6v7l3 4v5H6v-5l3-4z" />
+          <path d="M8 20h8M9 11h6" />
+        </>
+      ),
+      document: (
+        <>
+          <path d="M7 3h7l5 5v13H7z" />
+          <path d="M14 3v6h5M10 14h6M10 17h5" />
+        </>
+      ),
+      pen: (
+        <>
+          <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L8 18l-4 1 1-4z" />
+          <path d="M13 7l4 4M12 20h9" />
+        </>
+      ),
+      check: (
+        <>
+          <circle cx="12" cy="12" r="9" />
+          <path d="M8.5 12.5l2.5 2.5 5-5" />
+        </>
+      ),
+      pin: (
+        <>
+          <path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z" />
+          <circle cx="12" cy="10" r="2" />
+        </>
+      ),
+      message: <path d="M4 5h16v11H8l-4 4z" />,
+      mail: (
+        <>
+          <rect x="4" y="6" width="16" height="12" rx="1" />
+          <path d="M4 7l8 6 8-6" />
+        </>
+      ),
+      id: (
+        <>
+          <rect x="4" y="6" width="16" height="12" rx="1" />
+          <path d="M8 10h4M8 14h8M15 10h2" />
+        </>
+      ),
+      users: (
+        <>
+          <circle cx="9" cy="8" r="3" />
+          <path d="M3 20c0-3 3-5 6-5s6 2 6 5" />
+          <path d="M17 11a2.5 2.5 0 1 0 0-5M15 15c3 0 5 2 5 5" />
+        </>
+      ),
     };
 
     return (
       <svg className="svg-icon" viewBox="0 0 24 24" fill="none">
-        <path
-          d={icons[type]}
+        <g
           stroke="currentColor"
-          strokeWidth="2.2"
+          strokeWidth="2.1"
           strokeLinecap="round"
           strokeLinejoin="round"
-        />
+        >
+          {icons[type]}
+        </g>
       </svg>
     );
   };
@@ -53,9 +117,10 @@ export default function HomePage() {
         .header {
           background: #050505;
           color: white;
-          padding: 26px 8%;
+          padding: 14px 8%;
           display: flex;
           align-items: center;
+          justify-content: space-between;
           gap: 28px;
           position: sticky;
           top: 0;
@@ -63,10 +128,16 @@ export default function HomePage() {
           border-bottom: 1px solid #2A2A2A;
         }
 
+        .brand-wrap {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+        }
+
         .logo-mark {
-          width: 88px;
-          height: 88px;
-          border: 3px solid #B7833A;
+          width: 54px;
+          height: 54px;
+          border: 2px solid #B7833A;
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -75,21 +146,46 @@ export default function HomePage() {
           flex-shrink: 0;
         }
 
+        .logo-mark .svg-icon {
+          width: 28px;
+          height: 28px;
+        }
+
         .brand-title {
           font-family: Georgia, serif;
           text-transform: uppercase;
-          letter-spacing: .16em;
-          font-size: 30px;
-          line-height: 1.25;
+          letter-spacing: .14em;
+          font-size: 17px;
+          line-height: 1.2;
         }
 
         .brand-subtitle {
           color: #E8C27A;
           text-transform: uppercase;
-          letter-spacing: .24em;
-          margin-top: 8px;
-          font-size: 15px;
-          line-height: 1.5;
+          letter-spacing: .18em;
+          margin-top: 4px;
+          font-size: 10px;
+          line-height: 1.4;
+        }
+
+        .nav {
+          display: flex;
+          align-items: center;
+          gap: 22px;
+          flex-wrap: wrap;
+        }
+
+        .nav a {
+          color: white;
+          text-decoration: none;
+          text-transform: uppercase;
+          letter-spacing: .14em;
+          font-size: 11px;
+          font-weight: 700;
+        }
+
+        .nav a:hover {
+          color: #E8C27A;
         }
 
         .hero {
@@ -112,7 +208,9 @@ export default function HomePage() {
         }
 
         .eyebrow { margin-bottom: 30px; font-size: 13px; }
+
         h1, h2, h3 { font-family: Georgia, serif; }
+
         h1 {
           font-size: clamp(62px, 8vw, 115px);
           line-height: .92;
@@ -157,6 +255,7 @@ export default function HomePage() {
         }
 
         .btn-dark { background: #050505; color: white; }
+
         .btn-light {
           background: rgba(255,255,255,.9);
           color: #8B5A20;
@@ -192,7 +291,10 @@ export default function HomePage() {
           margin: 0;
         }
 
-        section { padding: 100px 8%; }
+        section {
+          padding: 100px 8%;
+          scroll-margin-top: 90px;
+        }
 
         .center {
           max-width: 760px;
@@ -315,6 +417,12 @@ export default function HomePage() {
           align-items: start;
         }
 
+        .split p {
+          font-size: 18px;
+          color: #444;
+          line-height: 1.8;
+        }
+
         .ready-card {
           background: white;
           border: 1px solid #e3e3e3;
@@ -375,6 +483,11 @@ export default function HomePage() {
           margin-bottom: 12px;
         }
 
+        .faq-item p {
+          color: #555;
+          line-height: 1.8;
+        }
+
         .reviews {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
@@ -386,6 +499,11 @@ export default function HomePage() {
           border: 1px solid #ddd;
           border-radius: 8px;
           padding: 34px;
+        }
+
+        .review p {
+          color: #555;
+          line-height: 1.8;
         }
 
         .stars {
@@ -442,20 +560,49 @@ export default function HomePage() {
         .mobile-bar { display: none; }
 
         @media (max-width: 1000px) {
+          .header {
+            padding: 14px 20px;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 14px;
+          }
+
+          .brand-title {
+            font-size: 15px;
+          }
+
+          .brand-subtitle {
+            font-size: 9px;
+          }
+
+          .logo-mark {
+            width: 50px;
+            height: 50px;
+          }
+
+          .nav {
+            width: 100%;
+            overflow-x: auto;
+            flex-wrap: nowrap;
+            gap: 18px;
+            padding-bottom: 4px;
+          }
+
+          .nav a {
+            white-space: nowrap;
+            font-size: 10px;
+          }
+
           .feature-bar, .grid4, .trust, .docs, .split, .contact-grid, .reviews {
             grid-template-columns: 1fr;
           }
 
           .hero { padding: 80px 24px; }
-          section { padding: 80px 24px; }
+          section { padding: 80px 24px; scroll-margin-top: 130px; }
           .subtext { font-size: 19px; }
           .feature-bar { padding: 28px; }
           h1 { font-size: 64px; }
           .gold { font-size: 24px; }
-          .header { padding: 24px; }
-          .logo-mark { width: 76px; height: 76px; }
-          .brand-title { font-size: 24px; }
-          .brand-subtitle { font-size: 13px; }
 
           .mobile-bar {
             display: grid;
@@ -490,11 +637,22 @@ export default function HomePage() {
 
       <main>
         <header className="header">
-          <div className="logo-mark"><Icon type="stamp" /></div>
-          <div>
-            <div className="brand-title">Central Valley<br />Notary Group</div>
-            <div className="brand-subtitle">Fresno Mobile Notary &<br />Loan Signing</div>
+          <div className="brand-wrap">
+            <div className="logo-mark"><Icon type="stamp" /></div>
+            <div>
+              <div className="brand-title">Central Valley Signing Services</div>
+              <div className="brand-subtitle">Fresno Mobile Notary & Loan Signing</div>
+            </div>
           </div>
+
+          <nav className="nav">
+            <a href="#services">Services</a>
+            <a href="#documents">Documents</a>
+            <a href="#service-area">Service Area</a>
+            <a href="#about">About</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+          </nav>
         </header>
 
         <section className="hero">
@@ -522,7 +680,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section>
+        <section id="services">
           <div className="center">
             <p className="section-label">Services</p>
             <h2>Professional Notary Services</h2>
@@ -543,7 +701,7 @@ export default function HomePage() {
           <div><Icon type="pin" />Serving Fresno & Clovis</div>
         </div>
 
-        <section>
+        <section id="documents">
           <div className="center">
             <p className="section-label">Common Documents</p>
             <h2>Documents Commonly Notarized</h2>
@@ -557,7 +715,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section>
+        <section id="service-area">
           <div className="center">
             <p className="section-label">Service Area</p>
             <h2>Serving Fresno and the Central Valley</h2>
@@ -571,12 +729,12 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="split">
+        <section id="about" className="split">
           <div>
             <p className="section-label">About Me</p>
             <h2>A Higher Standard of Mobile Notary Service</h2>
             <p><strong>Hannah Tosi | Fresno Notary Public</strong></p>
-            <p>Central Valley Notary Group was built on professionalism, discretion, and reliability — offering a polished mobile notary experience for individuals, families, real estate professionals, attorneys, and businesses throughout Fresno and the surrounding Central Valley.</p>
+            <p>Central Valley Signing Services was built on professionalism, discretion, and reliability — offering a polished mobile notary experience for individuals, families, real estate professionals, attorneys, and businesses throughout Fresno and the surrounding Central Valley.</p>
             <p>Whether the appointment is at a home, office, hospital, care facility, or correctional facility, the goal is simple: make the process feel smooth, respectful, and stress-free.</p>
           </div>
 
@@ -592,7 +750,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section>
+        <section id="faq">
           <div className="center">
             <p className="section-label">FAQ</p>
             <h2>Questions Clients Commonly Ask</h2>
@@ -614,11 +772,11 @@ export default function HomePage() {
           <div className="reviews">
             <div className="review"><div className="stars">★★★★★</div><p>“Professional, punctual, and incredibly easy to work with. The signing process felt smooth from start to finish.”</p><strong>Escrow Client</strong></div>
             <div className="review"><div className="stars">★★★★★</div><p>“Hannah made a difficult situation feel calm and organized. Extremely responsive and respectful throughout the appointment.”</p><strong>Hospital Appointment</strong></div>
-            <div className="review"><div className="stars">★★★★★</div><p>“Reliable, polished, and prepared. We will absolutely continue using Central Valley Notary Group for future signings.”</p><strong>Real Estate Signing</strong></div>
+            <div className="review"><div className="stars">★★★★★</div><p>“Reliable, polished, and prepared. We will absolutely continue using Central Valley Signing Services for future signings.”</p><strong>Real Estate Signing</strong></div>
           </div>
         </section>
 
-        <section className="dark">
+        <section id="contact" className="dark">
           <div className="center">
             <p className="section-label">Contact Me</p>
             <h2>Let’s Get Your Documents Notarized</h2>
@@ -627,13 +785,13 @@ export default function HomePage() {
           <div className="contact-grid">
             <div className="contact-card"><div className="contact-bubble"><Icon type="calendar" /></div><div><h3>Schedule Online</h3><p>Book an appointment in just a few clicks.</p><a className="btn btn-light" href="https://calendly.com/">Schedule with Calendly</a></div></div>
             <div className="contact-card"><div className="contact-bubble"><Icon type="message" /></div><div><h3>Text Me</h3><p>The fastest way to reach me for same-day availability, pricing, and appointment details.</p><a className="btn btn-light" href="sms:14158065811">Text (415) 806-5811</a></div></div>
-            <div className="contact-card"><div className="contact-bubble"><Icon type="mail" /></div><div><h3>Email Me</h3><p>Send questions, document details, or appointment requests.</p><p>hello@centralvalleynotarygroup.com</p></div></div>
+            <div className="contact-card"><div className="contact-bubble"><Icon type="mail" /></div><div><h3>Email Me</h3><p>Send questions, document details, or appointment requests.</p><p>hello@centralvalleysigningservices.com</p></div></div>
           </div>
 
           <div className="footer-note">
             I am a Notary Public, not an attorney licensed to practice law. I may not give legal advice or accept fees for legal advice.
             <br /><br />
-            © Central Valley Notary Group
+            © Central Valley Signing Services
           </div>
         </section>
 
