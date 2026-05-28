@@ -135,20 +135,21 @@ export default function HomePage() {
           flex-shrink: 0;
         }
 
-        .header {
-          background: #050505;
-          color: white;
-          padding: 14px 8%;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 28px;
-          position: sticky;
-          top: 0;
-          z-index: 100;
-          border-bottom: 1px solid #2A2A2A;
-          overflow: hidden;
-        }
+    .header {
+  background: rgba(5, 5, 5, 0.96);
+  color: white;
+  padding: 14px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  border-bottom: 1px solid #2A2A2A;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
 
         .brand-wrap {
           display: flex;
