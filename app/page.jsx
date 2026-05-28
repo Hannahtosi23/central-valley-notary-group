@@ -866,7 +866,7 @@ export default function HomePage() {
             <p className="section-label">About Me</p>
             <h2>A Higher Standard of Mobile Notary Service</h2>
             <p><strong>Hannah Tosi | Fresno Notary Public</strong></p>
-<p>Central Valley Notary Group was built on professionalism...
+            <p>Central Valley Notary Group was built on professionalism...
             <p>Whether the appointment is at a home, office, hospital, care facility, or correctional facility, the goal is simple: make the process feel smooth, respectful, and stress-free.</p>
           </div>
 
