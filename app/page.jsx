@@ -977,7 +977,7 @@ export default function HomePage() {
           </div>
         </section>
 
-                      <section id="contact" className="dark">
+          <section id="contact" className="dark">
           <div className="center">
             <p className="section-label">Contact Me</p>
             <h2>Let’s Get Your Documents Notarized</h2>
@@ -1028,14 +1028,43 @@ export default function HomePage() {
           </div>
 
           <div className="footer-note">
-            <h3 style={{ color: "#E8C27A", textTransform: "uppercase", letterSpacing: ".18em", fontSize: "12px" }}>
-              Business Hours
-            </h3>
+            <div style={{
+              marginBottom: "35px",
+              padding: "28px",
+              border: "1px solid rgba(232,194,122,.35)",
+              borderRadius: "10px",
+              background: "rgba(255,255,255,.05)",
+              maxWidth: "560px"
+            }}>
+              <h3 style={{
+                color: "#E8C27A",
+                textTransform: "uppercase",
+                letterSpacing: ".18em",
+                fontSize: "13px",
+                marginTop: 0,
+                marginBottom: "20px",
+                fontFamily: "Arial, sans-serif"
+              }}>
+                Business Hours
+              </h3>
 
-            <p>
-              Monday – Sunday<br />
-              7:00 AM – 7:00 PM
-            </p>
+              <div style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr",
+                gap: "10px 28px",
+                color: "#ffffff",
+                fontSize: "15px",
+                lineHeight: "1.8"
+              }}>
+                <div>Monday</div><div>7:00 AM – 7:00 PM</div>
+                <div>Tuesday</div><div>7:00 AM – 7:00 PM</div>
+                <div>Wednesday</div><div>7:00 AM – 7:00 PM</div>
+                <div>Thursday</div><div>7:00 AM – 7:00 PM</div>
+                <div>Friday</div><div>7:00 AM – 7:00 PM</div>
+                <div>Saturday</div><div>7:00 AM – 7:00 PM</div>
+                <div>Sunday</div><div>7:00 AM – 7:00 PM</div>
+              </div>
+            </div>
 
             <p>
               I am a Notary Public, not an attorney licensed to practice law.
@@ -1044,15 +1073,22 @@ export default function HomePage() {
             </p>
 
             <p>
-              © {new Date().getFullYear()} Central Valley Notary Group. All rights reserved.
+              © {new Date().getFullYear()} Central Valley Notary Group. All
+              rights reserved.
             </p>
           </div>
         </section>
 
         <div className="mobile-bar">
-          <a className="mobile-text" href="sms:14158065811">Text</a>
-          <a className="mobile-call" href="tel:14158065811">Call</a>
-          <a className="mobile-schedule" href="https://calendly.com/">Schedule</a>
+          <a className="mobile-text" href="sms:14158065811">
+            Text
+          </a>
+          <a className="mobile-call" href="tel:14158065811">
+            Call
+          </a>
+          <a className="mobile-schedule" href="https://calendly.com/">
+            Schedule
+          </a>
         </div>
       </main>
     </>
