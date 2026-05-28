@@ -135,22 +135,24 @@ export default function HomePage() {
           flex-shrink: 0;
         }
 
-    .header {
-  background: rgba(5, 5, 5, 0.96);
+  .header {
+  background: rgba(5, 5, 5, 0.97);
   color: white;
   padding: 14px 8%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 28px;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   z-index: 9999;
   border-bottom: 1px solid #2A2A2A;
   overflow: hidden;
   backdrop-filter: blur(10px);
 }
-
         .brand-wrap {
           display: flex;
           align-items: center;
@@ -226,7 +228,7 @@ export default function HomePage() {
             url('https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1600');
           background-size: cover;
           background-position: center;
-          padding: 110px 8%;
+          padding: 190px 8% 110px;
           display: flex;
           align-items: center;
           overflow: hidden;
