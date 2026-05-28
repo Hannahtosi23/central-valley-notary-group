@@ -1098,3 +1098,18 @@ export default function HomePage() {
             </p>
           </div>
         </section>
+        <div className="mobile-bar">
+          <a className="mobile-text" href="sms:14158065811">
+            Text
+          </a>
+          <a className="mobile-call" href="tel:14158065811">
+            Call
+          </a>
+          <a className="mobile-schedule" href="https://calendly.com/">
+            Schedule
+          </a>
+        </div>
+      </main>
+    </>
+  );
+}
