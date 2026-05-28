@@ -1041,6 +1041,46 @@ export default function HomePage() {
           </div>
         </section>
 
+        <div
+  style={{
+    marginBottom: "28px",
+    padding: "22px",
+    border: "1px solid rgba(255,255,255,.12)",
+    borderRadius: "8px",
+    background: "rgba(255,255,255,.03)",
+  }}
+>
+  <h3
+    style={{
+      color: "#E8C27A",
+      textTransform: "uppercase",
+      letterSpacing: ".18em",
+      fontSize: "12px",
+      marginBottom: "18px",
+    }}
+  >
+    Business Hours
+  </h3>
+
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      gap: "10px 30px",
+      color: "#d0d0d0",
+      lineHeight: "1.8",
+      fontSize: "15px",
+    }}
+  >
+    <div>Monday</div><div>7:00 AM – 7:00 PM</div>
+    <div>Tuesday</div><div>7:00 AM – 7:00 PM</div>
+    <div>Wednesday</div><div>7:00 AM – 7:00 PM</div>
+    <div>Thursday</div><div>7:00 AM – 7:00 PM</div>
+    <div>Friday</div><div>7:00 AM – 7:00 PM</div>
+    <div>Saturday</div><div>7:00 AM – 7:00 PM</div>
+    <div>Sunday</div><div>7:00 AM – 7:00 PM</div>
+  </div>
+</div>
         <div className="mobile-bar">
           <a className="mobile-text" href="sms:14158065811">
             Text
