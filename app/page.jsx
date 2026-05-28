@@ -400,11 +400,10 @@ export default function HomePage() {
           margin-bottom: 18px;
           line-height: 1.1;
         }
-
-        .card p {
-          color: #555;
-          line-height: 1.8;
-        }
+        
+.card p {
+  min-height: 140px;
+}
 
         .card-line {
           width: 52px;
