@@ -1098,7 +1098,7 @@ export default function HomePage() {
             </p>
           </div>
         </section>
-        <div className="mobile-bar">
+              <div className="mobile-bar">
           <a className="mobile-text" href="sms:14158065811">
             Text
           </a>
