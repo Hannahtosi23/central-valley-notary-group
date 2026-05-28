@@ -394,12 +394,13 @@ export default function HomePage() {
           margin: 0 auto 24px;
         }
 
-        .card h3 {
-          font-size: 28px;
-          margin-top: 0;
-          margin-bottom: 18px;
-          line-height: 1.1;
-        }
+     .card h3 {
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 18px;
+  line-height: 1.1;
+  min-height: 95px;
+}
         
 .card p {
   min-height: 140px;
