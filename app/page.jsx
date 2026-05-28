@@ -378,14 +378,14 @@ export default function HomePage() {
           gap: 28px;
         }
 
-        .card {
-          background: white;
-          border: 1px solid #e3e3e3;
-          border-radius: 8px;
-          padding: 34px;
-          box-shadow: 0 10px 28px rgba(0,0,0,.04);
-          text-align: center;
-        }
+     .card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
         .card .svg-icon {
           color: #B7833A;
