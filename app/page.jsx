@@ -634,13 +634,16 @@ export default function HomePage() {
 
 .email-link {
   color: #E8C27A;
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 700;
-  letter-spacing: .04em;
+  letter-spacing: .02em;
   text-decoration: none;
-  overflow-wrap: anywhere;
-  word-break: break-word;
-  line-height: 1.5;
+  white-space: nowrap;
+  overflow-x: auto;
+  display: block;
+  width: 100%;
+  line-height: 1.4;
+  -webkit-overflow-scrolling: touch;
 }
 
 .email-link:hover {
@@ -1062,9 +1065,12 @@ export default function HomePage() {
               <div>
                 <h3>Email Me</h3>
                 <p>Send questions, document details, or appointment requests.</p>
-                <a className="email-link" href="mailto:appointments@centralvalleynotarygroup.com">
-                  appointments@centralvalleynotarygroup.com
-                </a>
+              <a
+  className="email-link"
+  href="mailto:appointments@centralvalleynotarygroup.com"
+>
+  appointments@centralvalleynotarygroup.com
+</a>
               </div>
             </div>
           </div>
