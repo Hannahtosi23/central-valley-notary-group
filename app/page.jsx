@@ -891,13 +891,30 @@ export default function HomePage() {
         </section>
 
         <section id="about" className="split">
-          <div>
-            <p className="section-label">About Me</p>
-            <h2>A Higher Standard of Mobile Notary Service</h2>
-            <p><strong>Hannah Tosi | Fresno Notary Public</strong></p>
-            <p>Central Valley Notary Group was built on professionalism, discretion, and reliability — offering a polished mobile notary experience for individuals, families, real estate professionals, attorneys, and businesses throughout Fresno and the surrounding Central Valley.</p>
-            <p>Whether the appointment is at a home, office, hospital, care facility, or correctional facility, the goal is simple: make the process feel smooth, respectful, and stress-free.</p>
-          </div>
+<h2>A Higher Standard of Mobile Notary Service</h2>
+
+<p className="gold">Hannah Tosi | Fresno Notary Public</p>
+
+<p>
+  Central Valley Notary Group was built on professionalism, discretion,
+  and reliability — offering a polished mobile notary experience for
+  individuals, families, real estate professionals, attorneys, and
+  businesses throughout Fresno and the surrounding Central Valley.
+</p>
+
+<p>
+  Whether the appointment is at a home, office, hospital, care facility,
+  or correctional facility, the goal is simple: make the process feel
+  smooth, respectful, and stress-free.
+</p>
+
+<p>
+  Every signing is handled with attention to detail, punctual
+  communication, and a commitment to exceptional service. From routine
+  notarizations to time-sensitive signings, clients can expect a
+  professional experience focused on accuracy, convenience, and peace of
+  mind.
+</p>
 
           <div className="ready-card">
             <p className="section-label">Before Your Appointment</p>
