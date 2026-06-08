@@ -677,6 +677,7 @@ export default function HomePage() {
           width: 240px;
           height: 240px;
           object-fit: cover;
+          object-position: center 20%;
           border-radius: 50%;
           border: 3px solid #B7833A;
           margin: 0 0 30px;
@@ -918,7 +919,7 @@ export default function HomePage() {
      <section id="about" className="split">
           <div>
             <img
-              src="/headshot.jpg"
+              src="/headshot.jpg.jpg"
               alt="Hannah Tosi, Fresno Notary Public and Certified Loan Signing Agent serving Fresno and the Central Valley"
               className="about-portrait"
               onError={(e) => { e.currentTarget.style.display = 'none'; }}
