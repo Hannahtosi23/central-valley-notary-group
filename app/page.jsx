@@ -922,7 +922,6 @@ export default function HomePage() {
               src="/headshot.jpg.jpg"
               alt="Hannah Tosi, Fresno Notary Public and Certified Loan Signing Agent serving Fresno and the Central Valley"
               className="about-portrait"
-              onError={(e) => { e.currentTarget.style.display = 'none'; }}
             />
             <p className="section-label">About Me</p>
             <h2>A Higher Standard of Mobile Notary Service</h2>
