@@ -850,7 +850,7 @@ export default function HomePage() {
             </p>
 
             <div className="buttons">
-              <a className="btn btn-dark" href="https://calendly.com/">Schedule Appointment</a>
+              <a className="btn btn-dark" href="https://calendly.com/appointments-centralvalleynotarygroup/30min">Schedule Appointment</a>
               <a className="btn btn-light" href="sms:14158065811">Text (415) 806-5811</a>
             </div>
 
@@ -1115,7 +1115,7 @@ export default function HomePage() {
               <div>
                 <h3>Schedule Online</h3>
                 <p>Book an appointment in just a few clicks.</p>
-                <a className="btn btn-light contact-btn" href="https://calendly.com/">
+                <a className="btn btn-light contact-btn" href="https://calendly.com/appointments-centralvalleynotarygroup/30min">
                   Schedule Appointment
                 </a>
               </div>
@@ -1181,7 +1181,7 @@ export default function HomePage() {
         <div className="mobile-bar">
           <a className="mobile-text" href="sms:14158065811">Text</a>
           <a className="mobile-call" href="tel:14158065811">Call</a>
-          <a className="mobile-schedule" href="https://calendly.com/">Schedule</a>
+          <a className="mobile-schedule" href="https://calendly.com/appointments-centralvalleynotarygroup/30min">Schedule</a>
         </div>
       </main>
     </>
