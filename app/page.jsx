@@ -673,6 +673,25 @@ export default function HomePage() {
           display: none;
         }
 
+        .about-portrait {
+          width: 240px;
+          height: 240px;
+          object-fit: cover;
+          border-radius: 50%;
+          border: 3px solid #B7833A;
+          margin: 0 0 30px;
+          display: block;
+        }
+
+        .about-banner {
+          height: 360px;
+          background:
+            linear-gradient(rgba(5,5,5,.42), rgba(5,5,5,.42)),
+            url('https://images.pexels.com/photos/48148/document-agreement-documents-sign-48148.jpeg?auto=compress&cs=tinysrgb&w=1600');
+          background-size: cover;
+          background-position: center;
+        }
+
         @media (max-width: 1000px) {
           .header {
             padding: 14px 20px;
@@ -713,6 +732,10 @@ export default function HomePage() {
           .contact-grid,
           .reviews {
             grid-template-columns: 1fr;
+          }
+
+          .about-banner {
+            height: 220px;
           }
 
           .hero {
@@ -890,8 +913,16 @@ export default function HomePage() {
           </div>
         </section>
 
+        <div className="about-banner"></div>
+
      <section id="about" className="split">
           <div>
+            <img
+              src="/headshot.jpg"
+              alt="Hannah Tosi, Fresno Notary Public and Certified Loan Signing Agent serving Fresno and the Central Valley"
+              className="about-portrait"
+              onError={(e) => { e.currentTarget.style.display = 'none'; }}
+            />
             <p className="section-label">About Me</p>
             <h2>A Higher Standard of Mobile Notary Service</h2>
             <p>
