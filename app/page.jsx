@@ -930,23 +930,25 @@ export default function HomePage() {
             </p>
 
             <p>
-              Central Valley Notary Group was built on professionalism,
-              discretion, and reliability — offering a polished mobile notary
-              experience for individuals, families, real estate professionals,
-              attorneys, and businesses throughout Fresno and the surrounding
-              Central Valley.
+              With years of experience as a high-profile executive assistant
+              supporting C-suite leaders, Hannah built her career on precision,
+              discretion, and absolute reliability. She brings that same
+              executive-level standard to Central Valley Notary Group, offering
+              a polished mobile notary experience for individuals, families,
+              real estate professionals, attorneys, and businesses throughout
+              Fresno and the surrounding Central Valley.
             </p>
 
             <p>
               Whether the appointment is at a home, office, hospital, care
               facility, or correctional facility, the goal is simple: make the
-              process feel smooth, respectful, and stress-free.
+              process feel smooth, respectful, and stress free.
             </p>
 
             <p>
-              Every signing is handled with attention to detail, punctual
+              Every signing is handled with careful attention to detail, punctual
               communication, and a commitment to exceptional service. From
-              routine notarizations to time-sensitive signings, clients can
+              routine notarizations to time sensitive signings, clients can
               expect a professional experience focused on accuracy,
               convenience, and peace of mind.
             </p>
