@@ -31,8 +31,8 @@ export default function HomePage() {
       bolt: <path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" />,
       stamp: (
         <>
-          <path d="M9 4h6v7l3 4v5H6v-5l3-4z" />
-          <path d="M8 20h8M9 11h6" />
+          <path d="M5 21h14" />
+          <path d="M5 18h14v-1a3 3 0 0 0 -3 -3h-1.5l.5 -7a2 2 0 0 0 -2 -2h-2a2 2 0 0 0 -2 2l.5 7h-1.5a3 3 0 0 0 -3 3v1z" />
         </>
       ),
       document: (
