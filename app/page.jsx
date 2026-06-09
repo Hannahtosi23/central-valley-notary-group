@@ -1174,6 +1174,10 @@ export default function HomePage() {
             </p>
 
             <p>
+              Your privacy matters. All personal information and documents shared with Central Valley Notary Group are kept strictly confidential and used only to complete your requested notarial services.
+            </p>
+
+            <p>
               © {new Date().getFullYear()} Central Valley Notary Group. All rights reserved.
             </p>
           </div>
