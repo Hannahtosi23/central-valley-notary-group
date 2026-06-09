@@ -622,28 +622,23 @@ export default function HomePage() {
 
 .contact-card .btn {
   width: 100%;
-  max-width: 100%;
+  max-width: 340px;
   box-sizing: border-box;
-  white-space: normal;
-  word-break: break-word;
-  padding: 14px 12px;
-  font-size: 10px;
-  letter-spacing: .10em;
+  padding: 16px 28px;
+  font-size: 12px;
+  letter-spacing: .14em;
   line-height: 1.4;
 }
 
 .email-link {
   color: #E8C27A;
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: .02em;
   text-decoration: none;
-  white-space: nowrap;
-  overflow-x: auto;
-  display: block;
-  width: 100%;
-  line-height: 1.4;
-  -webkit-overflow-scrolling: touch;
+  display: inline-block;
+  line-height: 1.5;
+  overflow-wrap: break-word;
 }
 
 .email-link:hover {
