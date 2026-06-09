@@ -693,6 +693,20 @@ export default function HomePage() {
           background-position: center;
         }
 
+        .price span {
+          display: block;
+          margin-top: 6px;
+        }
+
+        .pricing-note {
+          max-width: 760px;
+          margin: 44px auto 0;
+          text-align: center;
+          font-size: 14px;
+          color: #555;
+          line-height: 1.7;
+        }
+
         @media (max-width: 1000px) {
           .header {
             padding: 14px 20px;
@@ -877,6 +891,9 @@ export default function HomePage() {
             <div className="card"><Icon type="shield" /><h3>Jail Notarizations</h3><div className="card-line"></div><p>Power of attorney forms, inmate authorization forms, legal affidavits, and custody-related documents.</p><div className="price">Starting at <span>$165</span></div></div>
             <div className="card"><Icon type="pen" /><h3>General Notary Services</h3><div className="card-line"></div><p>Power of attorney forms, affidavits, travel consent forms, trusts, and healthcare directives.</p><div className="price">Starting at <span>$45</span></div></div>
           </div>
+          <p className="pricing-note">
+            <strong>A note on pricing:</strong> California sets the notarization fee at $15 per signature. The prices shown are starting rates. Travel fees and other fees may apply depending on your location, the time of your appointment, and the type of service. You will always receive a clear, itemized total before anything is signed.
+          </p>
         </section>
 
         <div className="trust">
