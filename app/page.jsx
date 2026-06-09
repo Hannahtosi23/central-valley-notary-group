@@ -66,6 +66,9 @@ export default function HomePage() {
           <path d="M4 7l8 6 8-6" />
         </>
       ),
+      phone: (
+        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+      ),
       id: (
         <>
           <rect x="4" y="6" width="16" height="12" rx="1" />
@@ -1131,6 +1134,19 @@ export default function HomePage() {
                 <p>The fastest way to reach me for same-day availability, pricing, and appointment details.</p>
                 <a className="btn btn-light contact-btn" href="sms:14158065811">
                   Text (415) 806-5811
+                </a>
+              </div>
+            </div>
+
+            <div className="contact-card">
+              <div className="contact-bubble">
+                <Icon type="phone" />
+              </div>
+              <div>
+                <h3>Call Me</h3>
+                <p>Prefer to talk it through? Call directly for questions, quotes, or to book your appointment.</p>
+                <a className="btn btn-light contact-btn" href="tel:14158065811">
+                  Call (415) 806-5811
                 </a>
               </div>
             </div>
