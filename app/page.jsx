@@ -1102,19 +1102,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section>
-          <div className="center">
-            <p className="section-label">Client Reviews</p>
-            <h2>Professional, Responsive, Reliable</h2>
-          </div>
-
-          <div className="reviews">
-            <div className="review"><div className="stars">★★★★★</div><p>“Professional, punctual, and incredibly easy to work with. The signing process felt smooth from start to finish.”</p><strong>Escrow Client</strong></div>
-            <div className="review"><div className="stars">★★★★★</div><p>“Hannah made a difficult situation feel calm and organized. Extremely responsive and respectful throughout the appointment.”</p><strong>Hospital Appointment</strong></div>
-            <div className="review"><div className="stars">★★★★★</div><p>“Reliable, polished, and prepared. We will absolutely continue using Central Valley Notary Group for future signings.”</p><strong>Real Estate Signing</strong></div>
-          </div>
-        </section>
-
                   <section id="contact" className="dark">
           <div className="center">
             <p className="section-label">Contact Me</p>
