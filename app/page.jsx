@@ -843,7 +843,7 @@ export default function HomePage() {
         <section className="hero">
           <div className="hero-content">
             <p className="eyebrow">Professional. Reliable. Discreet.</p>
-            <h1>Mobile Notary & Loan Signing Services</h1>
+            <h1>Fresno Mobile Notary & Loan Signing Services</h1>
             <p className="gold">Delivered To You.</p>
             <div className="line"></div>
             <p className="subtext">
