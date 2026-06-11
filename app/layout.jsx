@@ -13,6 +13,7 @@ export const metadata = {
     "same-day notary Fresno",
     "Central Valley notary",
   ],
+  robots: { index: false, follow: false },
   openGraph: {
     title: "Fresno Mobile Notary & Loan Signing Agent | Central Valley Notary Group",
     description:
