@@ -1062,14 +1062,6 @@ export default function HomePage() {
             </div>
 
             <div className="faq-item">
-              <h3>Can you provide witnesses?</h3>
-              <p>
-                Witness availability may be possible for certain appointments
-                with advance notice. Additional fees may apply.
-              </p>
-            </div>
-
-            <div className="faq-item">
               <h3>Do you travel to jails or correctional facilities?</h3>
               <p>
                 Yes. Jail notarizations may be available depending on the
