@@ -890,7 +890,7 @@ export default function HomePage() {
             <div className="card"><Icon type="pen" /><h3>General Notary Services</h3><div className="card-line"></div><p>Power of attorney forms, affidavits, travel consent forms, trusts, and healthcare directives.</p><div className="price">Starting at <span>$45</span></div></div>
           </div>
           <p className="pricing-note">
-            <strong>A note on pricing:</strong> California sets the notarization fee at $15 per signature. The prices shown are starting rates. Travel fees and other fees may apply depending on your location, the time of your appointment, and the type of service. You will always receive a clear, itemized total before anything is signed.
+            <strong>A note on pricing:</strong> California sets the notarization fee at $15 per signature, so each additional signature is $15. The prices shown are starting rates. Travel fees and other fees may apply depending on your location, the time of your appointment, and the type of service. You will always receive a clear, itemized total before anything is signed.
           </p>
         </section>
 
