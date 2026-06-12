@@ -639,9 +639,10 @@ export default function HomePage() {
   font-weight: 700;
   letter-spacing: .02em;
   text-decoration: none;
-  display: inline-block;
+  display: block;
+  max-width: 100%;
   line-height: 1.5;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 .email-link:hover {
@@ -781,6 +782,11 @@ export default function HomePage() {
 
           .btn {
             width: 100%;
+          }
+
+          .email-link {
+            font-size: 13px;
+            letter-spacing: 0;
           }
 
           .feature-bar {
