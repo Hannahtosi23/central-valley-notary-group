@@ -480,9 +480,11 @@ export default function HomePage() {
 
         .split {
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 1fr;
           gap: 70px;
           align-items: start;
+          max-width: 760px;
+          margin: 0 auto;
         }
 
         .split p {
@@ -498,6 +500,8 @@ export default function HomePage() {
           border-radius: 8px;
           padding: 42px;
           box-shadow: 0 10px 28px rgba(0,0,0,.04);
+          max-width: 640px;
+          margin: 0 auto;
         }
 
         .ready-list {
@@ -908,6 +912,43 @@ export default function HomePage() {
           </p>
         </section>
 
+        <section>
+          <div className="ready-card">
+            <p className="section-label">Before Your Appointment</p>
+            <h3>What To Have Ready</h3>
+
+            <div className="ready-list">
+              <div className="ready-item">
+                <div className="circle-icon">
+                  <Icon type="id" />
+                </div>
+                Valid government-issued photo ID
+              </div>
+
+              <div className="ready-item">
+                <div className="circle-icon">
+                  <Icon type="document" />
+                </div>
+                Unsigned documents ready for review
+              </div>
+
+              <div className="ready-item">
+                <div className="circle-icon">
+                  <Icon type="users" />
+                </div>
+                All required signers present
+              </div>
+
+              <div className="ready-item">
+                <div className="circle-icon">
+                  <Icon type="check" />
+                </div>
+                Witnesses available if your document requires them
+              </div>
+            </div>
+          </div>
+        </section>
+
         <div className="trust">
           <div><Icon type="check" />Commissioned California Notary Public</div>
           <div><Icon type="shield" />Bonded & Insured</div>
@@ -976,41 +1017,6 @@ export default function HomePage() {
               sensitive loan signings, clients can count on accuracy,
               discretion, and peace of mind.
             </p>
-          </div>
-
-          <div className="ready-card">
-            <p className="section-label">Before Your Appointment</p>
-            <h3>What To Have Ready</h3>
-
-            <div className="ready-list">
-              <div className="ready-item">
-                <div className="circle-icon">
-                  <Icon type="id" />
-                </div>
-                Valid government-issued photo ID
-              </div>
-
-              <div className="ready-item">
-                <div className="circle-icon">
-                  <Icon type="document" />
-                </div>
-                Unsigned documents ready for review
-              </div>
-
-              <div className="ready-item">
-                <div className="circle-icon">
-                  <Icon type="users" />
-                </div>
-                All required signers present
-              </div>
-
-              <div className="ready-item">
-                <div className="circle-icon">
-                  <Icon type="check" />
-                </div>
-                Witnesses available if your document requires them
-              </div>
-            </div>
           </div>
         </section>
 
