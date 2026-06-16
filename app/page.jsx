@@ -108,9 +108,9 @@ export default function HomePage() {
           max-width: 100%;
           overflow-x: hidden;
           scroll-behavior: smooth;
-          background: #F8F6F1;
-          color: #111;
-          font-family: Arial, sans-serif;
+          background: #faf9f5;
+          color: #222831;
+          font-family: 'DM Sans', Arial, sans-serif;
         }
 
         body {
@@ -134,12 +134,12 @@ export default function HomePage() {
         .svg-icon {
           width: 42px;
           height: 42px;
-          color: #E8C27A;
+          color: #e6cd8a;
           flex-shrink: 0;
         }
 
   .header {
-  background: rgba(5, 5, 5, 0.97);
+  background: rgba(14, 41, 68, 0.97);
   color: white;
   padding: 14px 8%;
   display: flex;
@@ -152,7 +152,7 @@ export default function HomePage() {
   right: 0;
   width: 100%;
   z-index: 9999;
-  border-bottom: 1px solid #2A2A2A;
+  border-bottom: 1px solid #143452;
   overflow: hidden;
   backdrop-filter: blur(10px);
 }
@@ -164,14 +164,11 @@ export default function HomePage() {
         }
 
         .logo-mark {
-          width: 54px;
-          height: 54px;
-          border: 2px solid #B7833A;
-          border-radius: 50%;
+          width: 56px;
+          height: 56px;
           display: flex;
           align-items: center;
           justify-content: center;
-          color: #E8C27A;
           flex-shrink: 0;
         }
 
@@ -181,7 +178,7 @@ export default function HomePage() {
         }
 
         .brand-title {
-          font-family: Georgia, serif;
+          font-family: 'DM Serif Display', Georgia, serif;
           text-transform: uppercase;
           letter-spacing: .14em;
           font-size: 17px;
@@ -189,7 +186,7 @@ export default function HomePage() {
         }
 
         .brand-subtitle {
-          color: #E8C27A;
+          color: #e6cd8a;
           text-transform: uppercase;
           letter-spacing: .18em;
           margin-top: 4px;
@@ -216,7 +213,7 @@ export default function HomePage() {
         }
 
         .nav a:hover {
-          color: #E8C27A;
+          color: #e6cd8a;
         }
 
         .hero {
@@ -245,7 +242,7 @@ export default function HomePage() {
         .eyebrow,
         .gold,
         .section-label {
-          color: #B7833A;
+          color: #c4a049;
           text-transform: uppercase;
           letter-spacing: .28em;
           font-weight: 700;
@@ -259,7 +256,8 @@ export default function HomePage() {
         h1,
         h2,
         h3 {
-          font-family: Georgia, serif;
+          font-family: 'DM Serif Display', Georgia, serif;
+          color: #0e2944;
         }
 
         h1 {
@@ -284,7 +282,7 @@ export default function HomePage() {
         .line {
           width: 90px;
           height: 2px;
-          background: #B7833A;
+          background: #c4a049;
           margin-bottom: 35px;
         }
 
@@ -293,7 +291,7 @@ export default function HomePage() {
           font-size: 22px;
           line-height: 1.7;
           margin-bottom: 45px;
-          color: #333;
+          color: #5b5648;
         }
 
         .buttons {
@@ -316,18 +314,18 @@ export default function HomePage() {
 }
 
         .btn-dark {
-          background: #050505;
+          background: #0e2944;
           color: white;
         }
 
         .btn-light {
           background: rgba(255,255,255,.9);
-          color: #8B5A20;
-          border: 1px solid #B7833A;
+          color: #9a7d2e;
+          border: 1px solid #c4a049;
         }
 
         .feature-bar {
-          background: #090909;
+          background: #0e2944;
           color: white;
           border-radius: 18px;
           padding: 38px;
@@ -344,7 +342,7 @@ export default function HomePage() {
         }
 
         .feature h3 {
-          font-family: Arial, sans-serif;
+          font-family: 'DM Sans', Arial, sans-serif;
           color: white;
           text-transform: uppercase;
           letter-spacing: .12em;
@@ -353,7 +351,7 @@ export default function HomePage() {
         }
 
         .feature p {
-          color: #d2d2d2;
+          color: #b9c2cf;
           line-height: 1.6;
           font-size: 15px;
           margin: 0;
@@ -383,7 +381,7 @@ export default function HomePage() {
 
      .card {
   background: white;
-  border: 1px solid #ddd;
+  border: 1px solid #e6dcc3;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -391,7 +389,7 @@ export default function HomePage() {
 }
 
         .card .svg-icon {
-          color: #B7833A;
+          color: #c4a049;
           width: 54px;
           height: 54px;
           margin: 0 auto 24px;
@@ -412,7 +410,7 @@ export default function HomePage() {
         .card-line {
           width: 52px;
           height: 2px;
-          background: #B7833A;
+          background: #c4a049;
           margin: 18px auto 24px;
         }
 
@@ -430,7 +428,7 @@ export default function HomePage() {
         }
 
         .trust {
-          background: #050505;
+          background: #0e2944;
           color: white;
           padding: 42px 8%;
           display: grid;
@@ -452,7 +450,7 @@ export default function HomePage() {
         .trust .svg-icon {
           width: 34px;
           height: 34px;
-          color: #E8C27A;
+          color: #e6cd8a;
         }
 
         .docs {
@@ -463,19 +461,19 @@ export default function HomePage() {
 
         .doc {
           background: white;
-          border: 1px solid #ddd;
+          border: 1px solid #e6dcc3;
           border-radius: 6px;
           padding: 20px;
           display: flex;
           align-items: center;
           gap: 14px;
-          color: #333;
+          color: #5b5648;
         }
 
         .doc .svg-icon {
           width: 24px;
           height: 24px;
-          color: #B7833A;
+          color: #c4a049;
         }
 
         .split {
@@ -493,14 +491,14 @@ export default function HomePage() {
 
         .split p {
           font-size: 18px;
-          color: #444;
+          color: #5b5648;
           line-height: 1.8;
           margin: 0 0 22px;
         }
 
         .ready-card {
           background: white;
-          border: 1px solid #e3e3e3;
+          border: 1px solid #e6dcc3;
           border-radius: 8px;
           padding: 42px;
           box-shadow: 0 10px 28px rgba(0,0,0,.04);
@@ -518,7 +516,7 @@ export default function HomePage() {
           display: flex;
           align-items: center;
           gap: 24px;
-          color: #555;
+          color: #6f6a60;
           line-height: 1.7;
           font-size: 20px;
         }
@@ -527,7 +525,7 @@ export default function HomePage() {
           width: 70px;
           height: 70px;
           border-radius: 50%;
-          border: 1px solid #eadcc8;
+          border: 1px solid #e6dcc3;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -538,7 +536,7 @@ export default function HomePage() {
         .circle-icon .svg-icon {
           width: 30px;
           height: 30px;
-          color: #B7833A;
+          color: #c4a049;
         }
 
         .faq {
@@ -549,7 +547,7 @@ export default function HomePage() {
 
         .faq-item {
           background: white;
-          border: 1px solid #ddd;
+          border: 1px solid #e6dcc3;
           border-radius: 8px;
           padding: 30px;
         }
@@ -561,7 +559,7 @@ export default function HomePage() {
         }
 
         .faq-item p {
-          color: #555;
+          color: #6f6a60;
           line-height: 1.8;
         }
 
@@ -573,29 +571,34 @@ export default function HomePage() {
 
         .review {
           background: white;
-          border: 1px solid #ddd;
+          border: 1px solid #e6dcc3;
           border-radius: 8px;
           padding: 34px;
         }
 
         .review p {
-          color: #555;
+          color: #6f6a60;
           line-height: 1.8;
         }
 
         .stars {
-          color: #B7833A;
+          color: #c4a049;
           letter-spacing: .1em;
           margin-bottom: 20px;
         }
 
         .dark {
-          background: #050505;
+          background: #0e2944;
           color: white;
         }
 
         .dark p {
-          color: #d0d0d0;
+          color: #b9c2cf;
+        }
+
+        .dark h2,
+        .dark h3 {
+          color: #fff;
         }
 
       .contact-grid {
@@ -643,7 +646,7 @@ export default function HomePage() {
 }
 
 .email-link {
-  color: #E8C27A;
+  color: #e6cd8a;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: .02em;
@@ -672,7 +675,7 @@ export default function HomePage() {
           border-top: 1px solid rgba(255,255,255,.12);
           margin-top: 60px;
           padding-top: 35px;
-          color: #aaa;
+          color: #b9c2cf;
           font-size: 14px;
           line-height: 1.8;
         }
@@ -687,7 +690,7 @@ export default function HomePage() {
           object-fit: cover;
           object-position: center 20%;
           border-radius: 50%;
-          border: 3px solid #B7833A;
+          border: 3px solid #c4a049;
           margin: 0 0 30px;
           display: block;
         }
@@ -711,14 +714,14 @@ export default function HomePage() {
           margin: 44px auto 0;
           text-align: center;
           font-size: 14px;
-          color: #555;
+          color: #6f6a60;
           line-height: 1.7;
         }
 
         .price-note {
           margin-top: 8px;
           font-size: 12px;
-          color: #9C6B2E;
+          color: #9a7d2e;
           font-weight: 700;
         }
 
@@ -740,7 +743,7 @@ export default function HomePage() {
 
         .ready-tile p {
           font-size: 15px;
-          color: #555;
+          color: #6f6a60;
           line-height: 1.6;
           max-width: 200px;
           margin: 0;
@@ -843,9 +846,9 @@ export default function HomePage() {
             left: 0;
             right: 0;
             z-index: 200;
-            background: #050505;
+            background: #0e2944;
             padding: 14px 18px;
-            border-top: 1px solid #B7833A;
+            border-top: 1px solid #c4a049;
           }
 
           .mobile-bar a {
@@ -860,7 +863,7 @@ export default function HomePage() {
           }
 
           .mobile-text {
-            background: #E8C27A;
+            background: #e6cd8a;
             color: black;
           }
 
@@ -870,7 +873,7 @@ export default function HomePage() {
           }
 
           .mobile-schedule {
-            border: 1px solid #444;
+            border: 1px solid #5b5648;
             color: white;
           }
         }
@@ -880,7 +883,11 @@ export default function HomePage() {
         <header className="header">
           <div className="brand-wrap">
             <div className="logo-mark">
-              <Icon type="stamp" />
+              <svg viewBox="0 0 100 100" width="56" height="56" aria-hidden="true">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#e6cd8a" strokeWidth="2.5" />
+                <circle cx="50" cy="50" r="36" fill="none" stroke="#e6cd8a" strokeWidth="1.2" />
+                <text x="50" y="63" textAnchor="middle" fontFamily="'DM Serif Display', Georgia, serif" fontSize="34" fill="#e6cd8a">CV</text>
+              </svg>
             </div>
 
             <div>
@@ -1220,7 +1227,7 @@ export default function HomePage() {
 
           <div className="footer-note">
             <div style={{ marginBottom: "30px" }}>
-              <h3 style={{ color: "#E8C27A", textTransform: "uppercase", letterSpacing: ".18em", fontSize: "12px" }}>
+              <h3 style={{ color: "#e6cd8a", textTransform: "uppercase", letterSpacing: ".18em", fontSize: "12px" }}>
                 Business Hours
               </h3>
 
