@@ -883,11 +883,7 @@ export default function HomePage() {
         <header className="header">
           <div className="brand-wrap">
             <div className="logo-mark">
-              <svg viewBox="0 0 100 100" width="56" height="56" aria-hidden="true">
-                <circle cx="50" cy="50" r="45" fill="none" stroke="#e6cd8a" strokeWidth="2.5" />
-                <circle cx="50" cy="50" r="36" fill="none" stroke="#e6cd8a" strokeWidth="1.2" />
-                <text x="50" y="63" textAnchor="middle" fontFamily="'DM Serif Display', Georgia, serif" fontSize="34" fill="#e6cd8a">CV</text>
-              </svg>
+              <svg viewBox="0 0 200 200" width="54" height="54" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="100" cy="100" r="92" fill="none" stroke="#e6cd8a" strokeWidth="2.5"/><circle cx="100" cy="100" r="83" fill="none" stroke="#e6cd8a" strokeWidth="1.2"/><defs><path id="lmTop" d="M 28,100 A 72,72 0 0,1 172,100"/><path id="lmBot" d="M 32,100 A 68,68 0 0,0 168,100"/></defs><text fill="#e6cd8a" fontFamily="'DM Serif Display', Georgia, serif" fontSize="11" letterSpacing="1"><textPath href="#lmTop" startOffset="50%" textAnchor="middle">CENTRAL VALLEY NOTARY GROUP</textPath></text><text fill="#e6cd8a" fontFamily="'DM Serif Display', Georgia, serif" fontSize="11" letterSpacing="2.4"><textPath href="#lmBot" startOffset="50%" textAnchor="middle">FRESNO • CALIFORNIA</textPath></text><text x="100" y="108" textAnchor="middle" fontFamily="'DM Serif Display', Georgia, serif" fontSize="48" fill="#e6cd8a">CV</text><text x="100" y="132" textAnchor="middle" fontFamily="'DM Sans', sans-serif" fontSize="9.5" fontWeight="600" letterSpacing="3" fill="#e6cd8a">EST. 2026</text></svg>
             </div>
 
             <div>
