@@ -387,7 +387,7 @@ export default function HomePage() {
   padding: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
         .card .svg-icon {
@@ -402,11 +402,11 @@ export default function HomePage() {
   margin-top: 0;
   margin-bottom: 18px;
   line-height: 1.1;
-  min-height: 95px;
+  min-height: 100px;
 }
         
 .card p {
-  min-height: 140px;
+  min-height: 150px;
 }
 
         .card-line {
@@ -897,7 +897,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid4">
-            <div className="card"><Icon type="document" /><h3>Loan Signing Services</h3><div className="card-line"></div><p>Refinance packages, HELOCs, seller packages, buyer closings, and real estate loan documents.</p><div className="price">Starting at <span>$125</span></div></div>
+            <div className="card"><Icon type="document" /><h3>Loan Signing Services</h3><div className="card-line"></div><p>Refinance packages, HELOCs, seller packages, buyer closings, and real estate loan documents.</p><div className="price">Starting at <span>$125</span></div><div className="price-note">$125 for one signer, $175 for two signers. Travel fee may apply by service area.</div></div>
             <div className="card"><Icon type="check" /><h3>Apostille Services</h3><div className="card-line"></div><p>Birth certificates, marriage certificates, power of attorney documents, and international paperwork.</p><div className="price">Starting at <span>$145</span></div></div>
             <div className="card"><Icon type="shield" /><h3>Jail Notarizations</h3><div className="card-line"></div><p>Power of attorney forms, inmate authorization forms, legal affidavits, and custody-related documents.</p><div className="price">Starting at <span>$165</span></div></div>
             <div className="card"><Icon type="pen" /><h3>General Notary Services</h3><div className="card-line"></div><p>Power of attorney forms, affidavits, travel consent forms, trusts, and healthcare directives.</p><div className="price">Per signature <span>$15</span></div><div className="price-note">Plus a travel fee, based on where we're traveling to.</div></div>
