@@ -480,11 +480,15 @@ export default function HomePage() {
 
         .split {
           display: grid;
-          grid-template-columns: 1fr;
-          gap: 70px;
+          grid-template-columns: 280px 1fr;
+          gap: 56px;
           align-items: start;
-          max-width: 760px;
+          max-width: 1080px;
           margin: 0 auto;
+        }
+
+        .about-portrait {
+          margin: 0;
         }
 
         .split p {
@@ -1012,12 +1016,15 @@ export default function HomePage() {
         <div className="about-banner"></div>
 
      <section id="about" className="split">
-          <div>
+          <div className="about-photo-col">
             <img
               src="/headshot.jpg.jpg"
               alt="Hannah Tosi, Fresno Notary Public and Certified Loan Signing Agent serving Fresno and the Central Valley"
               className="about-portrait"
             />
+          </div>
+
+          <div>
             <p className="section-label">About Me</p>
             <h2>A Higher Standard of Mobile Notary Service</h2>
             <p>
