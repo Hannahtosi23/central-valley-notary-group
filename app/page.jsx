@@ -478,11 +478,12 @@ export default function HomePage() {
 
         .split {
           display: grid;
-          grid-template-columns: 280px 1fr;
-          gap: 56px;
-          align-items: start;
-          max-width: 1080px;
+          grid-template-columns: 300px 1fr;
+          gap: 46px;
+          align-items: center;
+          max-width: 1140px;
           margin: 0 auto;
+          padding: 56px 8%;
         }
 
         .about-portrait {
@@ -490,10 +491,10 @@ export default function HomePage() {
         }
 
         .split p {
-          font-size: 18px;
+          font-size: 17px;
           color: #5b5648;
-          line-height: 1.8;
-          margin: 0 0 22px;
+          line-height: 1.7;
+          margin: 0 0 14px;
         }
 
         .ready-card {
@@ -685,13 +686,13 @@ export default function HomePage() {
         }
 
         .about-portrait {
-          width: 240px;
-          height: 240px;
+          width: 300px;
+          height: 300px;
           object-fit: cover;
           object-position: center 20%;
           border-radius: 50%;
           border: 3px solid #c4a049;
-          margin: 0 0 30px;
+          margin: 0 auto;
           display: block;
         }
 
