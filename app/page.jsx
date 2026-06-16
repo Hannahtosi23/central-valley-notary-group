@@ -903,7 +903,7 @@ export default function HomePage() {
             <div className="card"><Icon type="pen" /><h3>General Notary Services</h3><div className="card-line"></div><p>Power of attorney forms, affidavits, travel consent forms, trusts, and healthcare directives.</p><div className="price">Starting at <span>$45</span></div><div className="price-note">$15 per signature + travel to you</div></div>
           </div>
           <p className="pricing-note">
-            <strong>Every price includes travel to your location.</strong> California's notarization fee is $15 per signature; the rest of the rate covers coming to you, flexible scheduling, and time on site. Additional signatures are $15 each. Longer distances, after-hours, or rush appointments may add to the total. You will always receive a clear, itemized quote before anything is signed.
+            <strong>Every price includes travel within the local Fresno and Clovis area.</strong> California's notarization fee is $15 per signature; the rest of the rate covers coming to you, flexible scheduling, and time on site. Additional signatures are $15 each. Trips beyond the local area, after-hours, or rush appointments may add to the total. You will always receive a clear, itemized quote before anything is signed.
           </p>
         </section>
 
