@@ -383,9 +383,10 @@ export default function HomePage() {
   background: white;
   border: 1px solid #e6dcc3;
   padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 6;
+  row-gap: 0;
 }
 
         .card .svg-icon {
