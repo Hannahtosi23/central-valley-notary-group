@@ -718,6 +718,30 @@ export default function HomePage() {
           font-weight: 700;
         }
 
+        .ready-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 28px;
+          max-width: 960px;
+          margin: 0 auto;
+        }
+
+        .ready-tile {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 16px;
+        }
+
+        .ready-tile p {
+          font-size: 15px;
+          color: #555;
+          line-height: 1.6;
+          max-width: 200px;
+          margin: 0;
+        }
+
         @media (max-width: 1000px) {
           .header {
             padding: 14px 20px;
@@ -755,6 +779,7 @@ export default function HomePage() {
           .trust,
           .docs,
           .split,
+          .ready-grid,
           .contact-grid,
           .reviews {
             grid-template-columns: 1fr;
@@ -912,39 +937,39 @@ export default function HomePage() {
           </p>
         </section>
 
-        <section>
-          <div className="ready-card">
+        <section id="before-appointment">
+          <div className="center">
             <p className="section-label">Before Your Appointment</p>
-            <h3>What To Have Ready</h3>
+            <h2>What To Have Ready</h2>
+          </div>
 
-            <div className="ready-list">
-              <div className="ready-item">
-                <div className="circle-icon">
-                  <Icon type="id" />
-                </div>
-                Valid government-issued photo ID
+          <div className="ready-grid">
+            <div className="ready-tile">
+              <div className="circle-icon">
+                <Icon type="id" />
               </div>
+              <p>Valid government-issued photo ID</p>
+            </div>
 
-              <div className="ready-item">
-                <div className="circle-icon">
-                  <Icon type="document" />
-                </div>
-                Unsigned documents ready for review
+            <div className="ready-tile">
+              <div className="circle-icon">
+                <Icon type="document" />
               </div>
+              <p>Unsigned documents ready for review</p>
+            </div>
 
-              <div className="ready-item">
-                <div className="circle-icon">
-                  <Icon type="users" />
-                </div>
-                All required signers present
+            <div className="ready-tile">
+              <div className="circle-icon">
+                <Icon type="users" />
               </div>
+              <p>All required signers present</p>
+            </div>
 
-              <div className="ready-item">
-                <div className="circle-icon">
-                  <Icon type="check" />
-                </div>
-                Witnesses available if your document requires them
+            <div className="ready-tile">
+              <div className="circle-icon">
+                <Icon type="check" />
               </div>
+              <p>Witnesses available if your document requires them</p>
             </div>
           </div>
         </section>
