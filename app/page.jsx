@@ -706,6 +706,13 @@ export default function HomePage() {
           line-height: 1.7;
         }
 
+        .price-note {
+          margin-top: 8px;
+          font-size: 12px;
+          color: #9C6B2E;
+          font-weight: 700;
+        }
+
         @media (max-width: 1000px) {
           .header {
             padding: 14px 20px;
@@ -890,13 +897,13 @@ export default function HomePage() {
           </div>
 
           <div className="grid4">
-            <div className="card"><Icon type="document" /><h3>Loan Signing Services</h3><div className="card-line"></div><p>Refinance packages, HELOCs, seller packages, buyer closings, and real estate loan documents.</p><div className="price">Starting at <span>$125</span></div></div>
-            <div className="card"><Icon type="check" /><h3>Apostille Services</h3><div className="card-line"></div><p>Birth certificates, marriage certificates, power of attorney documents, and international paperwork.</p><div className="price">Starting at <span>$145</span></div></div>
-            <div className="card"><Icon type="shield" /><h3>Jail Notarizations</h3><div className="card-line"></div><p>Power of attorney forms, inmate authorization forms, legal affidavits, and custody-related documents.</p><div className="price">Starting at <span>$165</span></div></div>
-            <div className="card"><Icon type="pen" /><h3>General Notary Services</h3><div className="card-line"></div><p>Power of attorney forms, affidavits, travel consent forms, trusts, and healthcare directives.</p><div className="price">Starting at <span>$45</span></div></div>
+            <div className="card"><Icon type="document" /><h3>Loan Signing Services</h3><div className="card-line"></div><p>Refinance packages, HELOCs, seller packages, buyer closings, and real estate loan documents.</p><div className="price">Starting at <span>$125</span></div><div className="price-note">Travel to you included</div></div>
+            <div className="card"><Icon type="check" /><h3>Apostille Services</h3><div className="card-line"></div><p>Birth certificates, marriage certificates, power of attorney documents, and international paperwork.</p><div className="price">Starting at <span>$145</span></div><div className="price-note">Travel to you included</div></div>
+            <div className="card"><Icon type="shield" /><h3>Jail Notarizations</h3><div className="card-line"></div><p>Power of attorney forms, inmate authorization forms, legal affidavits, and custody-related documents.</p><div className="price">Starting at <span>$165</span></div><div className="price-note">Facility travel included</div></div>
+            <div className="card"><Icon type="pen" /><h3>General Notary Services</h3><div className="card-line"></div><p>Power of attorney forms, affidavits, travel consent forms, trusts, and healthcare directives.</p><div className="price">Starting at <span>$45</span></div><div className="price-note">$15 per signature + travel to you</div></div>
           </div>
           <p className="pricing-note">
-            <strong>A note on pricing:</strong> California sets the notarization fee at $15 per signature, so each additional signature is $15. The prices shown are starting rates. Travel fees and other fees may apply depending on your location, the time of your appointment, and the type of service. You will always receive a clear, itemized total before anything is signed.
+            <strong>Every price includes travel to your location.</strong> California's notarization fee is $15 per signature; the rest of the rate covers coming to you, flexible scheduling, and time on site. Additional signatures are $15 each. Longer distances, after-hours, or rush appointments may add to the total. You will always receive a clear, itemized quote before anything is signed.
           </p>
         </section>
 
@@ -1018,6 +1025,17 @@ export default function HomePage() {
           </div>
 
           <div className="faq">
+            <div className="faq-item">
+              <h3>Can you give me legal advice or tell me which document I need?</h3>
+              <p>
+                No. I am a Notary Public, not an attorney licensed to practice
+                law. I cannot give legal advice, prepare legal documents, or
+                advise which document you need. For any legal questions, please
+                consult a licensed attorney. My role is to verify your identity
+                and witness your signature.
+              </p>
+            </div>
+
             <div className="faq-item">
               <h3>What forms of ID are accepted?</h3>
               <p>
