@@ -884,10 +884,6 @@ export default function HomePage() {
       <main>
         <header className="header">
           <div className="brand-wrap">
-            <div className="logo-mark">
-              <svg viewBox="0 0 56 56" width="48" height="48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><text x="28" y="39" textAnchor="middle" fontFamily="'DM Serif Display', Georgia, serif" fontSize="34" fill="#e6cd8a">CV</text></svg>
-            </div>
-
             <div>
               <div className="brand-title">Central Valley Notary Group</div>
               <div className="brand-subtitle">Fresno Mobile Notary & Loan Signing</div>
