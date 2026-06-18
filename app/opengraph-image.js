@@ -19,33 +19,8 @@ export default function Image() {
           backgroundColor: '#0e2944',
         }}
       >
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            width: 196,
-            height: 196,
-            borderRadius: '50%',
-            border: '6px solid #e6cd8a',
-            marginBottom: 40,
-          }}
-        >
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              width: 164,
-              height: 164,
-              borderRadius: '50%',
-              border: '2px solid #e6cd8a',
-            }}
-          >
-            <div style={{ display: 'flex', fontSize: 94, fontWeight: 700, color: '#e6cd8a', letterSpacing: 2 }}>
-              CV
-            </div>
-          </div>
+        <div style={{ display: 'flex', fontSize: 150, fontWeight: 700, color: '#e6cd8a', letterSpacing: 4, marginBottom: 24 }}>
+          CV
         </div>
         <div style={{ display: 'flex', fontSize: 50, fontWeight: 700, color: '#ffffff', letterSpacing: 3 }}>
           CENTRAL VALLEY NOTARY GROUP
