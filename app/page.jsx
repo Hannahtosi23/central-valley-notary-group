@@ -540,6 +540,10 @@ export default function HomePage() {
           border-color: #bfe3cb;
         }
 
+        .ready-tile .circle-icon .svg-icon {
+          color: #2e9e4f;
+        }
+
         .circle-icon .svg-icon {
           width: 30px;
           height: 30px;
