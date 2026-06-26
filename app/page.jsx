@@ -535,15 +535,6 @@ export default function HomePage() {
           flex-shrink: 0;
         }
 
-        .ready-tile .circle-icon {
-          color: #2e9e4f;
-          border-color: #bfe3cb;
-        }
-
-        .ready-tile .circle-icon .svg-icon {
-          color: #2e9e4f;
-        }
-
         .circle-icon .svg-icon {
           width: 30px;
           height: 30px;
@@ -960,21 +951,21 @@ export default function HomePage() {
           <div className="ready-grid">
             <div className="ready-tile">
               <div className="circle-icon">
-                <Icon type="check" />
+                <Icon type="id" />
               </div>
               <p>Valid government-issued photo ID</p>
             </div>
 
             <div className="ready-tile">
               <div className="circle-icon">
-                <Icon type="check" />
+                <Icon type="document" />
               </div>
               <p>Unsigned documents ready for review</p>
             </div>
 
             <div className="ready-tile">
               <div className="circle-icon">
-                <Icon type="check" />
+                <Icon type="users" />
               </div>
               <p>All required signers present</p>
             </div>
