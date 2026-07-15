@@ -736,6 +736,64 @@ export default function HomePage() {
           margin: 0 auto;
         }
 
+        .id-list {
+          max-width: 820px;
+          margin: 46px auto 0;
+          background: #fff;
+          border: 1px solid #e6dcc3;
+          border-radius: 8px;
+          padding: 32px 40px;
+        }
+
+        .id-list h3 {
+          text-align: center;
+          font-size: 19px;
+          margin: 0 0 10px;
+        }
+
+        .id-intro {
+          text-align: center;
+          color: #5b5648;
+          font-size: 15px;
+          margin: 0 auto 22px;
+          max-width: 560px;
+          line-height: 1.6;
+        }
+
+        .id-list ul {
+          margin: 0;
+          padding: 0 0 0 20px;
+          column-count: 2;
+          column-gap: 36px;
+        }
+
+        .id-list li {
+          font-size: 14.5px;
+          color: #5b5648;
+          line-height: 1.6;
+          margin-bottom: 9px;
+          break-inside: avoid;
+        }
+
+        .id-list li::marker {
+          color: #c4a049;
+        }
+
+        .id-note {
+          text-align: center;
+          font-size: 13px;
+          color: #7a7468;
+          font-style: italic;
+          margin: 22px auto 0;
+          max-width: 620px;
+          line-height: 1.5;
+        }
+
+        @media (max-width: 640px) {
+          .id-list { padding: 26px 22px; }
+          .id-list ul { column-count: 1; }
+        }
+
         .ready-tile {
           display: flex;
           flex-direction: column;
@@ -978,6 +1036,30 @@ export default function HomePage() {
               <p>Witnesses available if your document requires them</p>
             </div>
           </div>
+
+          <div className="id-list">
+            <h3>Acceptable Photo ID</h3>
+            <p className="id-intro">
+              Each signer must present a valid photo ID that is current or was issued within the
+              past 5 years, such as:
+            </p>
+            <ul>
+              <li>California driver’s license or ID card issued by the DMV</li>
+              <li>U.S. passport or U.S. passport card</li>
+              <li>Driver’s license or ID card issued by another U.S. state</li>
+              <li>Driver’s license issued by a Canadian or Mexican public agency</li>
+              <li>Valid passport from your country of citizenship</li>
+              <li>Consular ID issued by your country’s consulate</li>
+              <li>U.S. military ID card</li>
+              <li>Employee ID issued by a California state, city, or county agency</li>
+              <li>ID card issued by a federally recognized tribal government</li>
+              <li>Inmate ID issued by CDCR or a sheriff’s department (for in-custody signings)</li>
+            </ul>
+            <p className="id-note">
+              IDs issued outside California must also include a photograph, physical description,
+              signature, and an identifying number.
+            </p>
+          </div>
         </section>
 
         <div className="trust">
@@ -1075,8 +1157,12 @@ export default function HomePage() {
             <div className="faq-item">
               <h3>What forms of ID are accepted?</h3>
               <p>
-                A current government-issued photo ID such as a driver’s license,
-                passport, or state ID is typically required.
+                Each signer must present a valid photo ID that is current or was issued
+                within the past 5 years — a California driver’s license or DMV ID card, a
+                U.S. passport or passport card, a driver’s license or ID from another state,
+                a driver’s license from Canada or Mexico, a valid passport or consular ID from
+                your country of citizenship, or a U.S. military ID. See the full list under
+                “What To Have Ready.”
               </p>
             </div>
 
