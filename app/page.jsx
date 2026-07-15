@@ -779,7 +779,7 @@ export default function HomePage() {
         }
 
         .id-list li::before {
-          content: "\2713";
+          content: "✓";
           position: absolute;
           left: 2px;
           top: 0;
