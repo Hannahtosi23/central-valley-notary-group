@@ -762,7 +762,8 @@ export default function HomePage() {
 
         .id-list ul {
           margin: 0;
-          padding: 0 0 0 20px;
+          padding: 0;
+          list-style: none;
           column-count: 2;
           column-gap: 36px;
         }
@@ -773,10 +774,19 @@ export default function HomePage() {
           line-height: 1.6;
           margin-bottom: 9px;
           break-inside: avoid;
+          position: relative;
+          padding-left: 26px;
         }
 
-        .id-list li::marker {
-          color: #c4a049;
+        .id-list li::before {
+          content: "\2713";
+          position: absolute;
+          left: 2px;
+          top: 0;
+          color: #2e9e4f;
+          font-weight: 700;
+          font-size: 13.5px;
+          line-height: 1.75;
         }
 
         .id-note {
