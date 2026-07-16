@@ -376,7 +376,7 @@ export default function HomePage() {
 
         .grid4 {
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: repeat(3, 1fr);
           gap: 28px;
         }
 
@@ -1002,12 +1002,11 @@ export default function HomePage() {
 
           <div className="grid4">
             <div className="card"><Icon type="document" /><h3>Loan Signing Services</h3><div className="card-line"></div><p>Refinance packages, HELOCs, seller packages, buyer closings, and real estate loan documents.</p><div className="price">Starting at <span>$125</span></div><div className="price-note">$125 for one signer, $175 for two signers. Travel fee may apply by service area.</div></div>
-            <div className="card"><Icon type="check" /><h3>Apostille Services</h3><div className="card-line"></div><p>Birth certificates, marriage certificates, power of attorney documents, and international paperwork.</p><div className="price">Starting at <span>$145</span></div><div className="price-note">Travel fee may apply by service area.</div></div>
             <div className="card"><Icon type="shield" /><h3>Jail Notarizations</h3><div className="card-line"></div><p>Power of attorney forms, inmate authorization forms, legal affidavits, and custody-related documents.</p><div className="price">Starting at <span>$165</span></div><div className="price-note">Travel fee may apply by service area.</div></div>
             <div className="card"><Icon type="pen" /><h3>General Notary Services</h3><div className="card-line"></div><p>Power of attorney forms, affidavits, travel consent forms, trusts, and healthcare directives.</p><div className="price">Per signature <span>$15</span></div><div className="price-note">Plus a travel fee, based on where we're traveling to.</div></div>
           </div>
           <p className="pricing-note">
-            <strong>California's notarization fee is $15 per notarized signature, plus travel.</strong> Each additional signature is $15, and a travel fee applies based on where we're traveling to. Loan signing, apostille, and jail notarizations start at the rates shown above. After-hours or rush appointments may add to the total. You will always receive a clear, itemized quote before anything is signed.
+            <strong>California's notarization fee is $15 per notarized signature, plus travel.</strong> Each additional signature is $15, and a travel fee applies based on where we're traveling to. Loan signing and jail notarizations start at the rates shown above. After-hours or rush appointments may add to the total. You will always receive a clear, itemized quote before anything is signed.
           </p>
         </section>
 
