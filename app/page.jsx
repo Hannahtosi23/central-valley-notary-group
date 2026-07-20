@@ -804,12 +804,12 @@ export default function HomePage() {
           .id-list ul { column-count: 1; }
 
           h1 {
-            font-size: 34px;
+            font-size: 32px;
             letter-spacing: -0.5px;
           }
 
           .hero {
-            padding: 40px 18px 48px;
+            padding: 92px 18px 44px;
           }
 
           section {
@@ -833,11 +833,84 @@ export default function HomePage() {
           }
 
           .card {
-            padding: 26px;
+            padding: 20px;
           }
 
           .ready-card {
             padding: 26px 22px;
+          }
+
+          .header {
+            padding: 9px 16px;
+            gap: 7px;
+          }
+
+          .brand-title {
+            font-size: 12.5px;
+            letter-spacing: .1em;
+          }
+
+          .brand-subtitle {
+            font-size: 7.5px;
+            letter-spacing: .12em;
+            margin-top: 2px;
+          }
+
+          .nav {
+            gap: 10px;
+          }
+
+          .nav a {
+            font-size: 9px;
+            letter-spacing: .06em;
+          }
+
+          h2 {
+            font-size: 26px;
+            line-height: 1.15;
+            margin-bottom: 14px;
+          }
+
+          .card h3 {
+            font-size: 19px;
+            line-height: 1.25;
+          }
+
+          .faq-item h3 {
+            font-size: 17px;
+            line-height: 1.35;
+          }
+
+          p {
+            font-size: 15px;
+            line-height: 1.6;
+          }
+
+          .card p {
+            font-size: 14px;
+            line-height: 1.55;
+          }
+
+          .section-label {
+            font-size: 10px;
+          }
+
+          .price span {
+            font-size: 24px;
+          }
+
+          .circle-icon {
+            width: 54px;
+            height: 54px;
+          }
+
+          .docs div {
+            font-size: 14px;
+            padding: 14px;
+          }
+
+          .trust div {
+            font-size: 12px;
           }
         }
 
