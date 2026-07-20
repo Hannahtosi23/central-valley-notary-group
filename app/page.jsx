@@ -228,7 +228,7 @@ export default function HomePage() {
             url('https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1600');
           background-size: cover;
           background-position: center;
-          padding: 190px 8% 110px;
+          padding: 120px 8% 80px;
           display: flex;
           align-items: center;
           overflow: hidden;
@@ -262,7 +262,7 @@ export default function HomePage() {
         }
 
         h1 {
-          font-size: clamp(50px, 8vw, 115px);
+          font-size: clamp(38px, 4.6vw, 62px);
           line-height: .92;
           max-width: 900px;
           margin: 0 0 25px;
@@ -299,7 +299,7 @@ export default function HomePage() {
           display: flex;
           gap: 20px;
           flex-wrap: wrap;
-          margin-bottom: 70px;
+          margin-bottom: 42px;
         }
 
        .btn {
@@ -329,7 +329,7 @@ export default function HomePage() {
           background: #0e2944;
           color: white;
           border-radius: 18px;
-          padding: 38px;
+          padding: 28px;
           display: grid;
           grid-template-columns: repeat(5, 1fr);
           gap: 28px;
@@ -802,6 +802,43 @@ export default function HomePage() {
         @media (max-width: 640px) {
           .id-list { padding: 26px 22px; }
           .id-list ul { column-count: 1; }
+
+          h1 {
+            font-size: 34px;
+            letter-spacing: -0.5px;
+          }
+
+          .hero {
+            padding: 40px 18px 48px;
+          }
+
+          section {
+            padding: 48px 18px;
+          }
+
+          .feature-bar {
+            padding: 20px;
+            gap: 16px;
+            border-radius: 14px;
+          }
+
+          .buttons {
+            gap: 12px;
+            margin-bottom: 30px;
+          }
+
+          .buttons a {
+            width: 100%;
+            text-align: center;
+          }
+
+          .card {
+            padding: 26px;
+          }
+
+          .ready-card {
+            padding: 26px 22px;
+          }
         }
 
         .ready-tile {
@@ -868,18 +905,18 @@ export default function HomePage() {
           }
 
           .hero {
-            padding: 70px 24px 120px;
+            padding: 52px 20px 64px;
             min-height: auto;
           }
 
           section {
-            padding: 80px 24px;
+            padding: 60px 20px;
             scroll-margin-top: 140px;
           }
 
           h1 {
-            font-size: 52px;
-            line-height: .95;
+            font-size: 40px;
+            line-height: 1.02;
             max-width: 100%;
           }
 
