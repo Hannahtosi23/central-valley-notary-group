@@ -640,12 +640,12 @@ export default function HomePage() {
 
 .contact-card .btn {
   width: auto;
-  max-width: 250px;
+  max-width: 210px;
   box-sizing: border-box;
-  padding: 12px 24px;
-  font-size: 12px;
-  letter-spacing: .14em;
-  line-height: 1.4;
+  padding: 9px 18px;
+  font-size: 11px;
+  letter-spacing: .1em;
+  line-height: 1.35;
 }
 
 .email-link {
