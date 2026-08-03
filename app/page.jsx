@@ -915,6 +915,11 @@ export default function HomePage() {
             gap: 12px;
           }
 
+          #documents .docs {
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+          }
+
           .about-banner {
             height: 220px;
           }
