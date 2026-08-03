@@ -837,6 +837,16 @@ export default function HomePage() {
 
         @media (max-width: 640px) {
           .footer-pay-row { flex-wrap: wrap; }
+
+          .contact-card h3 {
+            font-size: 20px;
+            line-height: 1.25;
+          }
+
+          .contact-card p {
+            font-size: 15px;
+            line-height: 1.55;
+          }
         }
 
         
