@@ -900,6 +900,11 @@ export default function HomePage() {
             grid-template-columns: 1fr;
           }
 
+          #service-area .docs {
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+          }
+
           .about-banner {
             height: 220px;
           }
