@@ -799,30 +799,44 @@ export default function HomePage() {
           line-height: 1.5;
         }
 
-        .pay-strip {
+        .footer-pay {
           text-align: center;
-          padding: 62px 8%;
+          margin: 30px auto 0;
         }
 
-        .pay-strip .section-label {
-          display: block;
-          margin-bottom: 18px;
+        .footer-pay-label {
+          color: #b9c2cf;
+          text-transform: uppercase;
+          letter-spacing: .22em;
+          font-size: 11px;
+          margin-bottom: 14px;
         }
 
-        .pay-methods {
+        .footer-pay-row {
           display: flex;
-          flex-wrap: wrap;
+          flex-wrap: nowrap;
           justify-content: center;
+          align-items: center;
           gap: 10px;
         }
 
-        .pay-methods span {
-          border: 1px solid #e6dcc3;
-          border-radius: 999px;
-          padding: 7px 16px;
-          font-size: 14px;
-          color: #5b5648;
+        .footer-pay-row .pm {
           background: #fff;
+          border-radius: 6px;
+          padding: 9px 15px;
+          font-size: 13px;
+          font-weight: 700;
+          white-space: nowrap;
+        }
+
+        .pm-cash { color: #2e7d32; }
+        .pm-card { color: #0e2944; }
+        .pm-venmo { color: #008cff; }
+        .pm-paypal { color: #003087; }
+        .pm-zelle { color: #6d1ed4; }
+
+        @media (max-width: 640px) {
+          .footer-pay-row { flex-wrap: wrap; }
         }
 
         
@@ -1401,17 +1415,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="pay-strip">
-          <p className="section-label">Payments Accepted</p>
-          <div className="pay-methods">
-            <span>Cash</span>
-            <span>Card &amp; Apple Pay</span>
-            <span>Venmo</span>
-            <span>PayPal</span>
-            <span>Zelle</span>
-          </div>
-        </section>
-
                   <section id="contact" className="dark">
           <div className="center">
             <p className="section-label">Contact Me</p>
@@ -1502,6 +1505,17 @@ export default function HomePage() {
             <p>
               © {new Date().getFullYear()} Central Valley Notary Group. All rights reserved.
             </p>
+
+            <div className="footer-pay">
+              <p className="footer-pay-label">We Accept</p>
+              <div className="footer-pay-row">
+                <span className="pm pm-cash">Cash</span>
+                <span className="pm pm-card">Card &amp; Apple Pay</span>
+                <span className="pm pm-venmo">Venmo</span>
+                <span className="pm pm-paypal">PayPal</span>
+                <span className="pm pm-zelle">Zelle</span>
+              </div>
+            </div>
           </div>
         </section>
 
