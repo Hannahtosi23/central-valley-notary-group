@@ -799,6 +799,33 @@ export default function HomePage() {
           line-height: 1.5;
         }
 
+        .pay-accepted {
+          max-width: 820px;
+          margin: 28px auto 0;
+          text-align: center;
+        }
+
+        .pay-accepted .section-label {
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        .pay-methods {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+        }
+
+        .pay-methods span {
+          border: 1px solid #e6dcc3;
+          border-radius: 999px;
+          padding: 7px 16px;
+          font-size: 14px;
+          color: #5b5648;
+          background: #fff;
+        }
+
         
 
         .ready-tile {
@@ -1097,6 +1124,17 @@ export default function HomePage() {
             <h1>Fresno Mobile Notary & Loan Signing Services</h1>
             <p className="gold">Delivered To You.</p>
             <div className="line"></div>
+
+          <div className="pay-accepted">
+            <p className="section-label">Payments Accepted</p>
+            <div className="pay-methods">
+              <span>Cash</span>
+              <span>Card &amp; Apple Pay</span>
+              <span>Venmo</span>
+              <span>PayPal</span>
+              <span>Zelle</span>
+            </div>
+          </div>
             <p className="subtext">
               Convenient, professional, and accurate mobile notary and loan signing services throughout Fresno County and the Central Valley.
             </p>
@@ -1360,8 +1398,8 @@ export default function HomePage() {
             <div className="faq-item">
               <h3>What payment methods do you accept?</h3>
               <p>
-                Cash, Venmo, and other electronic payment methods may be
-                accepted depending on the appointment type.
+                For your convenience, I accept cash, card and Apple Pay (via Square), Venmo,
+                PayPal, and Zelle. Payment is collected at the appointment.
               </p>
             </div>
 
