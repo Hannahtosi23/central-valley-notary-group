@@ -639,10 +639,10 @@ export default function HomePage() {
 }
 
 .contact-card .btn {
-  width: 100%;
-  max-width: 340px;
+  width: auto;
+  max-width: 250px;
   box-sizing: border-box;
-  padding: 16px 28px;
+  padding: 12px 24px;
   font-size: 12px;
   letter-spacing: .14em;
   line-height: 1.4;
