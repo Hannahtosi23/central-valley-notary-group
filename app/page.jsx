@@ -799,15 +799,14 @@ export default function HomePage() {
           line-height: 1.5;
         }
 
-        .pay-accepted {
-          max-width: 820px;
-          margin: 28px auto 0;
+        .pay-strip {
           text-align: center;
+          padding: 62px 8%;
         }
 
-        .pay-accepted .section-label {
+        .pay-strip .section-label {
           display: block;
-          margin-bottom: 10px;
+          margin-bottom: 18px;
         }
 
         .pay-methods {
@@ -1402,6 +1401,17 @@ export default function HomePage() {
           </div>
         </section>
 
+        <section className="pay-strip">
+          <p className="section-label">Payments Accepted</p>
+          <div className="pay-methods">
+            <span>Cash</span>
+            <span>Card &amp; Apple Pay</span>
+            <span>Venmo</span>
+            <span>PayPal</span>
+            <span>Zelle</span>
+          </div>
+        </section>
+
                   <section id="contact" className="dark">
           <div className="center">
             <p className="section-label">Contact Me</p>
@@ -1481,19 +1491,7 @@ export default function HomePage() {
                 Sunday: 10:00 AM – 6:00 PM
               </p>
             </div>
-
-            <div className="pay-accepted">
-            <p className="section-label">Payments Accepted</p>
-            <div className="pay-methods">
-              <span>Cash</span>
-              <span>Card &amp; Apple Pay</span>
-              <span>Venmo</span>
-              <span>PayPal</span>
-              <span>Zelle</span>
-            </div>
-          </div>
-
-            <p>
+<p>
               I am a Notary Public, not an attorney licensed to practice law. I may not give legal advice or accept fees for legal advice. I can only provide notarial services.
             </p>
 
