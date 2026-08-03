@@ -1124,17 +1124,6 @@ export default function HomePage() {
             <h1>Fresno Mobile Notary & Loan Signing Services</h1>
             <p className="gold">Delivered To You.</p>
             <div className="line"></div>
-
-          <div className="pay-accepted">
-            <p className="section-label">Payments Accepted</p>
-            <div className="pay-methods">
-              <span>Cash</span>
-              <span>Card &amp; Apple Pay</span>
-              <span>Venmo</span>
-              <span>PayPal</span>
-              <span>Zelle</span>
-            </div>
-          </div>
             <p className="subtext">
               Convenient, professional, and accurate mobile notary and loan signing services throughout Fresno County and the Central Valley.
             </p>
@@ -1492,6 +1481,17 @@ export default function HomePage() {
                 Sunday: 10:00 AM – 6:00 PM
               </p>
             </div>
+
+            <div className="pay-accepted">
+            <p className="section-label">Payments Accepted</p>
+            <div className="pay-methods">
+              <span>Cash</span>
+              <span>Card &amp; Apple Pay</span>
+              <span>Venmo</span>
+              <span>PayPal</span>
+              <span>Zelle</span>
+            </div>
+          </div>
 
             <p>
               I am a Notary Public, not an attorney licensed to practice law. I may not give legal advice or accept fees for legal advice. I can only provide notarial services.
