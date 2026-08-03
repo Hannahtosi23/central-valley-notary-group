@@ -646,6 +646,7 @@ export default function HomePage() {
   font-size: 11px;
   letter-spacing: .1em;
   line-height: 1.35;
+  margin-bottom: 24px;
 }
 
 .email-link {
