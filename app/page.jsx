@@ -177,21 +177,31 @@ export default function HomePage() {
           height: 28px;
         }
 
-        .brand-title {
-          font-family: 'DM Serif Display', Georgia, serif;
-          text-transform: uppercase;
-          letter-spacing: .14em;
-          font-size: 17px;
-          line-height: 1.2;
-        }
-
-        .brand-subtitle {
+        .brand-eyebrow {
           color: #e6cd8a;
           text-transform: uppercase;
-          letter-spacing: .18em;
-          margin-top: 4px;
-          font-size: 10px;
-          line-height: 1.4;
+          letter-spacing: .34em;
+          font-size: 11px;
+          font-weight: 700;
+          font-family: 'DM Sans', Arial, sans-serif;
+          line-height: 1;
+          margin: 0 0 5px;
+        }
+
+        .brand-name {
+          font-family: 'DM Serif Display', Georgia, serif;
+          color: #ffffff;
+          font-size: 27px;
+          line-height: 1;
+          margin: 0;
+        }
+
+        .brand-rule {
+          width: 118px;
+          height: 3px;
+          background: #c9a24a;
+          border-radius: 1px;
+          margin-top: 9px;
         }
 
         .nav {
@@ -876,12 +886,17 @@ export default function HomePage() {
             gap: 14px;
           }
 
-          .brand-title {
-            font-size: 15px;
+          .brand-eyebrow {
+            font-size: 10px;
+            letter-spacing: .3em;
           }
 
-          .brand-subtitle {
-            font-size: 9px;
+          .brand-name {
+            font-size: 23px;
+          }
+
+          .brand-rule {
+            width: 100px;
           }
 
           .logo-mark {
@@ -1063,15 +1078,19 @@ export default function HomePage() {
             gap: 7px;
           }
 
-          .brand-title {
-            font-size: 12.5px;
-            letter-spacing: .1em;
+          .brand-eyebrow {
+            font-size: 9px;
+            letter-spacing: .26em;
           }
 
-          .brand-subtitle {
-            font-size: 7.5px;
-            letter-spacing: .12em;
-            margin-top: 2px;
+          .brand-name {
+            font-size: 20px;
+          }
+
+          .brand-rule {
+            width: 84px;
+            height: 2px;
+            margin-top: 7px;
           }
 
           .nav {
@@ -1137,8 +1156,9 @@ export default function HomePage() {
         <header className="header">
           <div className="brand-wrap">
             <div>
-              <div className="brand-title">Central Valley Notary Group</div>
-              <div className="brand-subtitle">Fresno Mobile Notary & Loan Signing</div>
+              <div className="brand-eyebrow">Central Valley</div>
+              <div className="brand-name">Notary Group</div>
+              <div className="brand-rule"></div>
             </div>
           </div>
 
