@@ -914,17 +914,34 @@ export default function HomePage() {
 
         @media (max-width: 1000px) {
           .svc-list {
-            grid-template-columns: 1fr;
-            gap: 22px;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px 26px;
           }
         }
 
         @media (max-width: 640px) {
+          .svc-list {
+            grid-template-columns: 1fr 1fr;
+            gap: 11px 16px;
+          }
+          .svc-item {
+            gap: 9px;
+          }
+          .svc-check {
+            width: 20px;
+            height: 20px;
+            margin-top: 1px;
+          }
+          .svc-check::before {
+            font-size: 11px;
+          }
           .svc-item h3 {
-            font-size: 17px;
+            font-size: 13.5px;
+            margin: 0;
+            line-height: 1.25;
           }
           .svc-item p {
-            font-size: 14px;
+            display: none;
           }
         }
 
