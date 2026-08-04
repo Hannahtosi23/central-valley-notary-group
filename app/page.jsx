@@ -846,6 +846,88 @@ export default function HomePage() {
         .pm-paypal { color: #003087; }
         .pm-zelle { color: #6d1ed4; }
 
+        .svc-section {
+          background: #0e2944;
+        }
+
+        .svc-section .section-label {
+          color: #e6cd8a;
+        }
+
+        .svc-section h2 {
+          color: #ffffff;
+        }
+
+        .svc-intro {
+          color: #c9d3df;
+          margin-top: 14px;
+        }
+
+        .svc-list {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 24px 44px;
+          max-width: 1080px;
+          margin: 0 auto;
+        }
+
+        .svc-item {
+          display: flex;
+          gap: 14px;
+          align-items: flex-start;
+        }
+
+        .svc-check {
+          flex-shrink: 0;
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+          background: rgba(201, 162, 74, 0.15);
+          border: 1px solid #c9a24a;
+          position: relative;
+          margin-top: 3px;
+        }
+
+        .svc-check::before {
+          content: "✓";
+          color: #e6cd8a;
+          font-size: 14px;
+          font-weight: 700;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        .svc-item h3 {
+          color: #ffffff;
+          font-size: 19px;
+          margin: 0 0 5px;
+        }
+
+        .svc-item p {
+          color: #b9c3d1;
+          font-size: 15px;
+          line-height: 1.55;
+          margin: 0;
+        }
+
+        @media (max-width: 1000px) {
+          .svc-list {
+            grid-template-columns: 1fr;
+            gap: 22px;
+          }
+        }
+
+        @media (max-width: 640px) {
+          .svc-item h3 {
+            font-size: 17px;
+          }
+          .svc-item p {
+            font-size: 14px;
+          }
+        }
+
         @media (max-width: 640px) {
           .footer-pay-row { flex-wrap: wrap; }
 
@@ -1212,6 +1294,93 @@ export default function HomePage() {
           <p className="pricing-note">
             <strong>California's notarization fee is $15 per notarized signature, plus travel.</strong> Each additional signature is $15, and a travel fee applies based on where we're traveling to. Loan signing and jail notarizations start at the rates shown above. After-hours or rush appointments may add to the total. You will always receive a clear, itemized quote before anything is signed.
           </p>
+        </section>
+
+        <section id="all-services" className="svc-section">
+          <div className="center">
+            <p className="section-label">Full Range of Services</p>
+            <h2>Everything We Notarize</h2>
+            <p className="svc-intro">From a single acknowledgment to a full loan or estate package, here's the complete range of signings we handle — at your home, office, or facility.</p>
+          </div>
+          <div className="svc-list">
+            <div className="svc-item">
+              <span className="svc-check" aria-hidden="true"></span>
+              <div>
+                <h3>Mobile / General Notarization</h3>
+                <p>We travel to you to notarize acknowledgments, jurats, affidavits, and other documents at your home, office, or chosen location.</p>
+              </div>
+            </div>
+            <div className="svc-item">
+              <span className="svc-check" aria-hidden="true"></span>
+              <div>
+                <h3>Loan Signing Agent Services</h3>
+                <p>Full signing service for real estate transactions — document presentation, notarization, and return-shipping coordination with your lender or escrow.</p>
+              </div>
+            </div>
+            <div className="svc-item">
+              <span className="svc-check" aria-hidden="true"></span>
+              <div>
+                <h3>Refinance Signings</h3>
+                <p>Complete notarization and signing of refinance loan packages at your convenience.</p>
+              </div>
+            </div>
+            <div className="svc-item">
+              <span className="svc-check" aria-hidden="true"></span>
+              <div>
+                <h3>Purchase &amp; Seller Signings</h3>
+                <p>On-site signing support for buyers and sellers closing a real estate purchase.</p>
+              </div>
+            </div>
+            <div className="svc-item">
+              <span className="svc-check" aria-hidden="true"></span>
+              <div>
+                <h3>HELOC Signings</h3>
+                <p>Notarization of home equity line of credit documents, including the right-of-rescission timing.</p>
+              </div>
+            </div>
+            <div className="svc-item">
+              <span className="svc-check" aria-hidden="true"></span>
+              <div>
+                <h3>Reverse Mortgage Signings</h3>
+                <p>Careful, unhurried signing service for reverse mortgage packages.</p>
+              </div>
+            </div>
+            <div className="svc-item">
+              <span className="svc-check" aria-hidden="true"></span>
+              <div>
+                <h3>Trust &amp; Estate Signings</h3>
+                <p>Notarization of living trusts, wills, and estate-planning packages, coordinated with your attorney or planner.</p>
+              </div>
+            </div>
+            <div className="svc-item">
+              <span className="svc-check" aria-hidden="true"></span>
+              <div>
+                <h3>Powers of Attorney &amp; Advance Directives</h3>
+                <p>Notarization of durable powers of attorney and advance healthcare directives.</p>
+              </div>
+            </div>
+            <div className="svc-item">
+              <span className="svc-check" aria-hidden="true"></span>
+              <div>
+                <h3>Hospital &amp; Care Facility Notary</h3>
+                <p>We come to hospitals, assisted living, and care facilities for patients and residents.</p>
+              </div>
+            </div>
+            <div className="svc-item">
+              <span className="svc-check" aria-hidden="true"></span>
+              <div>
+                <h3>Jail &amp; Correctional Facility Notary</h3>
+                <p>Notary service for inmates and their documents at local correctional facilities.</p>
+              </div>
+            </div>
+            <div className="svc-item">
+              <span className="svc-check" aria-hidden="true"></span>
+              <div>
+                <h3>Same-Day &amp; After-Hours Notary</h3>
+                <p>Last-minute, evening, and weekend appointments when you need them.</p>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section id="before-appointment">
