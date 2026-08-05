@@ -1030,11 +1030,6 @@ export default function HomePage() {
             gap: 12px;
           }
 
-          #documents .docs {
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-          }
-
           .about-banner {
             height: 220px;
           }
@@ -1346,7 +1341,6 @@ export default function HomePage() {
 
           <nav className="nav">
             <a href="#services">Services</a>
-            <a href="#documents">Documents</a>
             <a href="#service-area">Service Area</a>
             <a href="#about">About</a>
             <a href="#faq">FAQ</a>
@@ -1550,20 +1544,6 @@ export default function HomePage() {
           <div><Icon type="pen" />Loan Signing Support</div>
           <div><Icon type="pin" />Serving Fresno & Clovis</div>
         </div>
-
-        <section id="documents">
-          <div className="center">
-            <p className="section-label">Common Documents</p>
-            <h2>Documents Commonly Notarized</h2>
-            <p>Personal, legal, medical, and real estate-related documents throughout Fresno and surrounding Central Valley communities.</p>
-          </div>
-
-          <div className="docs">
-            {["Power of Attorney","Trust Documents","Real Estate Closings","HELOC Documents","Healthcare Directives","Travel Consent Forms","Affidavits","Grant Deeds","Loan Packages","Estate Planning Documents","Jail Authorization Forms","Business Agreements"].map((item) => (
-              <div className="doc" key={item}><Icon type="document" />{item}</div>
-            ))}
-          </div>
-        </section>
 
         <section id="service-area">
           <div className="center">
