@@ -1392,7 +1392,9 @@ export default function HomePage() {
           </div>
 
           <nav className="nav">
+            <a href="#top">Home</a>
             <a href="#services">Services</a>
+            <a href="#before-appointment">What To Have Ready</a>
             <a href="#service-area">Service Area</a>
             <a href="#about">About</a>
             <a href="#faq">FAQ</a>
@@ -1400,7 +1402,7 @@ export default function HomePage() {
           </nav>
         </header>
 
-        <section className="hero">
+        <section id="top" className="hero">
           <div className="hero-content">
             <p className="eyebrow">Professional. Reliable. Discreet.</p>
             <h1>Fresno Mobile Notary & Loan Signing Services</h1>
