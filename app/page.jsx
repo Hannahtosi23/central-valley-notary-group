@@ -439,34 +439,6 @@ export default function HomePage() {
           letter-spacing: 0;
         }
 
-        .trust {
-          background: #f4efe3;
-          color: #0e2944;
-          border-top: 1px solid #e6dcc3;
-          border-bottom: 1px solid #e6dcc3;
-          padding: 42px 8%;
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 24px;
-        }
-
-        .trust div {
-          display: flex;
-          align-items: center;
-          gap: 14px;
-          text-transform: uppercase;
-          letter-spacing: .12em;
-          font-size: 13px;
-          font-weight: 700;
-          line-height: 1.5;
-        }
-
-        .trust .svg-icon {
-          width: 34px;
-          height: 34px;
-          color: #c4a049;
-        }
-
         .sa-band {
           background: #0e2944;
           color: #fff;
@@ -1147,7 +1119,6 @@ export default function HomePage() {
 
           .feature-bar,
           .grid4,
-          .trust,
           .sa-wrap,
           .split,
           .ready-grid,
@@ -1374,9 +1345,6 @@ export default function HomePage() {
             height: 54px;
           }
 
-          .trust div {
-            font-size: 12px;
-          }
         }
       
 
@@ -1885,13 +1853,6 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-
-        <div className="trust">
-          <div><Icon type="check" />Commissioned California Notary Public</div>
-          <div><Icon type="shield" />Bonded & Insured</div>
-          <div><Icon type="pen" />Loan Signing Support</div>
-          <div><Icon type="pin" />Serving Fresno & Clovis</div>
-        </div>
 
         <section id="contact" className="dark">
           <div className="center">
