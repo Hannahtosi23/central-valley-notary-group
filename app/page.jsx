@@ -1274,10 +1274,12 @@ export default function HomePage() {
 
           #services .grid4 .card h3 {
             margin: 10px 0 4px;
+                      min-height: 0;
           }
 
           #services .grid4 .card p {
             margin: 0 0 14px;
+                      min-height: 0;
           }
 
           #services .grid4 .card .price {
