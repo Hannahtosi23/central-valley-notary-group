@@ -1318,6 +1318,19 @@ export default function HomePage() {
             height: 22px;
           }
         }
+      
+
+        .cred-band { background: #ffffff; }
+        .cred-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; max-width: 940px; margin: 0 auto; }
+        .cred-badge { display: flex; align-items: center; gap: 10px; background: #faf6ec; border: 1px solid #e6dcc3; border-radius: 999px; padding: 11px 20px; color: #0e2944; font-weight: 700; font-size: 14px; }
+        .cred-ic { width: 22px; height: 22px; border-radius: 50%; border: 1px solid #c9a24a; background: rgba(201, 162, 74, 0.12); position: relative; flex-shrink: 0; }
+        .cred-ic::before { content: "✓"; color: #b8891f; font-size: 12px; font-weight: 700; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+        @media (max-width: 640px) {
+          .cred-row { gap: 9px; }
+          .cred-badge { font-size: 12px; padding: 9px 14px; gap: 8px; }
+          .cred-ic { width: 18px; height: 18px; }
+          .cred-ic::before { font-size: 10px; }
+        }
       `}</style>
 
       <main>
@@ -1711,7 +1724,22 @@ export default function HomePage() {
           </div>
         </section>
 
-                  <section id="contact" className="dark">
+                  <section id="credentials" className="cred-band">
+          <div className="center">
+            <p className="section-label">Credentials &amp; Trust</p>
+            <h2>Credentials You Can Count On</h2>
+          </div>
+          <div className="cred-row">
+            <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>Commissioned California Notary Public</span>
+            <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>Commission #2562963 &middot; Exp. 07/26/2030</span>
+            <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>$100,000 E&amp;O Insured</span>
+            <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>Bonded</span>
+            <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>Background Screened</span>
+            <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>NNA Certified Signing Agent</span>
+          </div>
+        </section>
+
+        <section id="contact" className="dark">
           <div className="center">
             <p className="section-label">Contact Me</p>
             <h2>Let’s Get Your Documents Notarized</h2>
