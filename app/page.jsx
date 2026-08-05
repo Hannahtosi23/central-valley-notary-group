@@ -1290,6 +1290,34 @@ export default function HomePage() {
             margin-top: 6px;
           }
         }
+      
+
+        @media (max-width: 640px) {
+          #before-appointment .ready-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 22px 14px;
+          }
+
+          #before-appointment .ready-tile {
+            gap: 10px;
+          }
+
+          #before-appointment .ready-tile p {
+            font-size: 13px;
+            line-height: 1.5;
+            max-width: none;
+          }
+
+          #before-appointment .circle-icon {
+            width: 48px;
+            height: 48px;
+          }
+
+          #before-appointment .circle-icon .svg-icon {
+            width: 22px;
+            height: 22px;
+          }
+        }
       `}</style>
 
       <main>
