@@ -1320,7 +1320,8 @@ export default function HomePage() {
         }
       
 
-        .cred-band { background: #ffffff; }
+        .cred-band { background: #0e2944; }
+        .cred-band h2 { color: #ffffff; }
         .cred-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; max-width: 940px; margin: 0 auto; }
         .cred-badge { display: flex; align-items: center; gap: 10px; background: #faf6ec; border: 1px solid #e6dcc3; border-radius: 999px; padding: 11px 20px; color: #0e2944; font-weight: 700; font-size: 14px; }
         .cred-ic { width: 22px; height: 22px; border-radius: 50%; border: 1px solid #c9a24a; background: rgba(201, 162, 74, 0.12); position: relative; flex-shrink: 0; }
@@ -1617,6 +1618,21 @@ export default function HomePage() {
           </div>
         </section>
 
+                  <section id="credentials" className="cred-band">
+          <div className="center">
+            <p className="section-label">Credentials &amp; Trust</p>
+            <h2>Credentials You Can Count On</h2>
+          </div>
+          <div className="cred-row">
+            <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>Commissioned California Notary Public</span>
+            <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>Commission #2562963 &middot; Exp. 07/26/2030</span>
+            <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>$100,000 E&amp;O Insured</span>
+            <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>Bonded</span>
+            <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>Background Screened</span>
+            <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>NNA Certified Signing Agent</span>
+          </div>
+        </section>
+
                 <section id="faq">
           <div className="center">
             <p className="section-label">FAQ</p>
@@ -1721,21 +1737,6 @@ export default function HomePage() {
                 surrounding Central Valley communities.
               </p>
             </div>
-          </div>
-        </section>
-
-                  <section id="credentials" className="cred-band">
-          <div className="center">
-            <p className="section-label">Credentials &amp; Trust</p>
-            <h2>Credentials You Can Count On</h2>
-          </div>
-          <div className="cred-row">
-            <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>Commissioned California Notary Public</span>
-            <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>Commission #2562963 &middot; Exp. 07/26/2030</span>
-            <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>$100,000 E&amp;O Insured</span>
-            <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>Bonded</span>
-            <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>Background Screened</span>
-            <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>NNA Certified Signing Agent</span>
           </div>
         </section>
 
