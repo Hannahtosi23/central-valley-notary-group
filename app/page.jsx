@@ -465,28 +465,157 @@ export default function HomePage() {
           color: #e6cd8a;
         }
 
-        .docs {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 18px;
+        .sa-band {
+          background: #0e2944;
+          color: #fff;
         }
 
-        .doc {
-          background: white;
-          border: 1px solid #e6dcc3;
-          border-radius: 6px;
-          padding: 20px;
+        .sa-wrap {
+          display: grid;
+          grid-template-columns: 360px minmax(0, 1fr);
+          gap: 70px;
+          max-width: 1120px;
+          margin: 0 auto;
+          align-items: center;
+        }
+
+        .sa-radius {
+          position: relative;
+          width: 340px;
+          height: 340px;
+          margin: 0 auto;
+        }
+
+        .sa-ring {
+          position: absolute;
+          border-radius: 50%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        .sa-r1 { width: 120px; height: 120px; border: 1px solid rgba(201,162,74,.55); }
+        .sa-r2 { width: 215px; height: 215px; border: 1px solid rgba(201,162,74,.35); }
+        .sa-r3 { width: 310px; height: 310px; border: 1px dashed rgba(201,162,74,.26); }
+
+        .sa-sat {
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: rgba(230,205,138,.75);
+        }
+
+        .sa-hub {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+
+        .sa-dot {
+          width: 12px;
+          height: 12px;
+          background: #c4a049;
+          border-radius: 50%;
+          margin: 0 auto 9px;
+          box-shadow: 0 0 0 7px rgba(201,162,74,.16);
+        }
+
+        .sa-hub-name {
+          font-family: 'DM Serif Display', Georgia, serif;
+          color: #fff;
+          font-size: 23px;
+          line-height: 1;
+        }
+
+        .sa-hub-sub {
+          font-size: 10px;
+          letter-spacing: .2em;
+          text-transform: uppercase;
+          color: #e6cd8a;
+          margin-top: 6px;
+        }
+
+        .sa-band h2 { color: #fff; }
+
+        .sa-lede {
+          color: #b9c2cf;
+          font-size: 17px;
+          line-height: 1.7;
+          margin: 0 0 32px;
+          max-width: 520px;
+        }
+
+        .sa-tier {
+          font-size: 10px;
+          letter-spacing: .22em;
+          text-transform: uppercase;
+          color: #e6cd8a;
+          font-weight: 700;
+          margin: 0 0 12px;
+        }
+
+        .sa-primaries {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 12px;
+          margin: 0 0 28px;
+        }
+
+        .sa-pcard {
           display: flex;
           align-items: center;
-          gap: 14px;
-          color: #5b5648;
+          gap: 12px;
+          background: rgba(255,255,255,.07);
+          border: 1px solid rgba(230,205,138,.5);
+          border-radius: 10px;
+          padding: 14px 22px;
         }
 
-        .doc .svg-icon {
-          width: 24px;
-          height: 24px;
-          color: #c4a049;
+        .sa-pcard .svg-icon {
+          width: 20px;
+          height: 20px;
+          color: #e6cd8a;
         }
+
+        .sa-pcard span {
+          font-family: 'DM Serif Display', Georgia, serif;
+          font-size: 25px;
+          color: #fff;
+          line-height: 1;
+        }
+
+        .sa-chips {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 9px;
+        }
+
+        .sa-chips span {
+          border: 1px solid rgba(230,205,138,.34);
+          border-radius: 999px;
+          padding: 8px 17px;
+          font-size: 13.5px;
+          color: #eaf0f7;
+          font-weight: 600;
+        }
+
+        .sa-note {
+          color: #9fb0c4;
+          font-size: 13.5px;
+          line-height: 1.7;
+          margin: 26px 0 0;
+        }
+
+        .sa-note a {
+          color: #e6cd8a;
+          font-weight: 700;
+          text-decoration: none;
+        }
+
+        .sa-note a:hover { text-decoration: underline; }
 
         .split {
           display: grid;
@@ -1017,7 +1146,7 @@ export default function HomePage() {
           .feature-bar,
           .grid4,
           .trust,
-          .docs,
+          .sa-wrap,
           .split,
           .ready-grid,
           .contact-grid,
@@ -1025,10 +1154,18 @@ export default function HomePage() {
             grid-template-columns: 1fr;
           }
 
-          #service-area .docs {
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-          }
+          .sa-wrap { gap: 40px; }
+
+          .sa-radius { width: 240px; height: 240px; }
+          .sa-r1 { width: 88px; height: 88px; }
+          .sa-r2 { width: 156px; height: 156px; }
+          .sa-r3 { width: 224px; height: 224px; }
+          .sa-hub-name { font-size: 19px; }
+
+          .sa-lede { font-size: 15.5px; margin-bottom: 26px; }
+          .sa-pcard { padding: 11px 17px; }
+          .sa-pcard span { font-size: 21px; }
+          .sa-chips span { font-size: 12.5px; padding: 7px 14px; }
 
           .about-banner {
             height: 220px;
@@ -1233,11 +1370,6 @@ export default function HomePage() {
           .circle-icon {
             width: 54px;
             height: 54px;
-          }
-
-          .docs div {
-            font-size: 14px;
-            padding: 14px;
           }
 
           .trust div {
@@ -1545,17 +1677,56 @@ export default function HomePage() {
           <div><Icon type="pin" />Serving Fresno & Clovis</div>
         </div>
 
-        <section id="service-area">
-          <div className="center">
-            <p className="section-label">Service Area</p>
-            <h2>Serving Fresno and the Central Valley</h2>
-            <p>Mobile appointments are available throughout Fresno County and nearby communities.</p>
-          </div>
+        <section id="service-area" className="sa-band">
+          <div className="sa-wrap">
+            <div className="sa-radius" aria-hidden="true">
+              <div className="sa-ring sa-r3"></div>
+              <div className="sa-ring sa-r2"></div>
+              <div className="sa-ring sa-r1"></div>
+              <span className="sa-sat" style={{ top: "22%", left: "64%" }}></span>
+              <span className="sa-sat" style={{ top: "38%", left: "22%" }}></span>
+              <span className="sa-sat" style={{ top: "70%", left: "38%" }}></span>
+              <span className="sa-sat" style={{ top: "63%", left: "76%" }}></span>
+              <span className="sa-sat" style={{ top: "14%", left: "40%" }}></span>
+              <span className="sa-sat" style={{ top: "80%", left: "60%" }}></span>
+              <div className="sa-hub">
+                <div className="sa-dot"></div>
+                <div className="sa-hub-name">Fresno</div>
+                <div className="sa-hub-sub">Home Base</div>
+              </div>
+            </div>
 
-          <div className="docs">
-            {["Fresno","Clovis","Madera","Sanger","Selma","Kerman","Reedley","Kingsburg","Friant","Shaver Lake","Auberry","Nearby Central Valley Areas"].map((city) => (
-              <div className="doc" key={city}><Icon type="pin" />{city}</div>
-            ))}
+            <div className="sa-body">
+              <p className="section-label">Service Area</p>
+              <h2>Serving Fresno and the Central Valley</h2>
+              <p className="sa-lede">
+                I come to you — home, office, hospital, care facility, or
+                correctional facility — throughout Fresno County and the
+                surrounding valley.
+              </p>
+
+              <p className="sa-tier">Primary Service Area</p>
+              <div className="sa-primaries">
+                {["Fresno", "Clovis"].map((city) => (
+                  <div className="sa-pcard" key={city}>
+                    <Icon type="pin" />
+                    <span>{city}</span>
+                  </div>
+                ))}
+              </div>
+
+              <p className="sa-tier">Also Serving</p>
+              <div className="sa-chips">
+                {["Madera","Sanger","Selma","Kerman","Reedley","Kingsburg","Friant","Shaver Lake","Auberry"].map((city) => (
+                  <span key={city}>{city}</span>
+                ))}
+              </div>
+
+              <p className="sa-note">
+                …and nearby Central Valley communities. Don&rsquo;t see your city?{" "}
+                <a href="sms:14158065811">Text (415) 806-5811</a> — I likely still cover it.
+              </p>
+            </div>
           </div>
         </section>
 
