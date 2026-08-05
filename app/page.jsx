@@ -1249,6 +1249,45 @@ export default function HomePage() {
             font-size: 12px;
           }
         }
+      
+
+        @media (max-width: 640px) {
+          #services .grid4 {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+          }
+
+          #services .grid4 .card {
+            display: flex;
+            flex-direction: column;
+            grid-row: auto;
+            grid-template-rows: none;
+            height: auto;
+            min-height: 0;
+            padding: 22px 20px;
+          }
+
+          #services .grid4 .card-line {
+            margin: 12px auto 16px;
+          }
+
+          #services .grid4 .card h3 {
+            margin: 10px 0 4px;
+          }
+
+          #services .grid4 .card p {
+            margin: 0 0 14px;
+          }
+
+          #services .grid4 .card .price {
+            margin-top: 6px;
+          }
+
+          #services .grid4 .card .price-note {
+            margin-top: 6px;
+          }
+        }
       `}</style>
 
       <main>
