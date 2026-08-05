@@ -440,8 +440,10 @@ export default function HomePage() {
         }
 
         .trust {
-          background: #0e2944;
-          color: white;
+          background: #f4efe3;
+          color: #0e2944;
+          border-top: 1px solid #e6dcc3;
+          border-bottom: 1px solid #e6dcc3;
           padding: 42px 8%;
           display: grid;
           grid-template-columns: repeat(4, 1fr);
@@ -462,7 +464,7 @@ export default function HomePage() {
         .trust .svg-icon {
           width: 34px;
           height: 34px;
-          color: #e6cd8a;
+          color: #c4a049;
         }
 
         .sa-band {
@@ -1670,13 +1672,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        <div className="trust">
-          <div><Icon type="check" />Commissioned California Notary Public</div>
-          <div><Icon type="shield" />Bonded & Insured</div>
-          <div><Icon type="pen" />Loan Signing Support</div>
-          <div><Icon type="pin" />Serving Fresno & Clovis</div>
-        </div>
-
         <section id="service-area" className="sa-band">
           <div className="sa-wrap">
             <div className="sa-radius" aria-hidden="true">
@@ -1890,6 +1885,13 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
+        <div className="trust">
+          <div><Icon type="check" />Commissioned California Notary Public</div>
+          <div><Icon type="shield" />Bonded & Insured</div>
+          <div><Icon type="pen" />Loan Signing Support</div>
+          <div><Icon type="pin" />Serving Fresno & Clovis</div>
+        </div>
 
         <section id="contact" className="dark">
           <div className="center">
