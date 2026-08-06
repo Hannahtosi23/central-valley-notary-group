@@ -447,7 +447,8 @@ export default function HomePage() {
         .sa-wrap {
           display: grid;
           grid-template-columns: 360px minmax(0, 1fr);
-          gap: 70px;
+          grid-template-rows: auto auto;
+          column-gap: 70px;
           max-width: 1120px;
           margin: 0 auto;
           align-items: center;
@@ -458,6 +459,18 @@ export default function HomePage() {
           height: 420px;
           width: auto;
           margin: 0 auto;
+          grid-column: 1;
+          grid-row: 1 / span 2;
+        }
+
+        .sa-head {
+          grid-column: 2;
+          grid-row: 1;
+        }
+
+        .sa-body {
+          grid-column: 2;
+          grid-row: 2;
         }
 
         .sa-map-label {
@@ -1072,7 +1085,6 @@ export default function HomePage() {
 
           .feature-bar,
           .grid4,
-          .sa-wrap,
           .split,
           .ready-grid,
           .contact-grid,
@@ -1080,15 +1092,42 @@ export default function HomePage() {
             grid-template-columns: 1fr;
           }
 
-          .sa-wrap { gap: 40px; }
+          /* Service Area: map sits beside the heading to save vertical space */
+          .sa-wrap {
+            grid-template-columns: auto minmax(0, 1fr);
+            column-gap: 24px;
+            row-gap: 24px;
+            align-items: center;
+          }
 
-          .sa-map { height: 320px; }
-          .sa-map-label { font-size: 22px; }
+          .sa-map {
+            height: 300px;
+            grid-column: 1;
+            grid-row: 1;
+          }
 
-          .sa-lede { font-size: 15.5px; margin-bottom: 26px; }
-          .sa-pcard { padding: 11px 17px; }
-          .sa-pcard span { font-size: 21px; }
-          .sa-chips span { font-size: 12.5px; padding: 7px 14px; }
+          .sa-map-label { font-size: 23px; }
+
+          .sa-head {
+            grid-column: 2;
+            grid-row: 1;
+          }
+
+          .sa-head h2 { font-size: 27px; }
+
+          .sa-body {
+            grid-column: 1 / -1;
+            grid-row: 2;
+          }
+
+          .sa-lede { font-size: 15.5px; margin-bottom: 22px; }
+          .sa-tier { margin-bottom: 10px; }
+          .sa-primaries { gap: 10px; margin-bottom: 20px; }
+          .sa-pcard { padding: 10px 16px; }
+          .sa-pcard span { font-size: 20px; }
+          .sa-chips { gap: 8px; }
+          .sa-chips span { font-size: 12.5px; padding: 7px 13px; }
+          .sa-note { margin-top: 18px; }
 
           .about-banner {
             height: 220px;
@@ -1189,6 +1228,12 @@ export default function HomePage() {
         @media (max-width: 640px) {
           .id-list { padding: 26px 22px; }
           .id-list ul { column-count: 1; }
+
+          /* phones: shrink the map so it sits neatly next to the heading */
+          .sa-map { height: 200px; }
+          .sa-map-label { font-size: 34px; }
+          .sa-wrap { column-gap: 18px; }
+          .sa-head h2 { font-size: 26px; }
 
           h1 {
             font-size: 32px;
@@ -1615,9 +1660,12 @@ export default function HomePage() {
               <text x="184.2" y="338.7" fill="#ffffff" className="sa-map-label">Fresno</text>
             </svg>
 
-            <div className="sa-body">
+            <div className="sa-head">
               <p className="section-label">Service Area</p>
               <h2>Serving Fresno and the Central Valley</h2>
+            </div>
+
+            <div className="sa-body">
               <p className="sa-lede">
                 I come to you — home, office, hospital, care facility, or
                 correctional facility — throughout Fresno County and the
