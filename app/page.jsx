@@ -818,15 +818,6 @@ export default function HomePage() {
           display: block;
         }
 
-        .about-banner {
-          height: 360px;
-          background:
-            linear-gradient(rgba(5,5,5,.42), rgba(5,5,5,.42)),
-            url('https://images.pexels.com/photos/48148/document-agreement-documents-sign-48148.jpeg?auto=compress&cs=tinysrgb&w=1600');
-          background-size: cover;
-          background-position: center;
-        }
-
         .price span {
           display: block;
           margin-top: 6px;
@@ -1168,10 +1159,6 @@ export default function HomePage() {
           .sa-chips { gap: 8px; }
           .sa-chips span { font-size: 12.5px; padding: 7px 13px; }
           .sa-note { margin-top: 18px; }
-
-          .about-banner {
-            height: 220px;
-          }
 
           .hero {
             padding: 52px 20px 64px;
@@ -1750,8 +1737,6 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-
-        <div className="about-banner"></div>
 
      <section id="about" className="split">
           <div className="about-photo-col">
