@@ -624,23 +624,63 @@ export default function HomePage() {
         .faq {
           display: flex;
           flex-direction: column;
-          gap: 22px;
+          gap: 12px;
         }
 
         .faq-item {
           background: white;
           border: 1px solid #e6dcc3;
           border-radius: 8px;
-          padding: 30px;
         }
 
-        .faq-item h3 {
-          margin-top: 0;
-          font-size: 30px;
-          margin-bottom: 12px;
+        .faq-item summary {
+          display: block;
+          list-style: none;
+          cursor: pointer;
+          position: relative;
+          padding: 22px 62px 22px 26px;
         }
 
-        .faq-item p {
+        .faq-item summary::-webkit-details-marker {
+          display: none;
+        }
+
+        .faq-item summary h3 {
+          margin: 0;
+          font-size: 21px;
+          line-height: 1.35;
+        }
+
+        .faq-item summary:hover h3 {
+          color: #8a6d24;
+        }
+
+        .faq-item summary::after {
+          content: '';
+          position: absolute;
+          right: 28px;
+          top: 50%;
+          width: 10px;
+          height: 10px;
+          border-right: 2px solid #c4a049;
+          border-bottom: 2px solid #c4a049;
+          transform: translateY(-70%) rotate(45deg);
+          transition: transform 0.2s ease;
+        }
+
+        .faq-item[open] summary::after {
+          transform: translateY(-25%) rotate(-135deg);
+        }
+
+        .faq-item summary:focus-visible {
+          outline: 2px solid #c4a049;
+          outline-offset: -2px;
+          border-radius: 8px;
+        }
+
+        .faq-item > p {
+          margin: 0;
+          padding: 0 26px 24px;
           color: #6f6a60;
           line-height: 1.8;
         }
@@ -1312,9 +1352,23 @@ export default function HomePage() {
             line-height: 1.25;
           }
 
-          .faq-item h3 {
-            font-size: 17px;
+          .faq-item summary h3 {
+            font-size: 16.5px;
             line-height: 1.35;
+          }
+
+          .faq-item summary {
+            padding: 17px 46px 17px 18px;
+          }
+
+          .faq-item summary::after {
+            right: 20px;
+            width: 8px;
+            height: 8px;
+          }
+
+          .faq-item > p {
+            padding: 0 18px 18px;
           }
 
           p {
@@ -1758,8 +1812,10 @@ export default function HomePage() {
           </div>
 
           <div className="faq">
-            <div className="faq-item">
-              <h3>Can you give me legal advice or tell me which document I need?</h3>
+            <details className="faq-item">
+              <summary>
+                <h3>Can you give me legal advice or tell me which document I need?</h3>
+              </summary>
               <p>
                 No. I am a Notary Public, not an attorney licensed to practice
                 law. I cannot give legal advice, prepare legal documents, or
@@ -1767,10 +1823,12 @@ export default function HomePage() {
                 consult a licensed attorney. My role is to verify your identity
                 and witness your signature.
               </p>
-            </div>
+            </details>
 
-            <div className="faq-item">
-              <h3>What forms of ID are accepted?</h3>
+            <details className="faq-item">
+              <summary>
+                <h3>What forms of ID are accepted?</h3>
+              </summary>
               <p>
                 Each signer must present a valid photo ID that is current or was issued
                 within the past 5 years — a California driver’s license or DMV ID card, a
@@ -1779,82 +1837,100 @@ export default function HomePage() {
                 your country of citizenship, or a U.S. military ID. See the full list under
                 “What To Have Ready.”
               </p>
-            </div>
+            </details>
 
-            <div className="faq-item">
-              <h3>Do you travel to hospitals and care facilities?</h3>
+            <details className="faq-item">
+              <summary>
+                <h3>Do you travel to hospitals and care facilities?</h3>
+              </summary>
               <p>
                 Yes. Mobile appointments are available for hospitals, assisted
                 living facilities, rehabilitation centers, and care homes.
               </p>
-            </div>
+            </details>
 
-            <div className="faq-item">
-              <h3>Are evening or weekend appointments available?</h3>
+            <details className="faq-item">
+              <summary>
+                <h3>Are evening or weekend appointments available?</h3>
+              </summary>
               <p>
                 Yes. Evening, weekend, and urgent same-day appointments may be
                 available depending on scheduling.
               </p>
-            </div>
+            </details>
 
-            <div className="faq-item">
-              <h3>How quickly can I get an appointment?</h3>
+            <details className="faq-item">
+              <summary>
+                <h3>How quickly can I get an appointment?</h3>
+              </summary>
               <p>
                 Same-day appointments may be available depending on your
                 location, availability, and the type of document needing
                 notarization.
               </p>
-            </div>
+            </details>
 
-            <div className="faq-item">
-              <h3>Do all signers need to be present?</h3>
+            <details className="faq-item">
+              <summary>
+                <h3>Do all signers need to be present?</h3>
+              </summary>
               <p>
                 Yes. Every person whose signature requires notarization must
                 personally appear before the notary at the time of signing.
               </p>
-            </div>
+            </details>
 
-            <div className="faq-item">
-              <h3>Can documents be signed before the appointment?</h3>
+            <details className="faq-item">
+              <summary>
+                <h3>Can documents be signed before the appointment?</h3>
+              </summary>
               <p>
                 No. Most notarized documents must be signed in front of the
                 notary during the appointment.
               </p>
-            </div>
+            </details>
 
-            <div className="faq-item">
-              <h3>Do you travel to jails or correctional facilities?</h3>
+            <details className="faq-item">
+              <summary>
+                <h3>Do you travel to jails or correctional facilities?</h3>
+              </summary>
               <p>
                 Yes. Jail notarizations may be available depending on the
                 facility’s policies, appointment rules, and scheduling
                 availability.
               </p>
-            </div>
+            </details>
 
-            <div className="faq-item">
-              <h3>Can you notarize real estate or loan documents?</h3>
+            <details className="faq-item">
+              <summary>
+                <h3>Can you notarize real estate or loan documents?</h3>
+              </summary>
               <p>
                 Yes. Loan signing services are available for refinance packages,
                 HELOCs, buyer documents, seller packages, and other real estate
                 signing appointments.
               </p>
-            </div>
+            </details>
 
-            <div className="faq-item">
-              <h3>What payment methods do you accept?</h3>
+            <details className="faq-item">
+              <summary>
+                <h3>What payment methods do you accept?</h3>
+              </summary>
               <p>
                 For your convenience, I accept cash, card and Apple Pay (via Square), Venmo,
                 PayPal, and Zelle. Payment is collected at the appointment.
               </p>
-            </div>
+            </details>
 
-            <div className="faq-item">
-              <h3>What areas do you travel to?</h3>
+            <details className="faq-item">
+              <summary>
+                <h3>What areas do you travel to?</h3>
+              </summary>
               <p>
                 Mobile appointments are available throughout Fresno, Clovis, and
                 surrounding Central Valley communities.
               </p>
-            </div>
+            </details>
           </div>
         </section>
 
