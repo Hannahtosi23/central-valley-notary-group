@@ -772,7 +772,7 @@ export default function HomePage() {
           height: 300px;
           object-fit: cover;
           object-position: center 20%;
-          border-radius: 8px;
+          border-radius: 50%;
           border: 3px solid #c4a049;
           margin: 0 auto;
           display: block;
