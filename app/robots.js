@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.centralvalleynotarygroup.com/sitemap.xml",
+    sitemap: "https://centralvalleynotarygroup.com/sitemap.xml",
   };
 }
