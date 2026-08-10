@@ -18,7 +18,7 @@ export const metadata = {
     title: "Fresno Mobile Notary & Loan Signing Agent | Central Valley Notary Group",
     description:
       "Same-day, come-to-you mobile notary and loan signing services across Fresno, Clovis, Madera, and the Central Valley.",
-    url: "https://www.centralvalleynotarygroup.com",
+    url: "https://centralvalleynotarygroup.com",
     siteName: "Central Valley Notary Group",
     type: "website",
   },
@@ -30,8 +30,8 @@ const jsonLd = {
   name: "Central Valley Notary Group",
   description:
     "Mobile notary and loan signing agent serving Fresno and the Central Valley.",
-  url: "https://www.centralvalleynotarygroup.com",
-  telephone: "+1-415-806-5811",
+  url: "https://centralvalleynotarygroup.com",
+  telephone: "+1-559-392-7420",
   email: "appointments@centralvalleynotarygroup.com",
   areaServed: [
     "Fresno, CA",
