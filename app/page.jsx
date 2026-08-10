@@ -1500,7 +1500,7 @@ export default function HomePage() {
 
             <div className="buttons">
               <a className="btn btn-dark" href="https://calendly.com/appointments-centralvalleynotarygroup/30min">Schedule Appointment</a>
-              <a className="btn btn-light" href="sms:14158065811">Text (415) 806-5811</a>
+              <a className="btn btn-light" href="sms:15593927420">Text (559) 392-7420</a>
             </div>
 
             <div className="feature-bar">
@@ -1732,7 +1732,7 @@ export default function HomePage() {
 
               <p className="sa-note">
                 …and nearby Central Valley communities. Don&rsquo;t see your city?{" "}
-                <a href="sms:14158065811">Text (415) 806-5811</a> — I likely still cover it.
+                <a href="sms:15593927420">Text (559) 392-7420</a> — I likely still cover it.
               </p>
             </div>
           </div>
@@ -1946,8 +1946,8 @@ export default function HomePage() {
               <div>
                 <h3>Text Me</h3>
                 <p>The fastest way to reach me for same-day availability, pricing, and appointment details.</p>
-                <a className="btn btn-light contact-btn" href="sms:14158065811">
-                  Text (415) 806-5811
+                <a className="btn btn-light contact-btn" href="sms:15593927420">
+                  Text (559) 392-7420
                 </a>
               </div>
             </div>
@@ -1959,8 +1959,8 @@ export default function HomePage() {
               <div>
                 <h3>Call Me</h3>
                 <p>Prefer to talk it through? Call directly for questions, quotes, or to book your appointment.</p>
-                <a className="btn btn-light contact-btn" href="tel:14158065811">
-                  Call (415) 806-5811
+                <a className="btn btn-light contact-btn" href="tel:15593927420">
+                  Call (559) 392-7420
                 </a>
               </div>
             </div>
@@ -2024,8 +2024,8 @@ export default function HomePage() {
         </section>
 
         <div className="mobile-bar">
-          <a className="mobile-text" href="sms:14158065811">Text</a>
-          <a className="mobile-call" href="tel:14158065811">Call</a>
+          <a className="mobile-text" href="sms:15593927420">Text</a>
+          <a className="mobile-call" href="tel:15593927420">Call</a>
           <a className="mobile-schedule" href="https://calendly.com/appointments-centralvalleynotarygroup/30min">Schedule</a>
         </div>
       </main>
