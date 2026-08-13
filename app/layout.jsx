@@ -1,6 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
+  metadataBase: new URL("https://centralvalleynotarygroup.com"),
+  alternates: { canonical: "/" },
   title: "Fresno Mobile Notary & Loan Signing Agent | Central Valley Notary Group",
   description:
     "Fresno mobile notary and loan signing agent offering same-day, come-to-you appointments. Bonded and insured. Serving Fresno, Clovis, Madera, and the Central Valley.",
