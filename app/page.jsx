@@ -602,9 +602,9 @@ export default function HomePage() {
                 <p>Send questions, document details, or appointment requests.</p>
               <a
   className="email-link"
-  href="mailto:appointments@centralvalleynotarygroup.com"
+  href="mailto:book@centralvalleynotarygroup.com"
 >
-  appointments@centralvalleynotarygroup.com
+  book@centralvalleynotarygroup.com
 </a>
               </div>
             </div>
