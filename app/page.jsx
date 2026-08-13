@@ -1,3 +1,98 @@
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can you give me legal advice or tell me which document I need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. I am a Notary Public, not an attorney licensed to practice law. I cannot give legal advice, prepare legal documents, or advise which document you need. For any legal questions, please consult a licensed attorney. My role is to verify your identity and witness your signature."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What forms of ID are accepted?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each signer must present a valid photo ID that is current or was issued within the past 5 years — a California driver’s license or DMV ID card, a U.S. passport or passport card, a driver’s license or ID from another state, a driver’s license from Canada or Mexico, a valid passport or consular ID from your country of citizenship, or a U.S. military ID. See the full list under “What To Have Ready.”"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you travel to hospitals and care facilities?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Mobile appointments are available for hospitals, assisted living facilities, rehabilitation centers, and care homes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are evening or weekend appointments available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Evening, weekend, and urgent same-day appointments may be available depending on scheduling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can I get an appointment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Same-day appointments may be available depending on your location, availability, and the type of document needing notarization."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do all signers need to be present?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every person whose signature requires notarization must personally appear before the notary at the time of signing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can documents be signed before the appointment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Most notarized documents must be signed in front of the notary during the appointment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you travel to jails or correctional facilities?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Jail notarizations may be available depending on the facility’s policies, appointment rules, and scheduling availability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you notarize real estate or loan documents?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Loan signing services are available for refinance packages, HELOCs, buyer documents, seller packages, and other real estate signing appointments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What payment methods do you accept?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For your convenience, I accept cash, card and Apple Pay (via Square), Venmo, PayPal, and Zelle. Payment is collected at the appointment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What areas do you travel to?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mobile appointments are available throughout Fresno, Clovis, and surrounding Central Valley communities."
+      }
+    }
+  ]
+};
+
 export default function HomePage() {
   const Icon = ({ type }) => {
     const icons = {
@@ -95,6 +190,11 @@ export default function HomePage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <main>
         <header className="header">
           <div className="brand-wrap">
