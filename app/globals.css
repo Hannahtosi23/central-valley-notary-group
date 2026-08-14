@@ -1126,26 +1126,26 @@ body {
           .mobile-bar {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
+            gap: 10px;
             position: fixed;
             bottom: 0;
             left: 0;
             right: 0;
             z-index: 200;
             background: #0e2944;
-            padding: 14px 18px;
+            padding: 9px 14px;
             border-top: 1px solid #c4a049;
           }
 
           .mobile-bar a {
             text-align: center;
-            padding: 14px 8px;
-            border-radius: 8px;
+            padding: 11px 6px;
+            border-radius: 7px;
             text-decoration: none;
             text-transform: uppercase;
-            letter-spacing: .14em;
+            letter-spacing: .12em;
             font-weight: 700;
-            font-size: 12px;
+            font-size: 11.5px;
           }
 
           .mobile-text {
