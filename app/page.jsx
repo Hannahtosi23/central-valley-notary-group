@@ -1,3 +1,6 @@
+import SiteHeader from "./components/SiteHeader";
+import MobileBar from "./components/MobileBar";
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -196,25 +199,7 @@ export default function HomePage() {
       />
 
       <main>
-        <header className="header">
-          <div className="brand-wrap">
-            <div>
-              <div className="brand-eyebrow">Central Valley</div>
-              <div className="brand-name">Notary Group</div>
-              <div className="brand-rule"></div>
-            </div>
-          </div>
-
-          <nav className="nav">
-            <a href="#top">Home</a>
-            <a href="#services">Services</a>
-            <a href="#before-appointment">What To Have Ready</a>
-            <a href="#service-area">Service Area</a>
-            <a href="#about">About</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </header>
+        <SiteHeader />
 
         <section id="top" className="hero">
           <div className="hero-content">
@@ -248,7 +233,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid4">
-            <div className="card"><Icon type="document" /><h3>Loan Signing Services</h3><div className="card-line"></div><p>Refinance packages, HELOCs, seller packages, buyer closings, and real estate loan documents.</p><div className="price">Starting at <span>$125</span></div><div className="price-note">$125 for one signer, $175 for two signers. Travel fee may apply by service area.</div></div>
+            <div className="card"><Icon type="document" /><h3>Loan Signing Services</h3><div className="card-line"></div><p>Refinance packages, HELOCs, seller packages, buyer closings, and real estate loan documents.</p><div className="price">Starting at <span>$125</span></div><div className="price-note">$125 for one signer, $175 for two signers. Travel fee may apply by service area.</div><a className="card-link" href="/loan-signing-agent-fresno">More about loan signings &rarr;</a></div>
             <div className="card"><Icon type="users" /><h3>Trust & Estate Signings</h3><div className="card-line"></div><p>Living trusts, pour-over wills, certifications of trust, powers of attorney, healthcare directives, and grant deeds.</p><div className="price">Starting at <span>$125</span></div><div className="price-note">$15 per notarized signature, plus travel. Most trust packages run 6 to 12 signatures.</div></div>
             <div className="card"><Icon type="shield" /><h3>Jail Notarizations</h3><div className="card-line"></div><p>Power of attorney forms, inmate authorization forms, legal affidavits, and custody-related documents.</p><div className="price">Starting at <span>$165</span></div><div className="price-note">Travel fee may apply by service area.</div></div>
             <div className="card"><Icon type="pen" /><h3>General Notary Services</h3><div className="card-line"></div><p>Power of attorney forms, affidavits, travel consent forms, trusts, and healthcare directives.</p><div className="price">Per signature <span>$15</span></div><div className="price-note">Plus a travel fee, based on where we're traveling to.</div></div>
@@ -751,11 +736,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <div className="mobile-bar">
-          <a className="mobile-text" href="sms:15593927420">Text</a>
-          <a className="mobile-call" href="tel:15593927420">Call</a>
-          <a className="mobile-schedule" href="https://calendly.com/appointments-centralvalleynotarygroup/30min">Schedule</a>
-        </div>
+        <MobileBar />
       </main>
     </>
   );
