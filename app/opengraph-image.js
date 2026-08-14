@@ -15,30 +15,22 @@ export default function Image() {
           width: '100%',
           height: '100%',
           display: 'flex',
-          flexDirection: 'row',
+          flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          gap: 70,
           backgroundColor: '#0e2944',
-          padding: '0 80px',
         }}
       >
-        <img src={LOGO} width={340} height={340} style={{ borderRadius: 170 }} />
+        <img src={LOGO} width={252} height={252} style={{ borderRadius: 126 }} />
 
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', maxWidth: 560 }}>
-          <div style={{ display: 'flex', fontSize: 22, fontWeight: 700, color: '#c9a24a', letterSpacing: 3.5, whiteSpace: 'nowrap' }}>
-            MOBILE NOTARY &amp; LOAN SIGNING AGENT
-          </div>
-          <div style={{ display: 'flex', fontSize: 68, fontWeight: 700, color: '#ffffff', letterSpacing: -1, marginTop: 14, lineHeight: 1.1 }}>
-            We Come To You.
-          </div>
-          <div style={{ display: 'flex', width: 150, height: 4, backgroundColor: '#c9a24a', marginTop: 26, marginBottom: 26 }} />
-          <div style={{ display: 'flex', fontSize: 29, color: '#eaf0f7' }}>
-            Fresno &middot; Clovis &middot; Madera &middot; Central Valley
-          </div>
-          <div style={{ display: 'flex', fontSize: 23, color: '#9fb0c4', marginTop: 14 }}>
-            Bonded &amp; Insured &middot; NNA Certified Signing Agent
-          </div>
+        <div style={{ display: 'flex', width: 300, height: 2, backgroundColor: '#c9a24a', marginTop: 34, marginBottom: 30 }} />
+
+        <div style={{ display: 'flex', fontSize: 24, fontWeight: 700, color: '#e6cd8a', letterSpacing: 2.5, whiteSpace: 'nowrap' }}>
+          MOBILE NOTARY &amp; LOAN SIGNING AGENT
+        </div>
+
+        <div style={{ display: 'flex', fontSize: 24, color: '#b9c2cf', marginTop: 16, whiteSpace: 'nowrap' }}>
+          Fresno, Clovis &amp; the Central Valley
         </div>
       </div>
     ),
