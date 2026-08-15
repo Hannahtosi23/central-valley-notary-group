@@ -1216,9 +1216,30 @@ body {
           }
 
           .feature-bar {
-            padding: 20px;
-            gap: 16px;
+            padding: 16px;
+            gap: 11px;
             border-radius: 14px;
+          }
+
+          .feature {
+            gap: 11px;
+            align-items: center;
+          }
+
+          .feature .svg-icon {
+            width: 28px;
+            height: 28px;
+          }
+
+          .feature h3 {
+            font-size: 12px;
+            letter-spacing: .08em;
+            margin-bottom: 4px;
+          }
+
+          .feature p {
+            font-size: 13.5px;
+            line-height: 1.4;
           }
 
           .buttons {
