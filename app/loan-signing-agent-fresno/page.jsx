@@ -4,7 +4,7 @@ import MobileBar from "../components/MobileBar";
 export const metadata = {
   title: "Loan Signing Agent in Fresno | Refinance, HELOC & Closing Signings",
   description:
-    "NNA Certified Loan Signing Agent serving Fresno and the Central Valley. Mobile refinance, HELOC, purchase, seller, and reverse mortgage signings. $125 for one signer, $175 for two.",
+    "NNA Certified Loan Signing Agent serving Fresno and the Central Valley. Mobile refinance, HELOC, purchase, seller, and reverse mortgage signings. $150 for a single borrower, $200 when two people sign.",
   alternates: { canonical: "/loan-signing-agent-fresno" },
   openGraph: {
     title: "Loan Signing Agent in Fresno | Central Valley Notary Group",
@@ -49,9 +49,9 @@ const serviceSchema = {
   offers: {
     "@type": "Offer",
     priceCurrency: "USD",
-    price: "125",
+    price: "150",
     description:
-      "$125 for one signer, $175 for two signers. Travel fee may apply by service area.",
+      "$150 covers a single-borrower package; $200 when two people sign. Travel is quoted by distance from Fresno.",
   },
 };
 
@@ -153,12 +153,13 @@ export default function LoanSigningPage() {
             </div>
 
             <div className="lp-price-box">
-              <div className="lp-amount">$125</div>
+              <div className="lp-amount">$150</div>
               <p>
-                <strong>$125 for one signer &middot; $175 for two signers.</strong> A
-                travel fee may apply depending on your location. Printing and scan-backs
-                can be arranged &mdash; just let me know what the lender requires when you
-                book.
+                <strong>
+                  $150 covers a single-borrower package; $200 when two people sign.
+                </strong>{" "}
+                Travel is quoted by distance from Fresno. Printing and scan-backs can be
+                arranged &mdash; just let me know what the lender requires when you book.
               </p>
             </div>
 
