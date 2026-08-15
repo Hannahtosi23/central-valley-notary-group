@@ -1089,7 +1089,7 @@ body {
           .sa-note { margin-top: 18px; }
 
           .hero {
-            padding: 52px 20px 64px;
+            padding: 122px 20px 64px;
             min-height: auto;
           }
 
@@ -1228,13 +1228,14 @@ body {
           }
 
           .header {
-            padding: 9px 16px;
-            gap: 7px;
+            padding: 7px 14px;
+            gap: 4px;
           }
 
           .brand-eyebrow {
             font-size: 9px;
             letter-spacing: .26em;
+            margin-bottom: 3px;
           }
 
           .brand-name {
@@ -1244,16 +1245,17 @@ body {
           .brand-rule {
             width: 84px;
             height: 2px;
-            margin-top: 7px;
+            margin-top: 4px;
           }
 
           .nav {
-            gap: 10px;
+            gap: 6px 9px;
           }
 
           .nav a {
             font-size: 9px;
-            letter-spacing: .06em;
+            letter-spacing: .04em;
+            line-height: 1.15;
           }
 
           h2 {
