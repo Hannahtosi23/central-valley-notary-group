@@ -47,6 +47,14 @@ const faqSchema = {
     },
     {
       "@type": "Question",
+      "name": "Do you charge extra for same-day, after-hours, or holiday appointments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Last-minute and same-day requests, appointments outside my posted hours, and major holidays carry an additional fee on top of the standard notarization and travel fees. The amount depends on the timing and how far I’m traveling. You will always be quoted the full cost before the appointment is booked."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Do all signers need to be present?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -239,7 +247,10 @@ export default function HomePage() {
             <div className="card"><Icon type="pen" /><h3>General Notary Services</h3><div className="card-line"></div><p>Power of attorney forms, affidavits, travel consent forms, trusts, and healthcare directives.</p><div className="price">Per signature <span>$15</span></div><div className="price-note">Plus a travel fee, based on where we're traveling to.</div></div>
           </div>
           <p className="pricing-note">
-            <strong>California's notarization fee is $15 per notarized signature, plus travel.</strong> Each additional signature is $15, and a travel fee applies based on where we're traveling to. Loan signing and jail notarizations start at the rates shown above. After-hours or rush appointments may add to the total. You will always receive a clear, itemized quote before anything is signed.
+            <strong>California's notarization fee is $15 per notarized signature, plus travel.</strong> Each additional signature is $15, and a travel fee applies based on where we're traveling to. Loan signing and jail notarizations start at the rates shown above. You will always receive a clear, itemized quote before anything is signed.
+          </p>
+          <p className="pricing-note fee-note">
+            <strong>Same-day, after-hours, and holiday appointments carry an additional fee.</strong> This applies to last-minute and rush requests, appointments outside my posted hours, and major holidays. The amount depends on the timing and how far the travel is &mdash; you&rsquo;ll be quoted the full cost when you book, and nothing is added afterward.
           </p>
         </section>
 
@@ -565,6 +576,19 @@ export default function HomePage() {
                 Same-day appointments may be available depending on your
                 location, availability, and the type of document needing
                 notarization.
+              </p>
+            </details>
+
+            <details className="faq-item">
+              <summary>
+                <h3>Do you charge extra for same-day, after-hours, or holiday appointments?</h3>
+              </summary>
+              <p>
+                Yes. Last-minute and same-day requests, appointments outside my
+                posted hours, and major holidays carry an additional fee on top
+                of the standard notarization and travel fees. The amount depends
+                on the timing and how far I&rsquo;m traveling. You will always be
+                quoted the full cost before the appointment is booked.
               </p>
             </details>
 

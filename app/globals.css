@@ -754,6 +754,12 @@ body {
           line-height: 1.7;
         }
 
+        .fee-note {
+          margin-top: 18px;
+          padding-top: 18px;
+          border-top: 1px solid #e6dcc3;
+        }
+
         .price-note {
           margin-top: 8px;
           font-size: 12px;
