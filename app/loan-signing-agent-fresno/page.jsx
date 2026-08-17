@@ -4,7 +4,7 @@ import MobileBar from "../components/MobileBar";
 export const metadata = {
   title: "Loan Signing Agent in Fresno | Refinance, HELOC & Closing Signings",
   description:
-    "NNA Certified Loan Signing Agent serving Fresno and the Central Valley. Mobile refinance, HELOC, purchase, seller, and reverse mortgage signings. $150 for a single borrower, $200 when two people sign.",
+    "NNA Certified Loan Signing Agent serving Fresno and the Central Valley. Mobile refinance, HELOC, purchase, seller, and reverse mortgage signings starting at $150.",
   alternates: { canonical: "/loan-signing-agent-fresno" },
   openGraph: {
     title: "Loan Signing Agent in Fresno | Central Valley Notary Group",
@@ -47,11 +47,11 @@ const serviceSchema = {
     "Kingsburg, CA",
   ],
   offers: {
-    "@type": "Offer",
+    "@type": "AggregateOffer",
     priceCurrency: "USD",
-    price: "150",
+    lowPrice: "150",
     description:
-      "$150 covers a single-borrower package; $200 when two people sign. Travel is quoted by distance from Fresno.",
+      "Loan signings start at $150. The final amount depends on the number of signers, travel distance, and whether printing or scan-backs are needed.",
   },
 };
 
@@ -153,13 +153,12 @@ export default function LoanSigningPage() {
             </div>
 
             <div className="lp-price-box">
-              <div className="lp-amount">$150</div>
+              <div className="lp-amount">$150+</div>
               <p>
-                <strong>
-                  $150 covers a single-borrower package; $200 when two people sign.
-                </strong>{" "}
-                Travel is quoted by distance from Fresno. Printing and scan-backs can be
-                arranged &mdash; just let me know what the lender requires when you book.
+                <strong>Loan signings start at $150.</strong> The final amount depends on
+                the number of signers, how far the travel is, and whether printing or
+                scan-backs are needed. Tell me what the lender requires when you book and
+                you&rsquo;ll get an exact quote up front &mdash; nothing is added afterward.
               </p>
             </div>
 
