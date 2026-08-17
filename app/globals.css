@@ -1230,7 +1230,7 @@ body {
           }
 
           .hero {
-            padding: 92px 18px 44px;
+            padding: 102px 18px 44px;
           }
 
           section {
@@ -1309,7 +1309,7 @@ body {
           }
 
           .nav {
-            gap: 6px 9px;
+            gap: 12px 10px;
           }
 
           .nav a {
