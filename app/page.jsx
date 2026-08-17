@@ -50,7 +50,7 @@ const faqSchema = {
       "name": "Do you charge extra for same-day, after-hours, or holiday appointments?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Last-minute and same-day requests, appointments outside my posted hours, and major holidays carry an additional fee on top of the standard notarization and travel fees. The amount depends on the timing and how far I’m traveling. You will always be quoted the full cost before the appointment is booked."
+        "text": "Yes. Last-minute and same-day requests, appointments outside normal business hours, and major holidays carry an additional fee on top of the standard notarization and travel fees. The amount depends on the timing and how far I’m traveling. You will always be quoted the full cost before the appointment is booked."
       }
     },
     {
@@ -250,7 +250,7 @@ export default function HomePage() {
             <strong>California's notarization fee is $15 per notarized signature, plus travel.</strong> Each additional signature is $15, and a travel fee applies based on where we're traveling to. Loan signing and jail notarizations start at the rates shown above. You will always receive a clear, itemized quote before anything is signed.
           </p>
           <p className="pricing-note fee-note">
-            <strong>Same-day, after-hours, and holiday appointments carry an additional fee.</strong> This applies to last-minute and rush requests, appointments outside my posted hours, and major holidays. The amount depends on the timing and how far the travel is &mdash; you&rsquo;ll be quoted the full cost when you book, and nothing is added afterward.
+            <strong>Same-day, after-hours, and holiday appointments carry an additional fee.</strong> This applies to last-minute and rush requests, appointments outside normal business hours, and major holidays. The amount depends on the timing and how far the travel is &mdash; you&rsquo;ll be quoted the full cost when you book, and nothing is added afterward.
           </p>
         </section>
 
@@ -584,9 +584,9 @@ export default function HomePage() {
                 <h3>Do you charge extra for same-day, after-hours, or holiday appointments?</h3>
               </summary>
               <p>
-                Yes. Last-minute and same-day requests, appointments outside my
-                posted hours, and major holidays carry an additional fee on top
-                of the standard notarization and travel fees. The amount depends
+                Yes. Last-minute and same-day requests, appointments outside
+                normal business hours, and major holidays carry an additional fee
+                on top of the standard notarization and travel fees. The amount depends
                 on the timing and how far I&rsquo;m traveling. You will always be
                 quoted the full cost before the appointment is booked.
               </p>
@@ -720,22 +720,7 @@ export default function HomePage() {
           </div>
 
           <div className="footer-note">
-            <div style={{ marginBottom: "30px" }}>
-              <h3 style={{ color: "#e6cd8a", textTransform: "uppercase", letterSpacing: ".18em", fontSize: "12px" }}>
-                Business Hours
-              </h3>
-
-              <p>
-                Monday: 7:00 AM – 7:00 PM<br />
-                Tuesday: 7:00 AM – 7:00 PM<br />
-                Wednesday: 7:00 AM – 7:00 PM<br />
-                Thursday: 7:00 AM – 7:00 PM<br />
-                Friday: 7:00 AM – 7:00 PM<br />
-                Saturday: 10:00 AM – 6:00 PM<br />
-                Sunday: Closed
-              </p>
-            </div>
-<p>
+            <p>
               I am a Notary Public, not an attorney licensed to practice law. I may not give legal advice or accept fees for legal advice. I can only provide notarial services.
             </p>
 
