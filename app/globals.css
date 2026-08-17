@@ -253,7 +253,7 @@ body {
 
         .btn-light {
           background: rgba(255,255,255,.9);
-          color: #9a7d2e;
+          color: #7b6425;
           border: 1px solid #c4a049;
         }
 
@@ -274,7 +274,7 @@ body {
           align-items: flex-start;
         }
 
-        .feature h3 {
+        .feature .feature-title {
           font-family: 'DM Sans', Arial, sans-serif;
           color: white;
           text-transform: uppercase;
@@ -304,6 +304,9 @@ body {
         .section-label {
           font-size: 12px;
           margin-bottom: 20px;
+          /* Darker than the brand gold: these sit on cream/white and need
+             a 4.5:1 contrast ratio to be readable. Dark sections override below. */
+          color: #886d2c;
         }
 
         .grid4 {
@@ -785,7 +788,7 @@ body {
         .price-note {
           margin-top: 8px;
           font-size: 12px;
-          color: #9a7d2e;
+          color: #8b712a;
           font-weight: 700;
         }
 
@@ -892,7 +895,7 @@ body {
 
         .pm-cash { color: #2e7d32; }
         .pm-card { color: #0e2944; }
-        .pm-venmo { color: #008cff; }
+        .pm-venmo { color: #0075d5; }
         .pm-paypal { color: #003087; }
         .pm-zelle { color: #6d1ed4; }
 
@@ -900,7 +903,9 @@ body {
           background: #0e2944;
         }
 
-        .svc-section .section-label {
+        .svc-section .section-label,
+        .sa-band .section-label,
+        .cred-band .section-label {
           color: #e6cd8a;
         }
 
@@ -1258,7 +1263,7 @@ body {
             height: 28px;
           }
 
-          .feature h3 {
+          .feature .feature-title {
             font-size: 12px;
             letter-spacing: .08em;
             margin-bottom: 4px;

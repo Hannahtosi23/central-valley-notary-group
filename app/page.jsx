@@ -225,11 +225,11 @@ export default function HomePage() {
             </div>
 
             <div className="feature-bar">
-              <div className="feature"><Icon type="clock" /><div><h3>Same-Day Appointments</h3><p>When you need it, we’re there.</p></div></div>
-              <div className="feature"><Icon type="shield" /><div><h3>Bonded & Insured</h3><p>Your peace of mind is our priority.</p></div></div>
-              <div className="feature"><Icon type="car" /><div><h3>We Travel To You</h3><p>Homes, offices, hospitals, jails & more.</p></div></div>
-              <div className="feature"><Icon type="calendar" /><div><h3>Evening & Weekend Availability</h3><p>Flexible scheduling to fit your needs.</p></div></div>
-              <div className="feature"><Icon type="bolt" /><div><h3>Last-Minute Signings Welcome</h3><p>We’re here when you’re in a rush.</p></div></div>
+              <div className="feature"><Icon type="clock" /><div><div className="feature-title">Same-Day Appointments</div><p>When you need it, we’re there.</p></div></div>
+              <div className="feature"><Icon type="shield" /><div><div className="feature-title">Bonded & Insured</div><p>Your peace of mind is our priority.</p></div></div>
+              <div className="feature"><Icon type="car" /><div><div className="feature-title">We Travel To You</div><p>Homes, offices, hospitals, jails & more.</p></div></div>
+              <div className="feature"><Icon type="calendar" /><div><div className="feature-title">Evening & Weekend Availability</div><p>Flexible scheduling to fit your needs.</p></div></div>
+              <div className="feature"><Icon type="bolt" /><div><div className="feature-title">Last-Minute Signings Welcome</div><p>We’re here when you’re in a rush.</p></div></div>
             </div>
           </div>
         </section>
