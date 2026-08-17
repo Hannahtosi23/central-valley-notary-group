@@ -631,6 +631,28 @@ body {
           margin-bottom: 20px;
         }
 
+        .appt-only {
+          max-width: 620px;
+          margin: 24px auto 0;
+          font-size: 16px;
+          line-height: 1.7;
+        }
+
+        .appt-only strong {
+          color: #e6cd8a;
+        }
+
+        .appt-only a {
+          color: #e6cd8a;
+          font-weight: 700;
+          text-decoration: none;
+          white-space: nowrap;
+        }
+
+        .appt-only a:hover {
+          text-decoration: underline;
+        }
+
         .dark {
           background: #0e2944;
           color: white;
@@ -1213,6 +1235,11 @@ body {
 
           section {
             padding: 48px 18px;
+          }
+
+          .appt-only {
+            font-size: 14.5px;
+            margin-top: 18px;
           }
 
           .feature-bar {

@@ -660,6 +660,12 @@ export default function HomePage() {
           <div className="center">
             <p className="section-label">Contact Me</p>
             <h2>Let’s Get Your Documents Notarized</h2>
+            <p className="appt-only">
+              <strong>By appointment only.</strong> Call or text{" "}
+              <a href="tel:15593927420">(559) 392-7420</a> and I&rsquo;ll find a time
+              that works for you &mdash; evenings, weekends, and same-day appointments
+              are often available.
+            </p>
           </div>
 
           <div className="contact-grid">
