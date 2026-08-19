@@ -172,35 +172,6 @@ export default function TrustSigningPage() {
               </div>
             </div>
 
-            <h2>What Gets Notarized &mdash; and What Doesn&rsquo;t</h2>
-            <p>
-              This is the single thing most people are surprised by, so it is worth saying
-              plainly before your appointment rather than at your kitchen table.
-            </p>
-            <p>
-              <strong>
-                A will is not made valid by a notary in California. It is made valid by two
-                witnesses.
-              </strong>{" "}
-              That includes the pour-over will that usually sits inside a trust package.
-              California does not use the self-proving notarial affidavit that some other
-              states do, and a will that has been notarized but not properly witnessed can
-              be challenged in probate. If your package contains a will, plan on having two
-              qualified adults present who are not receiving anything under it.
-            </p>
-            <p>
-              Everything else in the list above &mdash; the trust, the certification, the
-              powers of attorney, the deed &mdash; is notary work, and I will tell you which
-              is which when you book so nobody is scrambling on the day.
-            </p>
-            <p>
-              What I can&rsquo;t do is tell you which documents you need or what any
-              provision means. I&rsquo;m a Notary Public, not an attorney, and questions
-              about the substance of your estate plan belong with the lawyer or document
-              preparer who drafted it. Being clear about that line is part of doing this
-              job properly.
-            </p>
-
             <div className="lp-price-box">
               <div className="lp-amount">$125+</div>
               <p>
