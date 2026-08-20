@@ -293,7 +293,7 @@ export default function HomePage() {
               <span className="svc-check" aria-hidden="true"></span>
               <div>
                 <h3>HELOC Signings</h3>
-                <p>Notarization of home equity line of credit documents, including the right-of-rescission timing.</p>
+                <p>Notarization of home equity line of credit documents, dated per the lender&rsquo;s instructions.</p>
               </div>
             </div>
             <div className="svc-item">
