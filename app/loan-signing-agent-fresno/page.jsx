@@ -94,7 +94,7 @@ export default function LoanSigningPage() {
             <p className="section-label">Loan Signings</p>
             <h1>Loan Signing Agent in Fresno &amp; the Central Valley</h1>
             <p>
-              I&rsquo;m an NNA Certified Signing Agent, background screened, bonded, and
+              I&rsquo;m an NNA Certified Loan Signing Agent, background screened, bonded, and
               carrying $100,000 in E&amp;O coverage. I bring the loan package to your
               kitchen table, your office, or wherever the signing needs to happen &mdash;
               evenings and weekends included.
