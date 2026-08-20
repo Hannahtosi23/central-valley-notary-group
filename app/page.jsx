@@ -504,6 +504,22 @@ export default function HomePage() {
             <p className="section-label">Credentials &amp; Trust</p>
             <h2>Credentials You Can Count On</h2>
           </div>
+          <div className="cred-seal">
+            <a
+              href="https://www.nationalnotary.org/knowledge-center/signing-agent-resources"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Certified Notary Signing Agent"
+            >
+              <img
+                src="https://www.nationalnotary.org/Image%20Library/NNA/membership%20images/nsa_member_badge.png"
+                alt="NNA Certified Notary Signing Agent"
+                width="104"
+                height="104"
+                loading="lazy"
+              />
+            </a>
+          </div>
           <div className="cred-row">
             <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>Commissioned California Notary Public</span>
             <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>Commission #2562963 &middot; Exp. 07/26/2030</span>

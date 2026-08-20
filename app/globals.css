@@ -1450,11 +1450,20 @@ body {
 
         .cred-band { background: #0e2944; }
         .cred-band h2 { color: #ffffff; }
+        .cred-band .center { margin-bottom: 26px; }
+        .cred-seal { display: flex; justify-content: center; margin: 2px auto 30px; }
+        .cred-seal a { display: inline-block; line-height: 0; border-radius: 50%; transition: transform 0.2s ease; }
+        .cred-seal a:hover { transform: scale(1.04); }
+        .cred-seal a:focus-visible { outline: 2px solid #c9a24a; outline-offset: 5px; }
+        .cred-seal img { display: block; width: 104px; height: 104px; border-radius: 50%; }
         .cred-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; max-width: 940px; margin: 0 auto; }
         .cred-badge { display: flex; align-items: center; gap: 10px; background: #faf6ec; border: 1px solid #e6dcc3; border-radius: 999px; padding: 11px 20px; color: #0e2944; font-weight: 700; font-size: 14px; }
         .cred-ic { width: 22px; height: 22px; border-radius: 50%; border: 1px solid #c9a24a; background: rgba(201, 162, 74, 0.12); position: relative; flex-shrink: 0; }
         .cred-ic::before { content: "✓"; color: #b8891f; font-size: 12px; font-weight: 700; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
         @media (max-width: 640px) {
+          .cred-band .center { margin-bottom: 20px; }
+          .cred-seal { margin: 0 auto 22px; }
+          .cred-seal img { width: 88px; height: 88px; }
           .cred-row { gap: 9px; }
           .cred-badge { font-size: 12px; padding: 9px 14px; gap: 8px; }
           .cred-ic { width: 18px; height: 18px; }
