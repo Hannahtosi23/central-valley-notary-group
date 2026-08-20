@@ -142,25 +142,25 @@ export default function TrustSigningPage() {
               <div className="lp-tile">
                 <h3>Powers of Attorney</h3>
                 <p>
-                  Durable and financial powers of attorney. Notarization is required when
-                  the power will be used for real property, and it is the form most
-                  institutions expect regardless.
+                  Durable and financial powers of attorney. If your attorney has tabbed a
+                  signature line for notarization, I&rsquo;ll handle it at the same
+                  appointment.
                 </p>
               </div>
               <div className="lp-tile">
                 <h3>Advance Health Care Directive</h3>
                 <p>
-                  California allows either a notary or two qualified witnesses on these.
-                  If notarizing is the route your attorney chose, I handle it at the same
-                  appointment.
+                  If your document is set up to be notarized rather than witnessed,
+                  I&rsquo;ll take care of it while I&rsquo;m there. Your attorney or document
+                  preparer will have marked which.
                 </p>
               </div>
               <div className="lp-tile">
                 <h3>Grant &amp; Trust Transfer Deeds</h3>
                 <p>
-                  The deed that actually moves your home into the trust. This one must be
-                  notarized before the county will record it &mdash; a trust without the
-                  deed often misses the point.
+                  The deed that moves your home into the trust. These come with a notarial
+                  certificate attached, and I complete it so the document goes back to you
+                  ready to file.
                 </p>
               </div>
               <div className="lp-tile">
