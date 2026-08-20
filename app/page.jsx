@@ -510,7 +510,7 @@ export default function HomePage() {
             <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>$100,000 E&amp;O Insured</span>
             <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>Bonded</span>
             <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>Background Screened</span>
-            <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>NNA Certified Signing Agent</span>
+            <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>NNA Certified Loan Signing Agent</span>
           </div>
         </section>
 
