@@ -125,15 +125,15 @@ export default function LoanSigningPage() {
               <div className="lp-tile">
                 <h3>Refinance</h3>
                 <p>
-                  Complete notarization and signing of refinance packages, including the
-                  three-day right of rescission on owner-occupied properties.
+                  Complete notarization and signing of refinance packages. I follow the
+                  lender&rsquo;s instructions on dating and on any pages the package flags.
                 </p>
               </div>
               <div className="lp-tile">
                 <h3>HELOC</h3>
                 <p>
-                  Home equity line of credit documents, with careful attention to
-                  right-of-rescission timing and dating.
+                  Home equity line of credit documents, signed and dated exactly as the
+                  lender&rsquo;s instructions specify.
                 </p>
               </div>
               <div className="lp-tile">
