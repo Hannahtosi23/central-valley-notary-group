@@ -220,8 +220,8 @@ export default function HomePage() {
             </p>
 
             <div className="buttons">
-              <a className="btn btn-dark" href="https://calendly.com/appointments-centralvalleynotarygroup/30min">Schedule Appointment</a>
-              <a className="btn btn-light" href="sms:15593927420">Text (559) 392-7420</a>
+              <a className="btn btn-dark" href="sms:15593927420">Text (559) 392-7420</a>
+              <a className="btn btn-light" href="tel:15593927420">Call (559) 392-7420</a>
             </div>
 
             <div className="feature-bar">
@@ -687,19 +687,6 @@ export default function HomePage() {
           <div className="contact-grid">
             <div className="contact-card">
               <div className="contact-bubble">
-                <Icon type="calendar" />
-              </div>
-              <div>
-                <h3>Schedule Online</h3>
-                <p>Book an appointment in just a few clicks.</p>
-                <a className="btn btn-light contact-btn" href="https://calendly.com/appointments-centralvalleynotarygroup/30min">
-                  Schedule Appointment
-                </a>
-              </div>
-            </div>
-
-            <div className="contact-card">
-              <div className="contact-bubble">
                 <Icon type="message" />
               </div>
               <div>
@@ -731,12 +718,9 @@ export default function HomePage() {
               <div>
                 <h3>Email Me</h3>
                 <p>Send questions, document details, or appointment requests.</p>
-              <a
-  className="email-link"
-  href="mailto:hannah@cvnotarygroup.com"
->
-  hannah@cvnotarygroup.com
-</a>
+                <a className="btn btn-light contact-btn email-btn" href="mailto:hannah@cvnotarygroup.com">
+                  hannah@cvnotarygroup.com
+                </a>
               </div>
             </div>
           </div>

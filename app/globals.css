@@ -715,6 +715,13 @@ body {
   margin-bottom: 24px;
 }
 
+.contact-card .email-btn {
+  max-width: 280px;
+  text-transform: none;
+  font-size: 13px;
+  letter-spacing: .01em;
+}
+
 .email-link {
   color: #e6cd8a;
   font-size: 16px;
@@ -1191,7 +1198,7 @@ body {
             color: black;
           }
 
-          .mobile-schedule {
+          .mobile-email {
             border: 1px solid #5b5648;
             color: white;
           }
