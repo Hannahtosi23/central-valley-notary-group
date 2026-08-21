@@ -733,9 +733,9 @@ export default function HomePage() {
                 <p>Send questions, document details, or appointment requests.</p>
               <a
   className="email-link"
-  href="mailto:book@centralvalleynotarygroup.com"
+  href="mailto:hannah@cvnotarygroup.com"
 >
-  book@centralvalleynotarygroup.com
+  hannah@cvnotarygroup.com
 </a>
               </div>
             </div>

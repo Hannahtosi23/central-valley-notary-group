@@ -34,7 +34,7 @@ const jsonLd = {
     "Mobile notary and loan signing agent serving Fresno and the Central Valley.",
   url: "https://centralvalleynotarygroup.com",
   telephone: "+1-559-392-7420",
-  email: "book@centralvalleynotarygroup.com",
+  email: "hannah@cvnotarygroup.com",
   areaServed: [
     "Fresno, CA",
     "Clovis, CA",
