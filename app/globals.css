@@ -1678,3 +1678,10 @@ body {
   .lp-body p { font-size: 16px; }
   .lp-price-box { padding: 22px 20px; }
 }
+
+/* Scheduling has been retired. The two service pages still carry a
+   "Schedule a Signing" link in their markup; this hides any Calendly
+   link site-wide until those files can be edited directly. */
+a[href*="calendly.com"] {
+  display: none !important;
+}
