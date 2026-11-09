@@ -522,7 +522,6 @@ export default function HomePage() {
           </div>
           <div className="cred-row">
             <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>Commissioned California Notary Public</span>
-            <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>Commission #2562963 &middot; Exp. 07/26/2030</span>
             <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>$100,000 E&amp;O Insured</span>
             <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>Bonded</span>
             <span className="cred-badge"><span className="cred-ic" aria-hidden="true"></span>Background Screened</span>
